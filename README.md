@@ -1,5 +1,5 @@
 <p align="center">
-# FOSSC Documentation
+<h1> FOSSC Documentation </h1>
 </p>
 
 <p align="center">
