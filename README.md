@@ -5,6 +5,13 @@
 
 This repository contains the assets required to build the [FOSSC Website](https://fossc.netlify.app/). We're glad that you want to contribute!
 
+
+# An overview of the website
+
+![name-of-you-image](/assets/fosscSS.PNG)
+
+
+
 ## Prerequisites
 
 To use this repository, you need the following installed locally:
