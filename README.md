@@ -1,7 +1,11 @@
 
 # FOSSC Documentation
 
-![name-of-you-image](https://uploads-ssl.webflow.com/602a337999a3d77b1d768af7/603f6b65c586ca3ef33c2f62_opensource-p-500.png)
+
+<p align="center">
+  <img src="https://uploads-ssl.webflow.com/602a337999a3d77b1d768af7/603f6b65c586ca3ef33c2f62_opensource-p-500.png" />
+</p>
+
 
 This repository contains the assets required to build the [FOSSC Website](https://fossc.netlify.app/). We're glad that you want to contribute!
 
