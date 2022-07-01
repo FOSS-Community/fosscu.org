@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background: #131313;
+  background: #444444;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -93,8 +93,34 @@
 }
 
 .navbar__links:hover {
-  color: #00fa00;
+  color: #00e043;
   transition: all 0.3s ease;
+}
+#box1{
+  padding: 20px;
+}
+#box1:hover{
+  
+transform: scale(1.075);
+  transition: 0.3s ease-in;
+}
+#box2:hover{
+  
+transform: scale(1.075);
+  transition: 0.3s ease-in;
+}
+#box3:hover{
+  
+transform: scale(1.075);
+  transition: 0.3s ease-in;
+}
+#box4:hover{
+  
+transform: scale(1.075);
+  transition: 0.3s ease-in;
+}
+.services__card:hover {
+ cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
@@ -195,7 +221,7 @@
 .hero {
   background: #000000;
   background: linear-gradient(to right, #161616, #000000);
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
 .hero__container {
@@ -272,7 +298,7 @@
 /* About Section */
 .main {
   background-color: #131313;
-  padding: 10rem 0;
+  padding: 2rem 0;
 }
 
 .main__container {
@@ -592,7 +618,7 @@
 
 /* Footer CSS */
 .footer__container {
-  background-color: #131313;
+  background-color: #414040;
   padding: 5rem 2;
   display: flex;
   flex-direction: column;
@@ -683,7 +709,7 @@ a {
 }
 
 a:hover {
-  color: #01f335;
+  
   transition: all 0.3s ease;
 }
 
