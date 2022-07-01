@@ -5,7 +5,10 @@
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
 }
-
+.services__btn button:hover{
+color:black;
+background-color: #00ffea;
+}
 .navbar {
   background: #444444;
   height: 80px;
@@ -17,7 +20,9 @@
   top: 0;
   z-index: 999;
 }
-
+.para{
+  padding: 20px;
+}
 .navbar__container {
   display: flex;
   justify-content: space-between;
@@ -73,7 +78,9 @@
   padding: 0 1rem;
   width: 100%;
 }
-
+.footer__link--items a:hover{
+  color: #00ffea;
+}
 .button {
   display: flex;
   justify-content: center;
@@ -416,7 +423,9 @@ transform: scale(1.075);
   color: #fff;
   background-image: linear-gradient(to right, #b3ff00 0%, #18d100 100%);
 }
-
+#logop{
+  margin-top: 20px;
+}
 .fa-layer-group,
 .fa-users {
   font-size: 14rem;
