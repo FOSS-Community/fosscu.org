@@ -698,7 +698,7 @@ transform: scale(1.075);
   align-items: center;
   width: 90%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
+  margin: 40px auto 0;
 }
 
 .social__icons {
