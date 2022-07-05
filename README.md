@@ -147,4 +147,5 @@ Thanks a lot for spending your time helping AutoType grow. Thanks a lot! Keep ro
 This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 
