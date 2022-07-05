@@ -147,5 +147,5 @@ Thanks a lot for spending your time helping FOSSC grow. Thanks a lot! Keep rocki
 This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://www.linkedin.com/pulse/20-ways-make-someone-smile-ingrid-kelada/?trk=read_related_article-card_title)
 
