@@ -10,6 +10,7 @@ This repository contains the assets required to build the [FOSSC Website](https:
 
 
 # An overview of the website
+[![CodeFactor](https://www.codefactor.io/repository/github/foss-community/website-fossc/badge)](https://www.codefactor.io/repository/github/foss-community/website-fossc)
 
 ![name-of-you-image](/assets/fosscSS.PNG)
 
