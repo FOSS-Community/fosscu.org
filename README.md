@@ -135,3 +135,16 @@ click on `Create pull request`.
 ## Where to go from here?
 
 Congrats! You just completed the standard _fork -> clone -> edit -> pull request_ workflow that you'll encounter often as a contributor!
+
+## 💪 Thanks to all Contributors
+
+Thanks a lot for spending your time helping AutoType grow. Thanks a lot! Keep rocking 🍻
+
+[![Contributors](https://contrib.rocks/image?repo=FOSS-Community/website-fossc)](https://github.com/FOSS-Community/website-fossc)
+
+## 🙏 Support
+
+This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
