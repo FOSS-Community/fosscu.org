@@ -23,7 +23,7 @@ body{
     background: #131313;
 }
 
-section::before
+/* section::before
 {
     content: '';
     position: absolute;
@@ -62,7 +62,7 @@ section::after
     {
         transform: translateY(-20px);
     }
-}
+} */
 
 .container
 {
