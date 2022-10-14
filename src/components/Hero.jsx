@@ -28,8 +28,8 @@ function Hero() {
             />
             <div className=' text-white grow'>
         <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
-            <p className='font-bold p-2'>Growing With the Community</p>
-            <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 text-[#00df9a] '>Welcome to FOSSCU</h1>
+            <p className='font-bold p-4'>Growing With the Community</p>
+            <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-8 text-[#00df9a] '>Welcome to FOSSCU</h1>
             <div className='flex justify-center items-center '>
                 {/* <p className='md:text-5xl sm:text-4xl text-xl font-bold'>We Do </p> */}
                 <Typed
