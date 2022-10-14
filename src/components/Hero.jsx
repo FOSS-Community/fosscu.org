@@ -17,7 +17,7 @@ function Hero() {
 
 
   return (
-    <div className='w-full py-16 px-4'>
+    <div className='w-full py-16 px-5'>
 
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
             <Lottie
