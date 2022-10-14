@@ -18,8 +18,8 @@ function About() {
             <Lottie
                 className = 'w-[500px] mx-auto my-4'
                 options = {defaultOptions}
-                height = {500}
-                width = {500}
+                height = {400}
+                width = {400}
                 />
             <div className='flex flex-col justify-center'>
                 <p className='text-[#AEF746] font-bold'>Community + Coding = 🔥</p>
