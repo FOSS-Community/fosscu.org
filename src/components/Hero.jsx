@@ -40,7 +40,9 @@ function Hero() {
                     loop
                 />
             </div>
-            <button className='bg-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
+            <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__kzFzfFUNFdWMTVWTjhSU1UyMDZTN0YzSkhMWVE5Vi4u" target="_blank" rel="noopener noreferrer">
+            <button className='bg-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Join Us 🤝</button>
+            </a>
         </div>
     </div>
         </div>
