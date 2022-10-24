@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import {RiOpenSourceFill} from 'react-icons/ri'
-
+import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -13,13 +13,14 @@ const Navbar = () => {
 
 
   return (
+    <>
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
         <RiOpenSourceFill size={60} color='green'/>
         <h1 className='w-full text-3xl font-bold text-[#0DFF1C] m-4'> FOSSCU</h1>
         <ul className='hidden md:flex'>
-            <li className='p-4'>Home</li>
+            <li className='p-4'> <Link to="/"> Home </Link> </li>
             <li className='p-4'>About</li>
-            <li className='p-4'>Team</li>
+            <li className='p-4'> <Link to="/team"> Team </Link> </li>
             <li className='p-4'>Projects</li>
             <li className='p-4'>Contact</li>
         </ul>
@@ -40,6 +41,8 @@ const Navbar = () => {
             </ul>
         </div>
     </div>
+    <Outlet />
+    </>
   )
 }
 

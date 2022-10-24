@@ -1,18 +1,27 @@
 import React from "react";
-import About from "./components/About";
-import Hero from "./components/Hero";
+import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
-import Newsletter from "./components/Newsletter";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Newsletter/>
-    </div>
+  return ( 
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/team" element={<Navbar />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
+{/* <Navbar />
+<Hero />
+<About />
+<Newsletter/> */}
