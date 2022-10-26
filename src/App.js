@@ -1,6 +1,7 @@
 import React from "react";
 import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
+import Team from "./pages/Team"
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/team" element={<Navbar />}></Route>
+        <Route path="/team" element={<Team xw/>}></Route>
       </Routes>
     </BrowserRouter>
   );
