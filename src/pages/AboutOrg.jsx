@@ -35,9 +35,11 @@ import FOSSCU from "../assets/img/logo/fosscu.png"
           <p class="leading-relaxed text-base mb-4"> We conduct Events and Bootcamps regularly get you more involved with the Open Source Culture and to improve your networking.</p>
         </div>
       </div>
+      <a href="https://linktr.ee/fosscu" target="_blank" rel="noopener noreferrer">
       <button
-        class="flex mx-auto mt-16 text-black bg-[#00ff00] font-poppins border-0 py-2 px-8 focus:outline-none rounded text-lg hover:shadow-md hover:shadow-white">JOIN OUR COMMUNITY
+        class="flex mx-auto mt-16 text-black bg-[#00ff00] font-poppins border-0 py-2 px-8 focus:outline-none rounded text-lg hover:shadow-md hover:shadow-white">Connect with Us 🤝
       </button>
+      </a>
     </div>
   </div>
   <Footer/>
