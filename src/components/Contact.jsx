@@ -5,8 +5,8 @@ import React from 'react'
     <section class="text-gray-400 bg-gray-1000 body-font relative">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#00FF00]">Contact Us</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Leave us a message. We will get back to you as soon as possible.</p>
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap -m-2">
@@ -29,7 +29,7 @@ import React from 'react'
           </div>
         </div>
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:bg-lime-500 rounded text-lg">Button</button>
+          <button class="flex mx-auto text-black bg-[#CCFFCC] border-0 py-2 px-8 focus:outline-none rounded text-lg">Send</button>
           </div>
       </div>
     </div>
