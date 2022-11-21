@@ -24,9 +24,9 @@ function About() {
             <div className='flex flex-col justify-center'>
                 <p className='text-[#AEF746] font-bold'>Community + Coding = 🔥</p>
                 <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-3'>We ❤️ Open Source</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, corporis veniam, vitae delectus ex esse qui blanditiis, commodi facilis dolor praesentium sapiente? Libero ullam quae eaque quaerat nostrum hic ea!</p>
-                <a href="https://github.com/FOSS-Community" target="_blank" rel="noopener noreferrer">
-                <button className='bg-black text-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Get Started 🏁</button>
+                <p>We at FOSSCU (Free and Open-Source Community United ) are a Group of individuals who are constantly working to promote Open-Source Culture.</p>
+                <a href="https://linktr.ee/fosscu" target="_blank" rel="noopener noreferrer">
+                <button className='bg-black text-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Connect with Us 🏁</button>
                 </a>
 
             </div>
