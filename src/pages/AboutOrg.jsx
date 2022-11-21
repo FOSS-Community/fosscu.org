@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const AboutOrg = () => {
+ const AboutOrg = () => {
   return (
     <div>AboutOrg</div>
   )
 }
+export default AboutOrg
