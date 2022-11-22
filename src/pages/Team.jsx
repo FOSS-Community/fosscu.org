@@ -47,15 +47,6 @@ const Team = () => {
             </div>
 
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-                <img className='w-20 mx-auto mt-[-3rem] bg-white profile_pic' src={Tejaswita_Agarwal} alt="/" />
-                <h2 className='text-2xl font-bold text-center py-8 text-white'>Tejaswita Agarwal</h2>
-                <p className='text-center text-1xl font-bold text-white'>T.B.A</p>
-                <div className='flex justify-center mx-auto md:w-[50%] my-6 px-6 py-3'>
-                <a href=""> <FaLink  size={30} color='white'/> </a>
-                </div>
-            </div>
-
-            <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
                 <img className='w-20 mx-auto mt-[-3rem] bg-white profile_pic' src={Aryan_Kaushik} alt="/" />
                 <h2 className='text-2xl font-bold text-center py-8 text-white'>ARYAN KAUSHIK</h2>
                 <p className='text-center text-1xl font-bold text-white'>Volunteer in Linux Software Development</p>
@@ -96,6 +87,14 @@ const Team = () => {
                 <img className='w-20 mx-auto mt-[-3rem] bg-white profile_pic' src={Srijan_Srivastava} alt="/" />
                 <h2 className='text-2xl font-bold text-center py-8  text-white'>Srijan Srivastava</h2>
                 <p className='text-center text-1xl font-bold  text-white'>Volunteer in Frontend Development</p>
+                <div className='flex justify-center mx-auto md:w-[50%] my-6 px-6 py-3'>
+                <a href=""> <FaLink  size={30} color='white'/> </a>
+                </div>
+            </div>
+            <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+                <img className='w-20 mx-auto mt-[-3rem] bg-white profile_pic' src={Tejaswita_Agarwal} alt="/" />
+                <h2 className='text-2xl font-bold text-center py-8 text-white'>Tejaswita Agarwal</h2>
+                <p className='text-center text-1xl font-bold text-white'>Volunteer in Public Relations</p>
                 <div className='flex justify-center mx-auto md:w-[50%] my-6 px-6 py-3'>
                 <a href=""> <FaLink  size={30} color='white'/> </a>
                 </div>
