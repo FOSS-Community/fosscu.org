@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+// require('dotenv').config()
 
 import axios from "axios";
+import env from "react-dotenv";
 const Contact = () => {
-  const url = "http://localhost:5000/";
+  
+  const url =env.url;
   const [data, setData] = useState({
     name: "",
     email: "",
