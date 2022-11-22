@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Axios from "axios";
+
 import axios from "axios";
 const Contact = () => {
   const url = "http://localhost:5000/";
@@ -16,13 +16,19 @@ const Contact = () => {
   }
   function submit(e){
     e.preventDefault();
-    Axios.post(url,{
+    console.log("click");
+    axios.post(url,{
       name:data.name,
       email:data.email,
       message:data.message
     })
     .then(res=>{
       console.log(res.data);
+      setData({
+        name:"",
+        email:"",
+        message:""
+      })
     })
   }
   return (
@@ -81,7 +87,7 @@ const Contact = () => {
             </div>
             <div class="p-2 w-full">
               <button class="flex mx-auto text-white bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:bg-lime-500 rounded text-lg">
-                Button
+                Submit
               </button>
             </div>
           </form>
