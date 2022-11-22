@@ -7,7 +7,7 @@ import FOSSCU from "../assets/img/logo/fosscu.png"
   return (
     <div>
       <Navbar/>
-    <div class="text-[#ffffff] body-font bg-neutral-900">
+    <div class="text-[#ffffff] body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <div class="flex flex-row mx-auto">
