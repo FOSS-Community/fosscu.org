@@ -15,6 +15,9 @@ function Hero() {
 
   return (
     <div className="w-full py-16 px-5">
+      <div className='absolute z-[0] w-[40%] h-[75%] top-40 pink__gradient' />
+            <div className='absolute z-[1] w-[80%] h-[10%] rounded-full bottom-40 white__gradient' />
+            <div className='absolute z-[0] w-[50%] h-[70%] right-20 bottom-20 top-60 blue__gradient' />
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <Lottie
           className="w-[500px] mx-auto my-4"
