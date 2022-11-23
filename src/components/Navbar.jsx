@@ -21,7 +21,7 @@ const Navbar = () => {
             <li className='p-4'> <Link to="/"> Home </Link> </li>
             <li className='p-4'> <Link to="/about">About</Link></li>
             <li className='p-4'> <Link to="/team"> Team </Link> </li>
-            <li className='p-4'>Projects</li>
+            <li className='p-4'><a href='https://github.com/FOSS-Community'>Projects</a></li>
             <li className='p-4'><Link to="/contact">Contact</Link></li>
         </ul>
         <div onClick={handleNav} className='block md:hidden'>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     <li className='p-4 border-b border-gray-600'><Link to="/"> Home </Link> </li>
                     <li className='p-4 border-b border-gray-600'><Link to="/about">About</Link></li>
                     <li className='p-4 border-b border-gray-600'><Link to="/team"> Team </Link> </li>
-                    <li className='p-4 border-b border-gray-600'>Projects</li>
+                    <li className='p-4 border-b border-gray-600'><a href='https://github.com/FOSS-Community'>Projects</a></li>
                     <li className='p-4 border-b border-gray-600'><Link to="/contact">Contact</Link></li>
             </ul>
         </div>
