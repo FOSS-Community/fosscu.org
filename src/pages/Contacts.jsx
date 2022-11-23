@@ -27,6 +27,7 @@ const Contacts = () => {
     })
     .then(res=>{
       console.log(res.data);
+      alert("Thanks for Equiring we will shortly contact you :)")
       setData({
         name:"",
         email:"",
