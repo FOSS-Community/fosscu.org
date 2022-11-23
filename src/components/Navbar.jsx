@@ -33,11 +33,11 @@ const Navbar = () => {
                 <h1 className='w-full text-3xl font-bold text-[#0DFF1C] m-4'> FOSSCU</h1> 
             </center>
                 <ul className='uppercase p-4'>
-                    <li className='p-4 border-b border-gray-600'>Home</li>
-                    <li className='p-4 border-b border-gray-600'>About</li>
-                    <li className='p-4 border-b border-gray-600'>Team</li>
+                    <li className='p-4 border-b border-gray-600'><Link to="/"> Home </Link> </li>
+                    <li className='p-4 border-b border-gray-600'><Link to="/about">About</Link></li>
+                    <li className='p-4 border-b border-gray-600'><Link to="/team"> Team </Link> </li>
                     <li className='p-4 border-b border-gray-600'>Projects</li>
-                    <li className='p-4 border-b border-gray-600'>Contact</li>
+                    <li className='p-4 border-b border-gray-600'><Link to="/contact">Contact</Link></li>
             </ul>
         </div>
     </div>
