@@ -31,9 +31,9 @@ const Team = () => {
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
                 <img className='w-20 mx-auto mt-[-3rem] bg-white profile_pic' src={Akshat_Sharma} alt="/" />
                 <h2 className='text-2xl font-bold text-center py-8 text-white'>AKSHAT SHARMA</h2>
-                <p className='text-center text-1xl font-bold text-white'>President and Web3 Developer</p>
+                <p className='text-center text-1xl font-bold text-white'>President and Blockchain Developer</p>
                 <div className='flex justify-center mx-auto md:w-[50%] my-6 px-6 py-3'>
-                    <a href=""> <FaLink  size={30} color='white'/> </a>
+                    <a href="https://linkfree.eddiehub.io/akshatcoder-hash"> <FaLink  size={30} color='white'/> </a>
                 </div>
             </div>
 
