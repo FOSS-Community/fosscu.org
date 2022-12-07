@@ -44,7 +44,7 @@ function Hero() {
                 loop
               />
             </div>
-            <a href="https://airtable.com/shrf9IfcWeG39JfbD" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/8RQYESyj" target="_blank" rel="noopener noreferrer">
               <button className='bg-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Join Us 🤝</button>
             </a>
           </div>
