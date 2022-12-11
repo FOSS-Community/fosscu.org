@@ -2,7 +2,10 @@
 name: Production workflow
 
 # When workflow is triggered
-on: [push, pull]
+on:
+  push:
+    branches-ignore: 
+      - dev
 
 # Jobs to carry out
 jobs:
