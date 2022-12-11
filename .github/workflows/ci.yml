@@ -2,10 +2,7 @@
 name: Production workflow
 
 # When workflow is triggered
-on:
-  push:
-    tags:
-      - "prod"
+on: [push, pull]
 
 # Jobs to carry out
 jobs:
