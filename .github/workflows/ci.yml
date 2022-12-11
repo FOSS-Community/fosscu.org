@@ -1,34 +1,30 @@
-name: 'Netlify Previews'
-
+# .github/workflows/netlify.yml
+name: Build and Deploy to Netlify
 on:
   push:
-    branches-ignore: 
-      - dev
-
+  pull_request:
 jobs:
-  deploy:
-    name: 'Deploy'
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-18.04
     env:
       NETLIFY_AUTH_TOKEN: h1oRy_nsUDk9czP_eQICH5GejCfv8YD4o92odSRAlIA
       NETLIFY_SITE_ID: f3ae3f59-26e2-47e6-8a57-21385d42b728
-
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      # Sets the branch name as environment variable
-      - uses: nelonoel/branch-name@v1.0.1
-      - uses: jsmrcaga/action-netlify-deploy@master
+      # ( Build to ./dist or other directory... )
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
         with:
+          publish-dir: './dist'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          deploy_alias: ${{ env.BRANCH_NAME }}
-      
-      # Creates a status check with link to preview
-      - name: Status check
-        uses: Sibz/github-status-action@v1.1.1
-        with:
-          authToken: ${{ secrets.GITHUB_TOKEN }}
-          context: Netlify preview
-          state: success
-          target_url: https://${{ env.BRANCH_NAME }}--my-site.netlify.app
+        timeout-minutes: 1
