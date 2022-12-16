@@ -11,9 +11,6 @@ import Tejaswita_Agarwal from '../assets/img/team/Tejaswita_Agarwal.jpg'
 import Devanshu_Saxena from '../assets/img/team/Devanshu_Saxena.jpg'
 
 import {
-  FaGithubSquare,
-  FaInstagram,
-  FaTwitterSquare,
   FaLink
 } from 'react-icons/fa';
 
