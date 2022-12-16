@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Lottie from 'react-lottie';
 import animationDataCommunity from '../assets/lotties/community_about_lottie.json';
 
 function About() {
 
+    const [size, setSize] = useState(window.innerWidth);
+
+    const checkSize = () => {
+      setSize(window.innerWidth);
+    };
+    useEffect(() => {
+      // console.log('useEffect');
+      window.addEventListener('resize', checkSize);
+      return () => {
+        console.log('cleanup');
+        window.removeEventListener('resize', checkSize);
+      };
+    }, []);
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -15,12 +28,18 @@ function About() {
   return (
     <div className='w-full bg-white py-16 px-4'>
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
-            <Lottie
+     {
+        size>=700
+        ?
+        <Lottie
                 className = 'w-[500px] mx-auto my-4'
                 options = {defaultOptions}
                 height = {400}
                 width = {400}
                 />
+                : 
+                ''
+     }
             <div className='flex flex-col justify-center'>
                 <p className='text-[#AEF746] font-bold'>Community + Coding = 🔥</p>
                 <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-3'>We ❤️ Open Source</h1>
