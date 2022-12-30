@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Lottie from "react-lottie";
 import animationData from "../assets/lotties/community_animation_lottie.json";
 import Typed from "react-typed";
-
+import logo from '../assets/img/logo/fosscu.png'
 function Hero() {
   const [size, setSize] = useState(window.innerWidth);
 
@@ -41,7 +41,7 @@ function Hero() {
           height={400}
           width={400}
         />
-        : ''
+        : <img  className="w-[200px] md:w-[10px] " src={logo} alt="foccu" />
         }
         <div className="flex flex-col justify-center">
           <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
