@@ -1,9 +1,9 @@
 // import React from "react";
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 import Lottie from "react-lottie";
 import animationData from "../assets/lotties/community_animation_lottie.json";
 import Typed from "react-typed";
-import logo from '../assets/img/logo/fosscu.png'
+import logo from "../assets/img/logo/fosscu.png";
 function Hero() {
   const [size, setSize] = useState(window.innerWidth);
 
@@ -12,10 +12,10 @@ function Hero() {
   };
   useEffect(() => {
     // console.log('useEffect');
-    window.addEventListener('resize', checkSize);
+    window.addEventListener("resize", checkSize);
     return () => {
-      console.log('cleanup');
-      window.removeEventListener('resize', checkSize);
+      console.log("cleanup");
+      window.removeEventListener("resize", checkSize);
     };
   }, []);
 
@@ -31,18 +31,18 @@ function Hero() {
   return (
     <div className="w-full py-16 px-5 ">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-        {
-          size>=700
-          ?
-
-        <Lottie
-          className="w-[500px] md:w-[10px] mx-auto my-4"
-          options={defaultOptions}
-          height={400}
-          width={400}
-        />
-        : <img  className="w-[200px] md:w-[10px] " src={logo} alt="foccu" />
-        }
+        {size >= 700 ? (
+          <Lottie
+            className="w-[500px] md:w-[10px] mx-auto my-4"
+            options={defaultOptions}
+            height={400}
+            width={400}
+          />
+        ) : (
+          <div className="flex justify-center">
+            <img className="w-[200px] md:w-[10px]  " src={logo} alt="foccu" />
+          </div>
+        )}
         <div className="flex flex-col justify-center">
           <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
             <p className="font-bold p-4 text-white">
@@ -65,8 +65,14 @@ function Hero() {
                 loop
               />
             </div>
-            <a href="https://discord.gg/8RQYESyj" target="_blank" rel="noopener noreferrer">
-              <button className='bg-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Join Us 🤝</button>
+            <a
+              href="https://discord.gg/8RQYESyj"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
+                Join Us 🤝
+              </button>
             </a>
           </div>
         </div>
