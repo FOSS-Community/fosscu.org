@@ -47,7 +47,7 @@ const Navbar = () => {
             <Link to="/team"> Team </Link>{" "}
           </li>
           <li className="p-4">
-            <a href="https://github.com/FOSS-Community">Projects</a>
+            <a href="fosscu-blog.vercel.app">Blog</a>
           </li>
           <li className="p-4">
             <Link to="/contact">Contact</Link>
