@@ -46,9 +46,9 @@ const Team = () => {
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
                 <img className='w-20 mx-auto mt-[-3rem] bg-white profile_pic' src={Arunima_Shukla} alt="/" />
                 <h2 className='text-2xl font-bold text-center py-8 text-white'>Arunima Shukla</h2>
-                <p className='text-center text-1xl font-bold text-white'>Android Lead</p>
+                <p className='text-center text-1xl font-bold text-white'>Women in Tech Lead</p>
                 <div className='flex justify-center mx-auto md:w-[50%] my-6 px-6 py-3'>
-                <a href="https://www.linkedin.com/in/anjuman-hasan/"> <FaLink  size={30} color='white'/> </a>
+                <a href="https://www.linkedin.com/in/arunima-shukla-571a42229/"> <FaLink  size={30} color='white'/> </a>
                 </div>
             </div>
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
