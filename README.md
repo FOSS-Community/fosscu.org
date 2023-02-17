@@ -1,6 +1,5 @@
 <h1 align="center">FOSSC Documentation</h1>
 
-
 <p align="center">
   <img src="https://uploads-ssl.webflow.com/602a337999a3d77b1d768af7/603f6b65c586ca3ef33c2f62_opensource-p-500.png" />
 </p>
