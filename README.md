@@ -5,13 +5,13 @@
 </p>
 
 
-This repository contains the assets required to build the [FOSSC Website](https://fossc.netlify.app/). We're glad that you want to contribute!
+[This repository](https://github.com/FOSS-Community/website-fossc) contains the assets required to build the [FOSSC Website](https://fossc.netlify.app/). We're glad that you want to contribute!
 
 
 # An overview of the website
 [![CodeFactor](https://www.codefactor.io/repository/github/foss-community/website-fossc/badge)](https://www.codefactor.io/repository/github/foss-community/website-fossc)
 
-![name-of-you-image](/assets/fosscSS.PNG)
+![name-of-you-image](src/assets/img/more/fosscSS.PNG)
 
 
 
@@ -31,16 +31,16 @@ This documentation aims to simplify and guide the way beginners make their first
 
 ## Fork this repository
 
-Fork this repository by clicking on the fork button on the top of this page.
+[Fork](https://github.com/FOSS-Community/website-fossc/fork) this repository by clicking on the fork button on the top of this page.
 This will create a copy of this repository in your account.
 
 
-![name-of-you-image](/assets/fork!.png)
+![name-of-you-image](src/assets/img/more/fork!.png)
 
 
 ## Clone the repository
 
-![name-of-you-image](/assets/code.png)
+![name-of-you-image](src/assets/img/more/code.png)
 
 Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
 
@@ -56,11 +56,11 @@ For example:
 
 
 ```
-git clone https://github.com/this-is-you/fossc.git
+git clone https://github.com/<your_username>/website-fossc.git
 ```
 
 
-![name-of-you-image](/assets/link.png)
+<!-- ![name-of-you-image](/assets/link.png) -->
 
 
 where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
