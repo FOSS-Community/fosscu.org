@@ -112,24 +112,24 @@ Push your changes using the command `git push`:
 git push origin <add-your-branch-name>
 ```
 
-replacing `<add-your-branch-name>` with the name of the branch you created earlier.
+Replacing `<add-your-branch-name>` with the name of the branch you created earlier.
 
 ## Submit your changes for review
 
 If you go to your repository on GitHub, you'll see a `Contribute` button. Click on that button.
 
-![name-of-you-image](/assets/openpull.png)
+![name-of-you-image](src/assets/img/more/openpull.png)
 
-click on `Open pull request`.
+Click on `Open pull request`.
 
-![name-of-you-image](/assets/createpull.png)
+![name-of-you-image](src/assets/img/more/createpull.png)
 
-click on `Create pull request`.
+Click on `Create pull request`.
 
-![name-of-you-image](/assets/createRequest.png)
+<!-- ![name-of-you-image](/assets/createRequest.png)
 
 
-click on `Create pull request`.
+Click on `Create pull request`. -->
 
 ## Where to go from here?
 
