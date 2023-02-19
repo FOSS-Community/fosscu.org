@@ -11,7 +11,7 @@ This repository contains the assets required to build the [FOSSC Website](https:
 # An overview of the website
 [![CodeFactor](https://www.codefactor.io/repository/github/foss-community/website-fossc/badge)](https://www.codefactor.io/repository/github/foss-community/website-fossc)
 
-![name-of-you-image](/assets/fosscSS.PNG)
+<img src="src\assets\readme img\FOSSCU.jpeg"></img>
 
 
 
@@ -31,18 +31,42 @@ This documentation aims to simplify and guide the way beginners make their first
 
 ## Fork this repository
 
-Fork this repository by clicking on the fork button on the top of this page.
-This will create a copy of this repository in your account.
+ Fork this repository by clicking on the fork button on the top of this page.
+ This will create a copy of this repository in your account.
 
 
-![name-of-you-image](/assets/fork!.png)
+ <img src="src\assets\readme img\Fork.jpeg"></img>
+
 
 
 ## Clone the repository
 
-![name-of-you-image](/assets/code.png)
+ <img src="src\assets\readme img\clone.png"></img>
 
-Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
+ Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click on open with Github Desktop ot you can click on  _copy to clipboard_ icon if you want to use git bash.
+
+**Note: Further command are for Git bash users not for the Git Desktop Users**
+
+> For Git Desktop users ---> Now just click on Open with VS code and start your contribution.
+
+ Example:
+ <img src="src\assets\readme img\Vscode img.png"></img>
+
+
+## Commit Changes
+
+ After you have updated the files,click on 'Commit to main' and then click on push origin.
+
+ Example :
+ <img src="src\assets\readme img\commit.png"></img>
+
+
+ Now Come back to Github web and click on contribute to submit your changes for review.
+
+
+***
+## Steps for Git Bash Users 
+
 
 Open a terminal and run the following git command:
 
@@ -60,10 +84,7 @@ git clone https://github.com/this-is-you/fossc.git
 ```
 
 
-![name-of-you-image](/assets/link.png)
-
-
-where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
+ Here you're copying the contents of the first-contributions repository on GitHub to your computer.
 
 ## Create a branch
 
@@ -118,15 +139,15 @@ replacing `<add-your-branch-name>` with the name of the branch you created earli
 
 If you go to your repository on GitHub, you'll see a `Contribute` button. Click on that button.
 
-![name-of-you-image](/assets/openpull.png)
+<img src="src\assets\readme img\Contribute.jpeg"></img>
 
 click on `Open pull request`.
 
-![name-of-you-image](/assets/createpull.png)
+<img src="src\assets\readme img\pull request.png"></img>
 
 click on `Create pull request`.
 
-![name-of-you-image](/assets/createRequest.png)
+<img src="src\assets\readme img\create request.png"></img>
 
 
 click on `Create pull request`.
