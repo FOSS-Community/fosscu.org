@@ -21,26 +21,26 @@ const Footer = () => {
     <div>
         <h6 className='font-medium text-gray-400'>Support</h6>
         <ul>
-            <li className='py-2 text-sm'>Documentation</li>
-            <li className='py-2 text-sm'>Guides</li>
-            <li className='py-2 text-sm'>API Status</li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Documentation</a></li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Guides</a></li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">API Status</a></li>
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-gray-400'>Company</h6>
         <ul>
             <li className='py-2 text-sm'>About</li>
-            <li className='py-2 text-sm'><a href="fosscu-blog.vercel.app">Blog</a></li>
-            <li className='py-2 text-sm'>Press</li>
-            <li className='py-2 text-sm'><a href="fosscu-blog.vercel.app">Call for Volunteers</a></li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Blog</a></li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Press</a></li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Call for Volunteers</a></li>
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-gray-400'>Legal</h6>
         <ul>
-            <li className='py-2 text-sm'>Claim</li>
-            <li className='py-2 text-sm'>Policy</li>
-            <li className='py-2 text-sm'>Terms</li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Claim</a></li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Policy</a></li>
+            <li className='py-2 text-sm'><a href="http://127.0.0.1:5500/redirect.html">Terms</a></li>
         </ul>
     </div>
       </div>
