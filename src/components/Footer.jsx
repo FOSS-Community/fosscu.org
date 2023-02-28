@@ -21,26 +21,46 @@ const Footer = () => {
     <div>
         <h6 className='font-medium text-gray-400'>Support</h6>
         <ul>
-            <li className='py-2 text-sm'>Documentation</li>
-            <li className='py-2 text-sm'>Guides</li>
-            <li className='py-2 text-sm'>API Status</li>
+            <a href="/buiding">
+               <li className="py-2 text-sum">Documentation</li>
+               </a>
+               <a href="/buiding">
+               <li className="py-2 text-sum">Guides</li>
+               </a>
+               <a href="/buiding">
+               <li className="py-2 text-sum">API Status</li>
+               </a>
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-gray-400'>Company</h6>
         <ul>
-            <li className='py-2 text-sm'>About</li>
-            <li className='py-2 text-sm'><a href="fosscu-blog.vercel.app">Blog</a></li>
-            <li className='py-2 text-sm'>Press</li>
-            <li className='py-2 text-sm'><a href="fosscu-blog.vercel.app">Call for Volunteers</a></li>
+        <a href="/buiding">
+               <li className="py-2 text-sum">About</li>
+               </a>
+               <a href="/buiding">
+               <li className="py-2 text-sum">Blog</li>
+               </a>
+               <a href="/buiding">
+               <li className="py-2 text-sum">Press</li>
+               </a>
+               <a href="/buiding">
+               <li className="py-2 text-sum">Call for Volunteers</li>
+               </a>
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-gray-400'>Legal</h6>
         <ul>
-            <li className='py-2 text-sm'>Claim</li>
-            <li className='py-2 text-sm'>Policy</li>
-            <li className='py-2 text-sm'>Terms</li>
+        <a href="/buiding">
+               <li className="py-2 text-sum">Claim</li>
+               </a>
+               <a href="/buiding">
+               <li className="py-2 text-sum">Policy</li>
+               </a>
+               <a href="/buiding">
+               <li className="py-2 text-sum">Terms</li>
+               </a>
         </ul>
     </div>
       </div>

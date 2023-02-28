@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Team from "./pages/Team"
 import Contacts from "./pages/Contacts"
 import About from "./pages/AboutOrg";
+import Buiding from "./pages/Buiding";
 import ReactDOM from "react-dom/client";
 // import About from './components/About'
 // import AboutOrg from "./pages/AboutOrg";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/team" element={<Team />}></Route>
         <Route path="/contact" element={<Contacts/>}></Route>
         <Route path="/about" element={<About/>}></Route>
+        <Route path="/buiding" element={<Buiding/>}></Route>
       </Routes>
     </BrowserRouter>
   );
