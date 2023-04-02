@@ -3,7 +3,7 @@ import STEP_1 from "../assets/img/guide_icons/STEP_1.png"
 import STEP_2 from "../assets/img/guide_icons/STEP_2.png"
 import STEP_3 from "../assets/img/guide_icons/STEP_3.png"
 import STEP_4 from "../assets/img/guide_icons/STEP_4.png"
-const GuideElement = () => {
+const Guide_Element = () => {
     return (
         <div>
             <h1 className="w-full py-16 text-white px-4 text-center text-5xl">Guideline To Contribute</h1>
@@ -56,4 +56,4 @@ const GuideElement = () => {
     );
 };
 
-export default GuideElement;
+export default Guide_Element;
