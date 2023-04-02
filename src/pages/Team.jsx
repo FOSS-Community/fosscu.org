@@ -73,7 +73,7 @@ const Team = () => {
                 <h2 className='text-2xl font-bold text-center py-8  text-white'>Srijan Srivastava</h2>
                 <p className='text-center text-1xl font-bold  text-white'>Volunteer in Frontend Development</p>
                 <div className='flex justify-center mx-auto md:w-[50%] my-6 px-6 py-3'>
-                <a href="https://www.linkedin.com/in/srijan-ss02/https://www.linkedin.com/in/yash-varshney-7b81ab1b1/"> <FaLink  size={30} color='white'/> </a>
+                <a href="https://www.linkedin.com/in/srijan-ss02/"> <FaLink  size={30} color='white'/> </a>
                 </div>
             </div>
             <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
