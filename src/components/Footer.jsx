@@ -35,10 +35,10 @@ const Footer = () => {
     <div>
         <h6 className='font-medium text-gray-400'>Company</h6>
         <ul>
-        <a href="/buiding">
+        <a href="/about">
                <li className="py-2 text-sum">About</li>
                </a>
-               <a href="/buiding">
+               <a href="https://fosscu-blog.vercel.app/">
                <li className="py-2 text-sum">Blog</li>
                </a>
                <a href="/buiding">
