@@ -6,6 +6,8 @@ import Contacts from "./pages/Contacts"
 import About from "./pages/AboutOrg";
 import Buiding from "./pages/Buiding";
 import ReactDOM from "react-dom/client";
+import Guide from "./pages/Guide";
+
 // import About from './components/About'
 // import AboutOrg from "./pages/AboutOrg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -22,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contacts/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/buiding" element={<Buiding/>}></Route>
+        <Route path="/guide" element={<Guide/>}></Route>
       </Routes>
     </BrowserRouter>
   );

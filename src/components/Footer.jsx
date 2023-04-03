@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="/buiding">
                <li className="py-2 text-sum">Documentation</li>
                </a>
-               <a href="/buiding">
+               <a href="/guide">
                <li className="py-2 text-sum">Guides</li>
                </a>
                <a href="/buiding">
@@ -44,7 +44,7 @@ const Footer = () => {
                <a href="/buiding">
                <li className="py-2 text-sum">Press</li>
                </a>
-               <a href="/buiding">
+               <a href="/builing">
                <li className="py-2 text-sum">Call for Volunteers</li>
                </a>
         </ul>

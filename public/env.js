@@ -73,4 +73,4 @@ window.env = {
   "windir": "C:\\WINDOWS",
   "ZES_ENABLE_SYSMAN": "1",
   "__INTELLIJ_COMMAND_HISTFILE__": "C:\\Users\\Admin\\AppData\\Local\\JetBrains\\WebStorm2022.3\\terminal\\history\\website-fossc-history"
-};
+
