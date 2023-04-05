@@ -157,6 +157,24 @@ click on `Create pull request`.
 
 Congrats! You just completed the standard _fork -> clone -> edit -> pull request_ workflow that you'll encounter often as a contributor!
 
+
+# Running through docker
+
+### Make sure you have docker install in your device, if not [Take reference from here](https://docs.docker.com/engine/install/)
+
+#### Clone the [fosscu website](https://github.com/FOSS-Community/website-fossc/edit/main/README.md)
+`git clone https://github.com/FOSS-Community/website-fossc`
+
+#### Change directory to cloned fosscu-website directory
+`cd website-fossc`
+
+#### Build the docker Image
+`docker build -t <image_name:version_tage> .`
+
+#### Run the Builded Image and create container to it.
+`docker run --name <container name> -d -p 5173:5173 <build_image_name:version_tag>`
+
+
 ## 💪 Thanks to all Contributors
 
 Thanks a lot for spending your time helping FOSSC grow. Thanks a lot! Keep rocking 🍻
