@@ -4,6 +4,8 @@ WORKDIR /website_fosscu
 
 COPY . /website_fosscu/
 
-RUN npm install vite --force
+RUN npm install yarn
 
-CMD ["npm", "start"]
+RUN yarn install vite
+
+CMD ["yarn", "start"]
