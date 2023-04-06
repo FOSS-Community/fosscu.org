@@ -172,7 +172,7 @@ Congrats! You just completed the standard _fork -> clone -> edit -> pull request
 `docker build -t <image_name:version_tage> .`
 
 #### Run the Builded Image and create container to it.
-`docker run --name <container name> -d -p 5173:5173 <build_image_name:version_tag>`
+`docker run --name <container name> -d -p 8080:8080 <build_image_name:version_tag>`
 
 
 ## 💪 Thanks to all Contributors
@@ -200,7 +200,7 @@ In the project directory, you can run:
 ### `yarn start`
 
 Runs the app in the development mode.\
-Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
