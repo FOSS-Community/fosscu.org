@@ -45,8 +45,8 @@ const Footer = () => {
             <a href="https://fosscu-blog.vercel.app/">
               <li className="py-2 text-sum">Blog</li>
             </a>
-            <a href="/buiding">
-              <li className="py-2 text-sum">Call for Volunteers</li>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform">
+              <li className="py-2 text-sum">Join Us</li>
             </a>
           </ul>
         </div>
