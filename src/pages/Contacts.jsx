@@ -3,6 +3,15 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import axios from "axios";
 import env from "react-dotenv";
+
+import {
+  FaDiscord,
+  FaLinkedin,
+  FaEnvelope,
+  FaTwitter
+} from 'react-icons/fa';
+
+
 const Contacts = () => {
   const url = env.url;
   const [data, setData] = useState({
@@ -45,6 +54,16 @@ const Contacts = () => {
               Contact Us
             </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
+          </div>
+          <div className="lg:w-1/2 md:w-2/3  mx-auto mb-8">
+            <div className="flex justify-center  md:space-x-12 lg:space-x-14 xl:space-x-20 space-x-6">
+
+              <a href="https://discord.gg/6EYsMh9x"> <FaDiscord size={40} /> </a>
+              <a href="Mailto:fosscu@gmail.com" ><FaEnvelope size={40} /></a>
+              <a href="https://www.linkedin.com/company/fosscu/" ><FaLinkedin size={40} /></a>
+              <a href="https://twitter.com/fosscuk/" ><FaTwitter size={40} /></a>
+
+            </div>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
             <form class="flex flex-wrap -m-2" onSubmit={(e) => submit(e)}>
