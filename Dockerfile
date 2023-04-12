@@ -1,18 +1,28 @@
-FROM node:19-alpine
+#BUILDER
+FROM node:19-alpine as builder
 
-# Make the app directory
+#Make the builder directory
 WORKDIR /website_fosscu
 
-# Copy built sources from project
-COPY ./package.json .
-COPY ./yarn.lock .
-COPY ./package-lock.json .
+#COPY build source from project
+COPY package*.json .
+COPY yarn.lock .
 
-# Installing all dependencies
+#Copy all files into container
+COPY . .
+
+#Installing all dependencies
 RUN yarn install
 
-# Copy all files into container
-COPY . .
+
+#MAIN
+FROM node:19-alpine as main
+
+#Make main app directory
+WORKDIR /app
+
+#Copy all from builder stage
+COPY --from=builder /website_fosscu/.  ./
 
 # Run the production build
 RUN yarn build
