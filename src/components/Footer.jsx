@@ -48,6 +48,9 @@ const Footer = () => {
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform">
               <li className="py-2 text-sum">Join Us</li>
             </a>
+            <a href="https://github.com/FOSS-Community/">
+              <li className="py-2 text-sum">Contribute</li>
+            </a>
           </ul>
         </div>
         <div>
