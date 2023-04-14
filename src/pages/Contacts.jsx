@@ -61,7 +61,7 @@ const Contacts = () => {
               <a href="https://discord.gg/6EYsMh9x"> <FaDiscord size={40} /> </a>
               <a href="Mailto:fosscu@gmail.com" ><FaEnvelope size={40} /></a>
               <a href="https://www.linkedin.com/company/fosscu/" ><FaLinkedin size={40} /></a>
-              <a href="https://twitter.com/fosscuk/" ><FaTwitter size={40} /></a>
+              <a href="https://twitter.com/fosscuk" ><FaTwitter size={40} /></a>
 
             </div>
           </div>
