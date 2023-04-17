@@ -37,7 +37,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h6 className='font-medium text-gray-400'>Company</h6>
+          <h6 className='font-medium text-gray-400'>Organization</h6>
           <ul>
             <a href="/about">
               <li className="py-2 text-sum">About</li>
