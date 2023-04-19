@@ -66,7 +66,7 @@ function Hero() {
             </div>
               <button className="bg-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
               <a
-              href="https://discord.com/invite/4xruwjjU9Ba"
+              href="https://discord.com/invite/4xruwjjU9B"
               target="_blank"
               rel="noopener noreferrer"
               >
