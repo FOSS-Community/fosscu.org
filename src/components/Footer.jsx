@@ -21,13 +21,13 @@ const Footer = () => {
         <div>
           <h6 className='font-medium text-gray-400'>Support</h6>
           <ul>
-            <a href="/buiding">
+            <a href="/building">
               <li className="py-2 text-sum">Documentation</li>
             </a>
             <a href="/guide">
               <li className="py-2 text-sum">Guides</li>
             </a>
-            <a href="/buiding">
+            <a href="/building">
               <li className="py-2 text-sum">API Status</li>
             </a>
             <a href='/faq'>
@@ -56,13 +56,13 @@ const Footer = () => {
         <div>
           <h6 className='font-medium text-gray-400'>Legal</h6>
           <ul>
-            <a href="/buiding">
+            <a href="/building">
               <li className="py-2 text-sum">Claim</li>
             </a>
-            <a href="/buiding">
+            <a href="/building">
               <li className="py-2 text-sum">Policy</li>
             </a>
-            <a href="/buiding">
+            <a href="/building">
               <li className="py-2 text-sum">Terms</li>
             </a>
           </ul>
