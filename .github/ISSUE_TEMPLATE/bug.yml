@@ -1,0 +1,68 @@
+name: Bug Report
+description: File a bug report 
+labels: ["bug", "triage"]
+assignees:
+  - adityaslyf
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Please share the title of the issue
+      placeholder: For E.g, link not working
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the issue
+      description: Brief description about the issue in 50-100 words.
+    validations:
+      required: true
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Pre-requisites & reading material
+      description: Anything that needs to be distributed or shared before the issue assigned
+  - type: input
+    id: time
+    attributes:
+      label: Time required for the issue 
+      description: Please specify how much time does it take to solve the issue (E.g 2 days, 3 days etc)
+    validations:
+      required: true
+  - type: input
+    id: slides
+    attributes:
+      label: Link to slides/demos
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. https://slides.com/....
+    validations:
+      required: false
+  - type: textarea
+    id: about-author
+    attributes:
+      label:  What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  
+   
+    
+      
+      
+      
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+      - Firefox
+      - Chrome
+      - Safari
+      - Microsoft Edge
