@@ -197,6 +197,13 @@ This project was bootstrapped with [VITE](https://vitejs.dev/).
 
 In the project directory, you can run:
 
+
+### `npm install -g yarn`
+Install all dependencies. This project uses yarn as the package manager. If you don't have yarn installed, you can install it by running the above command.
+
+### `yarn`
+Then, install all dependencies by running the above command.
+
 ### `yarn start`
 
 Runs the app in the development mode.\
