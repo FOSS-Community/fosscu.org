@@ -4,14 +4,6 @@ labels: ["bug", "triage"]
 assignees:
   - adityaslyf
 body:
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: Please share the title of the issue
-      placeholder: For E.g, link not working
-    validations:
-      required: false
   - type: textarea
     id: description
     attributes:
