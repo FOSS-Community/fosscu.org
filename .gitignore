@@ -5,6 +5,7 @@
 .env
 /.pnp
 .pnp.js
+/.yarn
 .yarn/
 
 # testing
