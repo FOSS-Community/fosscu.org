@@ -1,0 +1,51 @@
+name: Feature request
+description: Suggest an idea for this project 
+labels: ["feature", "triage"]
+assignees:
+  - Adityaslyf
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Please share the title of the feature
+      placeholder: For E.g, creat 
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature
+      description: One paragraph explanation of the feature.
+    validations:
+      required: true
+    attributes:
+      label:  Feature requirement
+      description: Why is this feature of general interest?
+      
+      
+    validations:
+      required: true
+      
+      
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Pre-requisites & reading material
+      description: Anything that needs to be distributed or shared before the issue assigned
+  - type: input
+    id: time
+    attributes:
+      label: Time required for the issue 
+      description: Please specify how much time does it take to solve the issue (E.g 2 days, 3 days etc)
+    validations:
+      required: true
+  - type: input
+    id: slides
+    attributes:
+      label: Link to slides/demos
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. https://slides.com/....
+    validations:
+      required: false
+      

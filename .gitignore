@@ -6,6 +6,8 @@
 /.pnp
 .pnp.js
 /.yarn
+.yarn/
+
 # testing
 /coverage
 
@@ -23,6 +25,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarnrc.yml
 
 
 # Local Netlify folder
