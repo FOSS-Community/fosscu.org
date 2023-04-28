@@ -64,17 +64,29 @@ function Hero() {
                 loop
               />
             </div>
-              <button className="bg-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">
+
+            <div class="flex-col space-x-4">
+              <button className="bg-[#0DFF1C] w-[200px] h-[60px] rounded-md font-medium my-50 my-4  py-3 text-black">
               <a
               href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform"
               target="_blank"
               rel="noopener noreferrer"
               >
-                Join Us 🤝
+              Join Us 🤝
               </a>
               </button>
+              <button className="bg-[#0DFF1C] w-[200px]  h-[60px] rounded-md py-1 px-1 font-medium my-50  text-black ">
+              <a
+              href="https://cal.com/fosscu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              Doubt Clarification ⏱️
+              </a>
+              </button>
+              </div>
+              </div>
           </div>
-        </div>
       </div>
     </div>
   );
