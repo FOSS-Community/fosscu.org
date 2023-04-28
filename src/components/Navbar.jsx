@@ -8,10 +8,6 @@ const Navbar = () => {
 
   const checkSize = () => {
     setSize(window.innerWidth);
-  };
-  useEffect(() => {
-    // console.log('useEffect');
-    window.addEventListener("resize", checkSize);
     return () => {
       console.log("cleanup");
       window.removeEventListener("resize", checkSize);
@@ -55,7 +51,7 @@ const Navbar = () => {
 
         <li className="p-4">
         <a href="https://cal.com/fosscu">
-        <button>Doubt Schedule</button>
+        <button>Doubt Resolution</button>
         </a>
         </li>
         </ul>
