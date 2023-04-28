@@ -8,6 +8,7 @@ import Buiding from "./pages/Buiding";
 import ReactDOM from "react-dom/client";
 import Guide from "./pages/Guide";
 import Faqs from "./pages/Faqs";
+import Resources from "./pages/Resources";
 
 // import About from './components/About'
 // import AboutOrg from "./pages/AboutOrg";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/building" element={<Buiding/>}></Route>
         <Route path="/guide" element={<Guide/>}></Route>
         <Route path="/faq" element={<Faqs/>}></Route>
+        <Route path="/resource" element={<Resources/>}></Route>
       </Routes>
     </BrowserRouter>
   );
