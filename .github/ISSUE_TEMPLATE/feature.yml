@@ -1,26 +1,42 @@
 name: Feature request
-description: Suggest an idea for this project 
-labels: ["feature", "triage"]
+description: Suggest an idea for this project
+title: "[Feature] <title>"
+labels: "feature"
+
 body:
-  - type: input
-    id: title
+  - type: markdown
     attributes:
-      label: Title
-      description: Please share the title of the feature
-      placeholder: For E.g, creat 
-    validations:
-      required: false
+      value: Is your feature request related to a problem? Please describe.
   - type: textarea
-    id: description
     attributes:
-      label: Describe the feature
-      description: One paragraph explanation of the feature.
+      label: Describe the feature you'd like to request
+      description: A clear and concise description of what the problem is.   
+      placeholder : | 
+        Ex. I'm always frustrated when [...]
     validations:
       required: true
+  - type: textarea
     attributes:
-      label:  Feature requirement
-      description: Why is this feature of general interest?
-      
-      
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
+      placeholder : |
+        Ex. I want the solution like [...]
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+      placeholder : |
+        Ex. I want to extend the function A by adding someting more
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+      placeholder : | 
+        context, screenshots, related links , etc.
+    validations:
+      required: true
+ 
