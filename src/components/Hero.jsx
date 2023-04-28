@@ -73,6 +73,15 @@ function Hero() {
                 Join Us 🤝
               </a>
               </button>
+              <button className="bg-[#0DFF1C] w-[200px] rounded-md font-medium my-1 mx-auto py-3 text-black">
+              <a
+              href="https://cal.com/fosscu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+                Doubt schedule 🤝
+              </a>
+              </button>
           </div>
         </div>
       </div>
