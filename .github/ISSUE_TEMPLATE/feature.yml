@@ -30,7 +30,7 @@ body:
       placeholder : |
         Ex. I want to extend the function A by adding someting more
     validations:
-      required: true
+      required: false
   - type: textarea
     attributes:
       label: Additional context
@@ -38,5 +38,5 @@ body:
       placeholder : | 
         context, screenshots, related links , etc.
     validations:
-      required: true
+      required: false
  
