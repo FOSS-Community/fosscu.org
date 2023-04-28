@@ -72,7 +72,7 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               >
-                Join Us 🤝
+              Join Us 🤝
               </a>
               </button>
               <button className="bg-[#0DFF1C] w-[200px]  h-[60px] rounded-md py-1 px-1 font-medium my-50  text-black ">
@@ -81,7 +81,7 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               >
-                Doubt schedule ❓
+              Doubt Clarification ⏱️
               </a>
               </button>
               </div>
