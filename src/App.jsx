@@ -9,6 +9,7 @@ import ReactDOM from "react-dom/client";
 import Guide from "./pages/Guide";
 import Faqs from "./pages/Faqs";
 import Resources from "./pages/Resources";
+import Roadmap from "./pages/Roadmap";
 
 // import About from './components/About'
 // import AboutOrg from "./pages/AboutOrg";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/guide" element={<Guide/>}></Route>
         <Route path="/faq" element={<Faqs/>}></Route>
         <Route path="/resource" element={<Resources/>}></Route>
+        <Route path="/roadmap" element={<Roadmap/>}></Route>
       </Routes>
     </BrowserRouter>
   );

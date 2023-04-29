@@ -13,7 +13,7 @@ const Resource = () => {
 
             <div className='flex flex-wrap  mt-26 mb-24 space-x-1 justify-center gap-4 md:gap-4 sm:gap-4'>
 
-                <a href="/building" className='w-[280px] h-[285px] flex flex-col shadow-lg shadow-[#00df9a] transition-shadow  hover:bg-opacity-90  duration-[320ms] bg-gray-900 rounded-lg text-green-400 hover:bg-[#00df9a] hover:shadow-none transition-color hover:text-white transition-color'>
+                <a href="/roadmap" className='w-[280px] h-[285px] flex flex-col shadow-lg shadow-[#00df9a] transition-shadow  hover:bg-opacity-90  duration-[320ms] bg-gray-900 rounded-lg text-green-400 hover:bg-[#00df9a] hover:shadow-none transition-color hover:text-white transition-color'>
                     <img src={frontend} alt='' className='w-[11.9rem] h-40 ml-6  mt-4 mb-3' />
                     <h2 className='text-center font-bold text-xl mb-0.5'>FRONTEND</h2>
                     <p className='flex flex-col text-center text-white text-md mb-1 px-16'>The Complete Guide to Frontend </p>
