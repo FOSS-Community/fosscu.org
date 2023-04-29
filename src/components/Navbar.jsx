@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-   
+
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         <RiOpenSourceFill size={60} color="green" />
         <h1 className="w-full text-3xl font-bold text-[#0DFF1C] m-4">
@@ -79,6 +79,9 @@ const Navbar = () => {
             </li>
             <li className="p-4 border-b border-gray-600">
               <Link to="/team"> Team </Link>{" "}
+            </li>
+            <li className="p-4 border-b border-gray-600 ">
+              <Link to="/resource">Resources</Link>{" "}
             </li>
             <li className="p-4 border-b border-gray-600">
               <a href="https://github.com/FOSS-Community">Projects</a>
