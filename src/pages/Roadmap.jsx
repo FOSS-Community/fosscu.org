@@ -5,6 +5,7 @@ import Roadmaps from "../components/Roadmaps";
 import frontendData from "../data/frontend.json";
 import { AiOutlineMenu } from 'react-icons/ai';
 
+import "/src/assets/roadmap/roadmap.css";
 
 const Roadmap = () => {
     return (

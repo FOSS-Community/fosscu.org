@@ -1,0 +1,68 @@
+[
+    {
+        "image": "/src/assets/img/team/akshat_sharma.png",
+        "name": "AKSHAT SHARMA",
+        "position": "President and Blockchain Developer",
+        "link": "https://linkfree.eddiehub.io/akshatcoder-hash"
+    },
+    {
+        "image": "/src/assets/img/team/kanishk_pachauri.jpeg",
+        "name": "KANISHK PACHAURI",
+        "position": "Community Manager and Backend Developer",
+        "link": "https://www.linkedin.com/in/kanishk-pachauri-0161261b0/"
+    },
+    {
+        "image": "/src/assets/img/team/anjuman_hasan.jpeg",
+        "name": "Anjuman Hasan",
+        "position": "Women in Tech Lead",
+        "link": "https://www.linkedin.com/in/anjuman-hasan/"
+    },
+    {
+        "image": "/src/assets/img/team/mayank.jpeg",
+        "name": "MAYANK",
+        "position": "Volunteer in Frontend Development",
+        "link": "https://www.linkedin.com/in/mayank-agarwal-162457199/"
+    },
+    {
+        "image": "/src/assets/img/team/yash_varshney.jpeg",
+        "name": "YASH VARSHNEY",
+        "position": "Volunteer in Web Development",
+        "link": "https://www.linkedin.com/in/yash-varshney-7b81ab1b1/"
+    },
+    {
+        "image": "/src/assets/img/team/Srijan_Srivastava.jpg",
+        "name": "Srijan Srivastava",
+        "position": "Volunteer in Backend Development",
+        "link": "https://www.linkedin.com/in/srijan-ss02/"
+    },
+    {
+        "image": "/src/assets/img/team/arunima_shukla.jpg",
+        "name": "Arunima Shukla",
+        "position": "Volunteer in Backend Development",
+        "link": "https://www.linkedin.com/in/arunima-shukla-571a42229/"
+    },
+    {
+        "image": "/src/assets/img/team/Tejaswita_Agarwal.jpg",
+        "name": "Tejaswita Agarwal",
+        "position": "Volunteer in Public Relations",
+        "link": "https://www.linkedin.com/in/tejaswita-agarwal/"
+    },
+    {
+        "image": "/src/assets/img/team/suyash_srivastava.png",
+        "name": "Suyash Srivastava",
+        "position": "Machine Learning Instructor and Lead",
+        "link": "https://www.linkedin.com/in/suyash-srivastava-024288197/"
+    },
+    {
+        "image": "/src/assets/img/team/shivendu_mishra.jpeg",
+        "name": "Shivendu Mishra",
+        "position": "Android Development Lead",
+        "link": "https://www.linkedin.com/in/shivendu-mishra-94ba36200/"
+    },
+    {
+        "image": "/src/assets/img/team/Devanshu_Saxena.jpg",
+        "name": "Devanshu Saxena",
+        "position": "Volunteer in Web Development",
+        "link": "https://www.linkedin.com/in/devanshu-saxena01/"
+    }
+]

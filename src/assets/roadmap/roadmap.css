@@ -1,0 +1,5 @@
+.sidebar::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+  }
+   
