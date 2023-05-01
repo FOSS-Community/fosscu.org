@@ -47,6 +47,10 @@ const Navbar = () => {
             <Link to="/team"> Team </Link>{" "}
           </li>
           <li className="p-4">
+            {" "}
+            <Link to="https://docs.fosscu.org"> Handbook </Link>
+          </li>
+          <li className="p-4">
             <a href="/resource">Resources</a>
           </li>
           <li className="p-4">
