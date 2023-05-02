@@ -43,7 +43,7 @@ function Hero() {
           </div>
         )}
         <div className="flex flex-col justify-center">
-          <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
+          <div className="max-w-[800px] mt-[-96px] w-full h-screen text-center flex flex-col justify-center">
             <p className="font-bold p-4 text-white">
               Growing With the Community
             </p>
@@ -64,29 +64,28 @@ function Hero() {
                 loop
               />
             </div>
-
-            <div class="flex-col space-x-4">
-              <button className="bg-[#0DFF1C] w-[200px] h-[60px] rounded-md font-medium my-50 my-4  py-3 text-black">
-              <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              Join Us 🤝
-              </a>
+            <div class="sm:space-x-4 space-x-0 flex flex-col items-center sm:flex-row sm:justify-center">
+              <button className="bg-[#0dff1c] w-[190px] h-[60px]  rounded-md font-medium my-4 py-3 text-black">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Join Us 🤝
+                </a>
               </button>
-              <button className="bg-[#0DFF1C] w-[200px]  h-[60px] rounded-md py-1 px-1 font-medium my-50  text-black ">
-              <a
-              href="https://cal.com/fosscu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              Doubt Clarification ⏱️
-              </a>
+              <button className="bg-[#0dff1c] w-[190px] h-[60px] rounded-md font-medium my-4 py-3 text-black">
+                <a
+                  href="https://cal.com/fosscu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Doubt Clarification ⏱️
+                </a>
               </button>
-              </div>
-              </div>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   );
