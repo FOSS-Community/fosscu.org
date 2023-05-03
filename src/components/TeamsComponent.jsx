@@ -7,7 +7,7 @@ const TeamsComponent = (props) => {
             <img
                 className="w-20 mx-auto mt-[-3rem] bg-white profile_pic"
                 src={props.image}
-                alt="/"
+                alt={props.name}
             />
             <h2 className="text-2xl font-bold text-center py-8 text-white">
                 {props.name}
