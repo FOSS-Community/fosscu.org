@@ -28,18 +28,21 @@ function Hero() {
   };
 
   return (
-    <div className="w-full py-16 px-5 ">
-      <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+    <div className="w-full py-15">
+      <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 px-15  justify-center ">
         {size >= 700 ? (
+          <div className="flex items-center justify-center h-full">
           <Lottie
-            className="w-[500px] md:w-[10px] mx-auto my-4"
+            className="w-[500px] md:w-[10px]"
             options={defaultOptions}
             height={400}
             width={400}
           />
+        </div>
+        
         ) : (
           <div className="flex justify-center">
-            <img className="w-[200px] md:w-[10px]  " src={logo} alt="foccu" />
+            <img className="w-[200px] md:w-[10px]   " src={logo} alt="foccu" />
           </div>
         )}
         <div className="flex flex-col justify-center">
