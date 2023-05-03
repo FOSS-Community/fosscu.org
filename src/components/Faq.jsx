@@ -9,7 +9,7 @@ const Faq = () => {
   return (
     <section className="">
       <div className="text-center mb-8 text-4xl  tracking-tight font-extrabold text-white ">
-        <h1 className="pt-20 pb-9 ">Welcome to <span className=" animate-pulse duration-300 text-[#0dff1c]">FOSSCU!</span></h1>
+        <h1 className="pt-20 pb-9 ">Welcome to<span className=" animate-pulse duration-300 text-[#0dff1c]">FOSSCU!</span></h1>
         <div>
           <h2 className="pb-2">How can we help you?</h2>
         </div>
