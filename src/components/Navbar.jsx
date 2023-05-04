@@ -34,26 +34,26 @@ const Navbar = () => {
           FOSSCU
         </h1>
         <ul className="hidden md:flex">
-          <li className="p-4">
+          <li className="p-4 hover:text-[#0DFF1C]">
             {" "}
             <Link to="/"> Home </Link>{" "}
           </li>
-          <li className="p-4">
+          <li className="p-4 hover:text-[#0DFF1C]">
             {" "}
             <Link to="/about">About</Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 hover:text-[#0DFF1C]">
             {" "}
             <Link to="/team"> Team </Link>{" "}
           </li>
-          <li className="p-4">
+          <li className="p-4 hover:text-[#0DFF1C]">
             {" "}
             <Link to="https://docs.fosscu.org"> Handbook </Link>
           </li>
-          <li className="p-4">
+          <li className="p-4 hover:text-[#0DFF1C]">
             <a href="/resource">Resources</a>
           </li>
-          <li className="p-4">
+          <li className="p-4 hover:text-[#0DFF1C]">
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
@@ -86,6 +86,9 @@ const Navbar = () => {
             </li>
             <li className="p-4 border-b border-gray-600 ">
               <Link to="/resource">Resources</Link>{" "}
+            </li>
+            <li className="p-4 border-b border-gray-600 ">
+              <Link to="https://docs.fosscu.org">Handbook</Link>{" "}
             </li>
             <li className="p-4 border-b border-gray-600">
               <a href="https://github.com/FOSS-Community">Projects</a>

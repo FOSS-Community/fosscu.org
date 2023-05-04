@@ -57,11 +57,18 @@ const Contacts = () => {
           </div>
           <div className="lg:w-1/2 md:w-2/3  mx-auto mb-8">
             <div className="flex justify-center  md:space-x-12 lg:space-x-14 xl:space-x-20 space-x-6">
-
-              <a href="https://discord.gg/6EYsMh9x"> <FaDiscord size={40} /> </a>
-              <a href="Mailto:fosscu@gmail.com" ><FaEnvelope size={40} /></a>
-              <a href="https://www.linkedin.com/company/fosscu/" ><FaLinkedin size={40} /></a>
-              <a href="https://twitter.com/fosscuk" ><FaTwitter size={40} /></a>
+            <div className="w-12 h-10 flex flex-col items-center">
+              <a href="https://discord.gg/6EYsMh9x" target="discord" > <FaDiscord className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 " size={40} /> </a>
+            </div>
+              <div className="w-12 h-10 flex flex-col items-center">
+              <a href="Mailto:fosscu@gmail.com" target="mail" ><FaEnvelope className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} /></a>
+               </div>
+                <div className="w-12 h-10 flex flex-col items-center">
+              <a href="https://www.linkedin.com/company/fosscu/" target="linkedin" ><FaLinkedin className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} /></a>
+               </div>
+                <div className="w-12 h-10 flex flex-col items-center">
+              <a href="https://twitter.com/fosscuk" target="twitter" ><FaTwitter className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10 " size={35} /></a>
+               </div>
 
             </div>
           </div>
@@ -77,7 +84,7 @@ const Contacts = () => {
                     id="name"
                     onChange={(e) => handle(e)}
                     value={data.name}
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-lime-500 focus:bg-gray-900 focus:ring-2 focus:ring-lime-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    class="w-full bg-gray-800 hover:outline-2 bg-opacity-40 rounded border border-gray-700 focus:border-[#0dff1c] focus:bg-gray-900 focus:ring-2 focus:ring-[#0dff1c] text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -92,7 +99,7 @@ const Contacts = () => {
                     name="email"
                     onChange={(e) => handle(e)}
                     value={data.email}
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-lime-500 focus:bg-gray-900 focus:ring-2 focus:ring-lime-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-[#0dff1c] focus:bg-gray-900 focus:ring-2 focus:ring-[#0dff1c] text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -106,12 +113,12 @@ const Contacts = () => {
                     name="message"
                     onChange={(e) => handle(e)}
                     value={data.message}
-                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-lime-500 focus:bg-gray-900 focus:ring-2 focus:ring-lime-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-[#0dff1c] focus:bg-gray-900 focus:ring-2 focus:ring-[#0dff1c] h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
-              <div class="p-2 w-full">
-                <button class="flex mx-auto text-white bg-lime-500 border-0 py-2 px-8 focus:outline-none hover:bg-lime-500 rounded text-lg">
+              <div class="p-2  w-full">
+                <button class="flex mx-auto tracking-tight font-semibold text-black bg-[#00ff11c4] border-0 py-2 px-8 focus:outline-none hover:bg-[#0dff1c] rounded text-lg">
                   Submit
                 </button>
               </div>
