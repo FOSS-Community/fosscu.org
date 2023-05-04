@@ -1,0 +1,80 @@
+[
+    {
+        "image": "https://i.ibb.co/LtPMJXZ/akshat-sharma.png",
+        "name": "AKSHAT SHARMA",
+        "position": "President and Blockchain Developer",
+        "link": "https://linkfree.eddiehub.io/akshatcoder-hash"
+    },
+    {
+        "image": "https://i.ibb.co/z8jVL9V/kanishk-pachauri.jpg",
+        "name": "KANISHK PACHAURI",
+        "position": "Community Manager and Backend Developer",
+        "link": "https://www.linkedin.com/in/kanishk-pachauri-0161261b0/"
+    },
+    {
+        "image": "https://i.ibb.co/Qr77wgk/anjuman-hasan.jpg",
+        "name": "Anjuman Hasan",
+        "position": "Women in Tech Lead",
+        "link": "https://www.linkedin.com/in/anjuman-hasan/"
+    },
+    {
+        "image": "https://i.ibb.co/pdS3Bz1/mayank.jpg",
+        "name": "MAYANK",
+        "position": "Volunteer in Frontend Development",
+        "link": "https://www.linkedin.com/in/mayank-agarwal-162457199/"
+    },
+    {
+        "image": "https://i.ibb.co/z7BxKZ8/yash-varshney.jpg",
+        "name": "YASH VARSHNEY",
+        "position": "Volunteer in Web Development",
+        "link": "https://www.linkedin.com/in/yash-varshney-7b81ab1b1/"
+    },
+    {
+        "image": "https://i.ibb.co/XVJPHr0/Srijan-Srivastava.jpg",
+        "name": "Srijan Srivastava",
+        "position": "Volunteer in Backend Development",
+        "link": "https://www.linkedin.com/in/srijan-ss02/"
+    },
+    {
+        "image": "https://i.ibb.co/Lk7sV0t/arunima-shukla.jpg",
+        "name": "Arunima Shukla",
+        "position": "Volunteer in Backend Development",
+        "link": "https://www.linkedin.com/in/arunima-shukla-571a42229/"
+    },
+    {
+        "image": "https://i.ibb.co/34GJFS2/Tejaswita-Agarwal.png",
+        "name": "Tejaswita Agarwal",
+        "position": "Volunteer in Public Relations",
+        "link": "https://www.linkedin.com/in/tejaswita-agarwal/"
+    },
+    {
+        "image": "https://i.ibb.co/vkHfDM5/suyash-srivastava.png",
+        "name": "Suyash Srivastava",
+        "position": "Machine Learning Instructor and Lead",
+        "link": "https://www.linkedin.com/in/suyash-srivastava-024288197/"
+    },
+    {
+        "image": "https://i.ibb.co/BGD1Th9/shivendu-mishra.jpg",
+        "name": "Shivendu Mishra",
+        "position": "Android Development Lead",
+        "link": "https://www.linkedin.com/in/shivendu-mishra-94ba36200/"
+    },
+    {
+        "image": "https://i.ibb.co/pjnccjZ/Devanshu-Saxena.jpg",
+        "name": "Devanshu Saxena",
+        "position": "Volunteer in Web Development",
+        "link": "https://www.linkedin.com/in/devanshu-saxena01/"
+    },
+    {
+        "image": "https://i.ibb.co/Qd8HvWJ/Shivam-Yadav.jpg",
+        "name": "Shivam Yadav",
+        "position": "Volunteer in Web Development",
+        "link": "https://www.linkedin.com/in/shivam-yadav-513005257/"
+    },
+    {
+        "image": "https://i.ibb.co/dkNYd1x/Shivam-Kumar.jpg",
+        "name": "Shivam Kumar",
+        "position": "Volunteer in Web Development",
+        "link": "https://www.linkedin.com/in/shivam-kumar-70a746256/"
+    }
+]
