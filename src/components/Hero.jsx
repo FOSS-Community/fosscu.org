@@ -28,7 +28,7 @@ function Hero() {
   };
 
   return (
-    <div className="w-full py-15">
+    <div className="w-full py-16 px-5">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 px-15  justify-center ">
         {size >= 700 ? (
           <div className="flex items-center justify-center h-full">
