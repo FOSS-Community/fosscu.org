@@ -28,7 +28,7 @@ const Navbar = () => {
     <>
 
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-        <RiOpenSourceFill size={60} color="green" />
+        <RiOpenSourceFill className="flex-shrink-0" size={31} color="green" />
         <h1 className="w-full text-3xl font-bold text-[#0DFF1C] m-4">
           {" "}
           FOSSCU
@@ -63,7 +63,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-grey-900 bg-[#000300] ease-in-out duration-500 "
+              ? "fixed z-30 left-0 top-0 w-[60%] h-full border-r border-r-grey-900 bg-[#000300] ease-in-out duration-500 "
               : "fixed left-[-100%]"
           }
         >

@@ -3,7 +3,7 @@ import React from "react";
 const Roadmaps = (props) => {
     return (
         <div>
-            <div className="details-section sm:ml-80 ">
+            <div className="details-section z-10 lg:ml-80 ">
                 <section className="">
                     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                         <div className="max-w-screen-lg  sm:text-lg text-gray-100">
@@ -34,8 +34,8 @@ const Roadmaps = (props) => {
                             </div>)
                             :
                             (<div className="flex flex-col items-start mt-6">
-                                <a href={props.link}>
-                                    <img src={props.image} alt="overview of site" className="w-full" />
+                                <a href={props.link} target="_blank" >
+                                    <img src={props.image}  alt="overview of site" className="w-full" />
                                 </a>
                             </div>)
                         }
