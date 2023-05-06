@@ -51,7 +51,7 @@
         "para2": "Main course contains 2 parts which cover JavaScript as a programming language and working with a browser. There are also additional series of thematic articles.",
         "para3": "Here we learn JavaScript, starting from scratch and go on to advanced concepts like OOP.",
         "link": "https://javascript.info/",
-        "image": "/src/assets/img/roadmap/modernJs.png"
+        "image": "src/assets/img/roadmap/modernJs.png"
     },
     {
         "head": "JavaScript Mastery - Complete Path to JavaScript Mastery",
@@ -83,7 +83,7 @@
         "para2": "Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny.",
         "para3": "Rapidly build modern websites without ever leaving your HTML.",
         "link": "https://tailwindcss.com/docs/installation",
-        "image": "/src/assets/img/roadmap/tailwind.png"
+        "image": "src/assets/img/roadmap/tailwind.png"
     },
     {
         "head": "The Net Ninja - Tailwind CSS Tutorial",
@@ -99,7 +99,7 @@
         "para2": "This is why the Learn section is organized like a self-paced course split into chapters. The first two chapters describe the fundamentals of React. If you’re new to React, or want to refresh it in your memory, start here:",
         "para3": "We’d like everyone in the world to have an equal opportunity to learn React for free on their own.",
         "link": "https://react.dev/blog/2023/03/16/introducing-react-dev",
-        "image": "/src/assets/img/roadmap/react.png"
+        "image": "src/assets/img/roadmap/react.png"
     },
     {
         "head": "FreeCodeCamp - Learn React JS",
@@ -107,7 +107,7 @@
         "para2": "React combines HTML with JavaScript functionality into its own markup language called JSX. React also makes it easy to manage the flow of data throughout the application.",
         "para3": "In this course, you'll learn how to create different React components, manage data in the form of state props, use different lifecycle methods like componentDidMount, and much more.",
         "link": "https://www.freecodecamp.org/learn/front-end-development-libraries/#react",
-        "image": "/src/assets/img/roadmap/reactfreecodecamp.png"
+        "image": "src/assets/img/roadmap/reactfreecodecamp.png"
     },
     {
         "head": "FreeCodeCamp - Beginner's Tutorial for React JS",
@@ -138,7 +138,7 @@
         "para2": "The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. ",
         "para3": " On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.",
         "link": "https://v2.vuejs.org/v2/guide/installation.html?redirect=true",
-        "image": "/src/assets/img/roadmap/vue.png"
+        "image": "src/assets/img/roadmap/vue.png"
     },
     {
         "head": "The Net Ninja - Vue JS 3 Tutorial",
