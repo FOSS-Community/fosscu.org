@@ -23,48 +23,48 @@ const Footer = () => {
         <div>
           <h6 className="font-medium text-[#00df9a]">Support</h6>
           <ul>
-            <a href="/building">
-              <li className="py-2 text-sum">Documentation</li>
+            <a href="/building" className="pb-2">
+              <li className="pt-2 text-sum hover:border-b hover:border-green-400">Documentation</li>
             </a>
-            <a href="/guide">
-              <li className="py-2 text-sum">Guides</li>
+            <a href="/guide" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Guides</li>
             </a>
-            <a href="/building">
-              <li className="py-2 text-sum">API Status</li>
+            <a href="/building" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">API Status</li>
             </a>
-            <a href="/faq">
-              <li className="py-2 text-sum">FAQ</li>
+            <a href="/faq" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">FAQ</li>
             </a>
           </ul>
         </div>
         <div>
           <h6 className="font-medium text-[#00df9a]">Organization</h6>
           <ul>
-            <a href="/about">
-              <li className="py-2 text-sum">About</li>
+            <a href="/about" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">About</li>
             </a>
-            <a href="https://fosscu-blog.vercel.app/">
-              <li className="py-2 text-sum">Blog</li>
+            <a href="https://fosscu-blog.vercel.app/"className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Blog</li>
             </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform">
-              <li className="py-2 text-sum">Join Us</li>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Join Us</li>
             </a>
-            <a href="https://github.com/FOSS-Community/">
-              <li className="py-2 text-sum">Contribute</li>
+            <a href="https://github.com/FOSS-Community/" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Contribute</li>
             </a>
           </ul>
         </div>
         <div>
           <h6 className="font-medium text-[#00df9a]">Handbook</h6>
           <ul>
-            <a href="https://docs.fosscu.org/Docs/values">
-              <li className="py-2 text-sum">Core Values</li>
+            <a href="https://docs.fosscu.org/Docs/values" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Core Values</li>
             </a>
-            <a href="https://docs.fosscu.org/Docs/code-of-conduct">
-              <li className="py-2 text-sum">Code of Conduct</li>
+            <a href="https://docs.fosscu.org/Docs/code-of-conduct" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Code of Conduct</li>
             </a>
-            <a href="/building">
-              <li className="py-2 text-sum">Terms</li>
+            <a href="/building" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Terms</li>
             </a>
           </ul>
         </div>
