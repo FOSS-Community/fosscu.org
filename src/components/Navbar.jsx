@@ -56,6 +56,13 @@ const Navbar = () => {
           <li className="p-4">
             <Link to="/contact">Contact</Link>
           </li>
+          <li className="p-4">
+            {" "}
+          <a href="https://lu.ma/fosscu" rel="noreferrer">
+          Calendar
+          </a>
+ 
+        </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
