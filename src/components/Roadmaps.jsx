@@ -1,6 +1,7 @@
 import React from "react";
 
 const Roadmaps = (props) => {
+
     return (
         <div>
             <div className="details-section z-10 lg:ml-80 ">
@@ -14,8 +15,8 @@ const Roadmaps = (props) => {
                             <p className="mb-4 ">{props.para2}</p>
                             <p className="mb-4 font-medium">{props.para3}
                             </p>
-                            <a href={props.link ? props.link : props.videoLink}
-                                className="inline-flex items-center font-medium  hover:text-primary-800  text-primary-700">
+                            <a href={props.link ? props.link : props.videoLink} target="_blank"
+                                className="inline-flex items-center font-medium hover:underline hover:text-primary-800  text-primary-700">
                                 Learn more
                                 <svg className="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -27,17 +28,13 @@ const Roadmaps = (props) => {
                         </div>
                         {props.videoLink ?
                             (<div className="aspect-video flex flex-col items-start mt-6">
-                                <iframe className=" rounded-lg w-full h-full " src={props.videoLink}
+                                <iframe className=" rounded-lg w-full h-full " target="_blank" src={props.videoLink}
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen loading=""></iframe>
                             </div>)
                             :
-                            (<div className="flex flex-col items-start mt-6">
-                                <a href={props.link} target="_blank" >
-                                    <img src={props.image}  alt="overview of site" className="w-full" />
-                                </a>
-                            </div>)
+                            null
                         }
                     </div>
                 </section>

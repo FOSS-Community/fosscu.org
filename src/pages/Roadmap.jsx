@@ -6,28 +6,25 @@ import frontendData from "../data/frontend.json";
 import { AiOutlineMenu } from 'react-icons/ai';
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
+import data from "../data/data.json"
 import "/src/assets/roadmap/roadmap.css";
 
 const Roadmap = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggleRoadmap = () => {
         setIsOpen(!isOpen);
     };
-
+    const languageKeys = Object.keys(data.languages);
     return (
         <div>
             <div className="lg:ml-80 ">
                 <Navbar />
             </div>
-
             <div className="lg:hidden sticky inline-block bg-gray-300   top-0 rounded-r-xl z-20 p-1 ">
                 <button onClick={toggleRoadmap}>
-                    {isOpen ? null : <HiMenu size={36} fill="#" className=" mt-1 " />} 
+                    {isOpen ? null : <HiMenu size={36} fill="#" className=" mt-1 " />}
                 </button>
             </div>
-
-
             <aside className={`fixed  bg-[#000300]  border-t-2 top-0 border-r-2 z-40 left-0 opacity-100  w-[20rem] pb-24  h-screen  transition-transform  lg:translate-x-0 ${isOpen ? "translate-x-0" : "-translate-x-full"
                 }  border-gray-700`} >
                 <div className="flex flex-row  pl-4 pb-3 pt-5 border-b border-gray-700 mb-6">
@@ -42,229 +39,51 @@ const Roadmap = () => {
                     </div>
                 </div>
                 <div className="sidebar  px-3 pb-4  h-full overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100" >
-                    <ul className="space-y-6 font-medium ">
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            HTML Resources
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c] active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">The Net Ninja</span>
-                                    </a>
-
-                                    <a className="flex items-center rounded-lg  hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black  hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">freeCodeCamp</span>
-                                    </a>
-                                    <a className="flex items-center rounded-lg  hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black  hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current" />
-                                        </span>
-                                        <span className="ml-1">Bro Code</span>
-                                    </a>
+                    <ul className="space-y-6    font-medium ">
+                        {languageKeys.map((key) => {
+                            const language = data.languages[key];
+                            return (
+                                <li className="text-white pl-4  tracking-wide text-lg">
+                                    {key}
+                                    <ul className="pl-4">
+                                        <li className="">
+                                            {language.first ?
+                                                (<a className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c] active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
+                                                    <span className="p-2 rounded hover:bg-[#00df9a] ">
+                                                        <AiOutlineMenu size={18} className="fill-current " />
+                                                    </span>
+                                                    <span className="ml-1">{language.first}</span>
+                                                </a>) : null
+                                            }
+                                            {language.second ?
+                                                (<a className="flex items-center rounded-lg  hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black  hover:text-black">
+                                                    <span className="p-2 rounded hover:bg-gray-500 ">
+                                                        <AiOutlineMenu size={18} className="fill-current " />
+                                                    </span>
+                                                    <span className="ml-1">{language.second}</span>
+                                                </a>) : null
+                                            }
+                                            {language.third ?
+                                                (<a className="flex items-center rounded-lg  hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black  hover:text-black">
+                                                    <span className="p-2 rounded hover:bg-gray-500 ">
+                                                        <AiOutlineMenu size={18} className="fill-current" />
+                                                    </span>
+                                                    <span className="ml-1">{language.third}</span>
+                                                </a>) : null
+                                            }
+                                            {language.fourth ?
+                                                (<a className="flex items-center rounded-lg  hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black  hover:text-black">
+                                                    <span className="p-2 rounded hover:bg-gray-500 ">
+                                                        <AiOutlineMenu size={18} className="fill-current" />
+                                                    </span>
+                                                    <span className="ml-1">{language.fourth}</span>
+                                                </a>) : null
+                                            }
+                                        </li>
+                                    </ul>
                                 </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            CSS Resources
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">The Net Ninja</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">freeCodeCamp</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current" />
-                                        </span>
-                                        <span className="ml-1">Bro Code</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4 tracking-wide text-lg">
-                            JavaScript
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1 tracking-tight  ">The Modern JS (Read)</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">JavaScript Mastery</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current" />
-                                        </span>
-                                        <span className="ml-1">freeCodeCamp</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current" />
-                                        </span>
-                                        <span className="ml-1 tracking-tight">Build 30 things in 30 days</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            Tailwind CSS
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">Documentation</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">The Net Ninja</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            React JS
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">Documentation</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">freeCodeCamp</span>
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">freeCodeCamp(Youtube)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            Next JS
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1"></span>Codevolution
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">The Net Ninja</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            Vue JS
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1"></span>Documentation
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">The Net Ninja</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            Three JS
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1"></span>Chris Courses
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">Documentatioin</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            React Native
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1"></span>Documentation
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">The Net Ninja</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="text-white pl-4  tracking-wide text-lg">
-                            Electron
-                            <ul className="pl-4">
-                                <li className="">
-                                    <a href="#" className="flex items-center  mt-2 rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-[#00df9a] ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1"></span>Codevolution
-                                    </a>
-                                    <a href="#" className="flex items-center rounded-lg   hover:bg-[#0dff1c]  active:bg-[#0dff1c] focus:bg-[#0dff1c] active:text-black focus:text-black hover:text-black">
-                                        <span className="p-2 rounded hover:bg-gray-500 ">
-                                            <AiOutlineMenu size={18} className="fill-current " />
-                                        </span>
-                                        <span className="ml-1">Documentation</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
+                            )
+                        })}
                     </ul>
                 </div>
             </aside>
@@ -279,15 +98,12 @@ const Roadmap = () => {
                         videoLink={frontend.videoLink}
                         image={frontend.image}
                     />
-                )
-                )
+                ))
             }
             <div className="lg:ml-80 overflow-hidden">
                 <Footer />
             </div>
-
-        </div >
-    )
+        </div >)
 }
 
 export default Roadmap;
