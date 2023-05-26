@@ -63,6 +63,9 @@ const Footer = () => {
             <a href="https://docs.fosscu.org/Docs/code-of-conduct" className="pb-2">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Code of Conduct</li>
             </a>
+            <a href="https://docs.fosscu.org/Docs/getting-started" className="pb-2">
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">What is FOSS</li>
+            </a>
             <a href="/building" className="pb-2">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Terms</li>
             </a>
