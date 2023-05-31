@@ -16,7 +16,7 @@ const TeamsComponent = (props) => {
                 {props.position}
             </p>
             <div className="flex justify-center mx-auto md:w-[50%] my-6 px-6 py-3">
-                <a href={props.link}>
+                <a href={props.link.url} target={props.link.target} rel={props.link.rel}>
                     {" "}
                     <FaLink size={30} color="white" />{" "}
                 </a>
