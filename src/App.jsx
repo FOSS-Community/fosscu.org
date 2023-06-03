@@ -10,6 +10,16 @@ import Guide from "./pages/Guide";
 import Faqs from "./pages/Faqs";
 import Resources from "./pages/Resources";
 import Roadmap from "./pages/Roadmap";
+import Frontends from "./pages/FrontEnds";
+import HTMLCSS from "./pages/Frontend/HTMLCSS"
+import JS from "./pages/Frontend/JSc"
+import Eletron from "./pages/Frontend/Eletron";
+import Reactjs from "./pages/Frontend/Reactjs";
+import Next__js from "./pages/Frontend/Next__js";
+import Tail_wind from "./pages/Frontend/Tail_wind";
+import Vue__js from "./pages/Frontend/Vue__js";
+import React__native from "./pages/Frontend/React__native";
+import Three__js from "./pages/Frontend/Three__js";
 
 // import About from './components/About'
 // import AboutOrg from "./pages/AboutOrg";
@@ -31,6 +41,16 @@ function App() {
         <Route path="/faq" element={<Faqs/>}></Route>
         <Route path="/resource" element={<Resources/>}></Route>
         <Route path="/roadmap" element={<Roadmap/>}></Route>
+        <Route path="/frontend" element={<Frontends/>}></Route>
+        <Route path="/html_css" element={<HTMLCSS/>}></Route>
+        <Route path="/javascript" element={<JS/>}></Route>
+        <Route path="/electron" element={<Eletron/>}></Route>
+        <Route path="/reactjs" element={<Reactjs/>}></Route>
+        <Route path="/nextjs" element={<Next__js/>}></Route>
+        <Route path="/tailwind" element={<Tail_wind/>}></Route>
+        <Route path="/vuejs" element={<Vue__js/>}></Route>
+        <Route path="/threejs" element={<Three__js/>}></Route>
+        <Route path="/reactnative" element={<React__native/>}></Route>
       </Routes>
     </BrowserRouter>
   );
