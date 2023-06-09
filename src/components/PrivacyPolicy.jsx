@@ -2,11 +2,11 @@ import React from "react";
 
 const PrivacyPolicy = () => {
     return (
-    <div className="text-white">
+    <div className="bg-slate-950 text-white m-4 p-5" >
         
-        <h1>Privacy Policy</h1>
+        <h1 className="text-4xl">Privacy Policy</h1>
         
-        <p>Last updated: June 11, 2023</p>
+        <p className="mt-10">Last updated: June 11, 2023</p>
         <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
         <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. </p>
         <h1>Interpretation and Definitions</h1>
@@ -14,11 +14,11 @@ const PrivacyPolicy = () => {
         <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
         <h2>Definitions</h2>
         <p>For the purposes of this Privacy Policy:</p>
-        <ul>
-        <li>
+        <ul className="list-disc list">
+        <li className=" mt-5 ">
         <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
         </li>
-        <li>
+        <li >
         <p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
         </li>
         <li>
