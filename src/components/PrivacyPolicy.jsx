@@ -2,7 +2,7 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="text-gray-300 m-4 p-5">
+    <div className="sm:container  text-gray-300 sm:mx-auto p-5 m-4">
       <h1 className="text-4xl flex flex-auto justify-center font-semibold  text-[#0DFF1C]">
         Privacy Policy
       </h1>
@@ -12,13 +12,13 @@ const PrivacyPolicy = () => {
         <span className="font-semibold font-serif">June 11, 2023</span>
       </p>
       <br></br>
-      <p>
+      <p className="font-medium">
         This Privacy Policy describes Our policies and procedures on the
         collection, use and disclosure of Your information when You use the
         Service and tells You about Your privacy rights and how the law protects
         You.
       </p>
-      <p>
+      <p className="font-medium">
         We use Your Personal data to provide and improve the Service. By using
         the Service, You agree to the collection and use of information in
         accordance with this Privacy Policy.{" "}
@@ -114,7 +114,7 @@ const PrivacyPolicy = () => {
             <strong>Website</strong> refers to FOSSCU, accessible from{" "}
             <a
               className="text-[#0dff1c] hover:underline "
-              href="https://fosscu.org/"
+              href="/"
             >
               https://fosscu.org/
             </a>
@@ -538,7 +538,7 @@ const PrivacyPolicy = () => {
           By visiting this page on our website:{" "}
           <a
             className="text-[#0dff1c] hover:underline"
-            href="https://fosscu.org/contact"
+            href="/contact"
           >
             https://fosscu.org/contact
           </a>
