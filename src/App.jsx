@@ -9,6 +9,7 @@ import ReactDOM from "react-dom/client";
 import Guide from "./pages/Guide";
 import Faqs from "./pages/Faqs";
 import Resources from "./pages/Resources";
+import Privacy from "./pages/Privacy";
 import Frontends from "./pages/FrontEnds";
 import HTMLCSS from "./pages/Frontend/HTMLCSS"
 import JS from "./pages/Frontend/JSc"
@@ -39,6 +40,7 @@ function App() {
         <Route path="/guide" element={<Guide/>}></Route>
         <Route path="/faq" element={<Faqs/>}></Route>
         <Route path="/resource" element={<Resources/>}></Route>
+        <Route path="/privacypolicy" element={<Privacy/>}></Route>
         <Route path="/frontend" element={<Frontends/>}></Route>
         <Route path="/html_css" element={<HTMLCSS/>}></Route>
         <Route path="/javascript" element={<JS/>}></Route>
