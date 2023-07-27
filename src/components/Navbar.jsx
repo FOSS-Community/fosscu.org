@@ -113,6 +113,13 @@ const Navbar = () => {
             <li className="p-4 border-b border-gray-600">
               <Link to="/contact">Contact</Link>
             </li>
+            <li className="p-4 border-b border-gray-600">
+              <Link to="https://lu.ma/fosscu">Calender</Link>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+              <Link to="https://github.com/FOSS-Community/">Contribute</Link>
+            </li>
+            
           </ul>
         </div>
       </div >
