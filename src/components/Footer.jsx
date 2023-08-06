@@ -8,14 +8,14 @@ const Footer = () => {
         <h1 className='w-full text-3xl font-bold text-[#00df9a]'>FOSSCU</h1>
         <p className='py-4'>Made with 💚 and Open Source</p>
         <div className='flex justify-between md:w-[75%] my-6'>
-        <a href="https://www.instagram.com/fosscu/" className="transition duration-300 ease-in-out hover:scale-125" target="_blank">
+        <a href="https://www.instagram.com/fosscu/" className="transition duration-300 ease-in-out hover:scale-125" target="blank">
             <FaInstagram size={30} />
           </a>
-          <a href="https://twitter.com/fosscuk" className="transition duration-300 ease-in-out hover:scale-125" target="_blank">
+          <a href="https://twitter.com/fosscuk" className="transition duration-300 ease-in-out hover:scale-125" target="blank">
             
             <FaTwitterSquare size={30} />
           </a>
-          <a href="https://github.com/FOSS-Community/" className="transition duration-300 ease-in-out hover:scale-125" target="_blank">
+          <a href="https://github.com/FOSS-Community/" className="transition duration-300 ease-in-out hover:scale-125" target="blank">
             <FaGithubSquare size={30} />
           </a></div>
       </div>
@@ -43,13 +43,13 @@ const Footer = () => {
             <a href="/about" className="pb-2">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">About</li>
             </a>
-            <a href="https://fosscu-blog.vercel.app/"className="pb-2" target="_blank">
+            <a href="https://fosscu-blog.vercel.app/"className="pb-2" target="blank">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Blog</li>
             </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform" className="pb-2" target="_blank">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform" className="pb-2" target="blank">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Join Us</li>
             </a>
-            <a href="https://github.com/FOSS-Community/" className="pb-2" target="_blank">
+            <a href="https://github.com/FOSS-Community/" className="pb-2" target="blank">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Contribute</li>
             </a>
           </ul>
@@ -57,13 +57,13 @@ const Footer = () => {
         <div>
           <h6 className="font-medium text-[#00df9a]">Handbook</h6>
           <ul>
-            <a href="https://docs.fosscu.org/Docs/values" className="pb-2" target="_blank">
+            <a href="https://docs.fosscu.org/Docs/values" className="pb-2" target="blank">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Core Values</li>
             </a>
-            <a href="https://docs.fosscu.org/Docs/code-of-conduct" className="pb-2" target="_blank">
+            <a href="https://docs.fosscu.org/Docs/code-of-conduct" className="pb-2" target="blank">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Code of Conduct</li>
             </a>
-            <a href="https://docs.fosscu.org/Docs/getting-started" className="pb-2" target="_blank">
+            <a href="https://docs.fosscu.org/Docs/getting-started" className="pb-2" target="blank">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">What is FOSS</li>
             </a>
             <a href="/building" className="pb-2">
