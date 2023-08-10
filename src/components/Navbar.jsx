@@ -67,7 +67,7 @@ const Navbar = () => {
             <div
               class="translate-x-[-0em] hidden absolute bg-black text-white rounded mt-1 w-36 group-hover:block hover:rounded-md ">
               <a href="/resource" class="block px-4 py-2 hover:text-[#0dff1c]">Resources</a>
-              <a href="https://docs.fosscu.org" class="block px-4 py-2 hover:text-[#0dff1c]">Handbook</a>
+              <a href="https://docs.fosscu.org" class="block px-4 py-2 hover:text-[#0dff1c]" target="blank">Handbook</a>
               <a href="https://lu.ma/fosscu" rel="noreferrer" target="blank" class="block px-4 py-2 hover:text-[#0dff1c]">Calendar</a>
               <a href="https://github.com/FOSS-Community/" target="blank" class="block px-4 py-2 hover:text-[#0dff1c]">Contribute</a>
             </div>
