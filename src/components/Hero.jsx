@@ -70,7 +70,7 @@ function Hero() {
             <div class="sm:space-x-4 space-x-0 flex flex-col items-center sm:flex-row sm:justify-center">
               <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px]  rounded-md font-medium my-4 py-3 text-black">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScXC6WhL-tIYUXqeqsJM4Dmp3SzW3HDTw0Em06aV2zll_QcrA/viewform"
+                  href="https://dub.sh/fosscu-discord"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
