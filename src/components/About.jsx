@@ -45,8 +45,9 @@ function About() {
                 <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-3'>We ❤️ Open Source</h1>
                 <p>We at FOSSCU (Free and Open-Source Community United) are a Group of individuals who are constantly working to promote Open-Source Culture.</p>
                 <a href="https://linktr.ee/fosscu" target="_blank" rel="noopener noreferrer">
-                <button className='bg-black text-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Connect with Us 🏁</button>
+                <button className='hover:bg-slate-800 bg-black text-[#0DFF1C] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Connect with Us 🏁</button>
                 </a>
+    
 
             </div>
         </div>
