@@ -8,7 +8,7 @@ const Navbar = () => {
   const [size, setSize] = useState(window.innerWidth);
   const location = useLocation();
   console.log(location)
-  const [activeLink, setActiveLink] = useState(location.pathname);
+  const [activeLink] = useState(location.pathname);
   const checkSize = () => {
     setSize(window.innerWidth);
   };
