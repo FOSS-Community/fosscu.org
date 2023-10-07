@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { RiOpenSourceFill } from "react-icons/ri";
+import { useLocation } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [size, setSize] = useState(window.innerWidth);
-
+  const location = useLocation();
+  console.log(location)
+  const [activeLink, setActiveLink] = useState(location.pathname);
   const checkSize = () => {
     setSize(window.innerWidth);
   };
@@ -34,24 +37,36 @@ const Navbar = () => {
           FOSSCU
         </h1>
         <ul className="hidden md:flex">
-          <li className="p-4 hover:text-[#0DFF1C]">
-            {" "}
+          <li
+            className={`p-4 ${activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+              }`}
+
+          >
             <Link to="/"> Home </Link>{" "}
           </li>
-          <li className="p-4 hover:text-[#0DFF1C]">
-            {" "}
+          <li
+            className={`p-4 ${activeLink === "/about" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+              }`}
+
+          >
             <Link to="/about">About</Link>
           </li>
-          <li className="p-4 hover:text-[#0DFF1C]">
-            {" "}
+          <li
+            className={`p-4 ${activeLink === "/team" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+              }`}
+
+          >
             <Link to="/team"> Team </Link>{" "}
           </li>
 
-          <li className="p-4 hover:text-[#0DFF1C] translate-x-[-3.2em] hidden absolute  bg-white text-gray-900 rounded mt-1 w-48 group-hover:block hover:rounded-md">
+
+          <li className={`p-4 ${activeLink === "/resource" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            } hover:text-[#0DFF1C] translate-x-[-3.2em] hidden absolute  bg-white text-gray-900 rounded mt-1 w-48 group-hover:block hover:rounded-md `} >
             <a href="/resource">Resources</a>
           </li>
 
-          <li className="p-4 hover:text-[#0DFF1C]">
+          <li className={`p-4 ${activeLink === "/contact" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            } hover:text-[#0DFF1C]`}>
             <Link to="/contact">Contact</Link>
           </li>
 
@@ -92,34 +107,39 @@ const Navbar = () => {
             </h1>
           </center>
           <ul className="uppercase p-4">
-            <li className="p-4 border-b border-gray-600">
+            <li className={`p-4 ${activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            } border-b border-gray-600 `}>
               <Link to="/"> Home </Link>{" "}
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className={`p-4 ${activeLink === "/about" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            } border-b border-gray-600 `}>
               <Link to="/about">About</Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className={`p-4 ${activeLink === "/team" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            } border-b border-gray-600 `}>
               <Link to="/team"> Team </Link>{" "}
             </li>
-            <li className="p-4 border-b border-gray-600 ">
+            <li className={`p-4 ${activeLink === "/resource" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            } border-b border-gray-600 `}>
               <Link to="/resource">Resources</Link>{" "}
             </li>
-            <li className="p-4 border-b border-gray-600 ">
-              <Link to="https://docs.fosscu.org">Handbook</Link>{" "}
+            <li className={`p-4 border-b border-gray-600 `}>
+              <a href="https://docs.fosscu.org">Handbook</a>{" "}
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className={`p-4 border-b border-gray-600 `}>
               <a href="https://github.com/FOSS-Community">Projects</a>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className={`p-4 ${activeLink === "/contact" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            } border-b border-gray-600 `}>
               <Link to="/contact">Contact</Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
-              <Link to="https://lu.ma/fosscu">Calender</Link>
+            <li className={`p-4 border-b border-gray-600 `}>
+              <a href="https://lu.ma/fosscu">Calender</a>
             </li>
-            <li className="p-4 border-b border-gray-600">
-              <Link to="https://github.com/FOSS-Community/">Contribute</Link>
+            <li className={`p-4 border-b border-gray-600 `}>
+              <a href="https://github.com/FOSS-Community/">Contribute</a>
             </li>
-            
+
           </ul>
         </div>
       </div >
