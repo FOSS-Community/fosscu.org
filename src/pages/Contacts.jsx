@@ -58,7 +58,7 @@ const Contacts = () => {
           <div className="lg:w-1/2 md:w-2/3  mx-auto mb-8">
             <div className="flex justify-center  md:space-x-12 lg:space-x-14 xl:space-x-20 space-x-6">
             <div className="w-12 h-10 flex flex-col items-center">
-              <a href="https://discord.gg/6EYsMh9x" target="discord" > <FaDiscord className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 " size={40} /> </a>
+              <a href="https://discord.com/invite/4xruwjjU9B" target="discord" > <FaDiscord className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 " size={40} /> </a>
             </div>
               <div className="w-12 h-10 flex flex-col items-center">
               <a href="Mailto:fosscu@gmail.com" target="mail" ><FaEnvelope className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} /></a>
