@@ -73,7 +73,7 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-              <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px]  rounded-md font-medium my-4 py-3 text-black">
+              <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px]   rounded-md font-medium my-4 py-3 text-black">
                   Join Us 🤝
               </button>
                 </a>
