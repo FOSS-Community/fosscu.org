@@ -5,7 +5,7 @@ function PageNotFound() {
     <div className="flex   text-white flex-col items-center justify-center  p-10">
       <img
         className="w-96 mx-auto "
-        src="src\assets\img\page_not_found_img\404-error.png"
+        src="src/assets/img/page_not_found_img/error.png"
         alt="404-page-not-found"
       />
       <p className="font-bold md:text-3xl  sm:text-2xl text-xl p-4 text-white">
