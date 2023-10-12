@@ -68,24 +68,24 @@ function Hero() {
               />
             </div>
             <div class="sm:space-x-4 space-x-0 flex flex-col items-center sm:flex-row sm:justify-center">
-              <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px]  rounded-md font-medium my-4 py-3 text-black">
                 <a
                   href="https://dub.sh/fosscu-discord"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+              <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px]   rounded-md font-medium my-4 py-3 text-black">
                   Join Us 🤝
-                </a>
               </button>
-              <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px] rounded-md font-medium my-4 py-3 text-black">
+                </a>
                 <a
                   href="https://cal.com/fosscu/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+              <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px] rounded-md font-medium my-4 py-3 text-black">
                   Doubt Clarification ⏱️
-                </a>
               </button>
+                </a>
             </div>
           </div>
         </div>
