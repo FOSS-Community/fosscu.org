@@ -1,4 +1,4 @@
-name: Greetings
+name:  Greetings
 
 on: [pull_request_target, issues]
 
@@ -6,8 +6,30 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Thank you 🙏🏻 for submitting your first issue to progress-tracker by @FOSS-Community'
-        pr-message: 'Thank you 🙏🏻 for contributing to progress-tracker by @FOSS-Community. Looking Forward for more contributions.'
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: 'Thank you 🙏🏻 for submitting your first issue to progress-tracker by @FOSS-Community'
+          pr-message: 'Thank you 🙏🏻 for contributing to progress-tracker by @FOSS-Community. Looking forward to more contributions.'
+
+      - name: Label Issues and Pull Requests
+        run: |
+          if [ "${{ github.event_name }}" == "issues" ]; then
+            # Label issues based on keywords in title or body
+            # For example, label "bug" if "bug" is found in the issue
+            # Add more conditions as needed
+            if [[ ${{ github.event.issue.title }} == *"bug"* ]]; then
+              echo "Adding label: bug"
+              gh issue add-label ${{ github.event.issue.number }} bug
+            fi
+          elif [ "${{ github.event_name }}" == "pull_request_target" ]; then
+            # Label pull requests based on keywords in title or body
+            # Add more conditions as needed
+            if [[ ${{ github.event.pull_request.title }} == *"feature"* ]]; then
+              echo "Adding label: feature"
+              gh pr add-label ${{ github.event.pull_request.number }} feature
+            fi
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
