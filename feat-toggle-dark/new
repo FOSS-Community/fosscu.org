@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dark/Light Mode Toggle</title>
+
+
+
+  <style>
+    /* CSS for light mode */
+    body.light-mode {
+      background-color: white;
+      color: black;
+    }
+    
+    /* CSS for dark mode */
+    body.dark-mode {
+      background-color: black;
+      color: white;
+    }
+    
+    #mode-toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    
+    #mode-toggle label {
+      display: inline-block;
+      background-color: #ccc;
+      border-radius: 20px;
+      width: 40px;
+      height: 20px;
+      cursor: pointer;
+      position: relative;
+    }
+    
+    #mode-toggle input[type="checkbox"] {
+      display: none;
+    }
+    
+    #mode-toggle input[type="checkbox"]:checked + label {
+      background-color: #2196F3;
+    }
+    
+    #mode-toggle label:after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.3s;
+      transform: translateX(0);
+    }
+    
+    #mode-toggle input[type="checkbox"]:checked + label:after {
+      transform: translateX(20px);
+    }
+  </style>
+
+
+
+</head>
+<body class="light-mode">
+  <div id="mode-toggle">
+    <input type="checkbox" id="toggle-switch">
+    <label for="toggle-switch"></label>
+  </div>
+
+  <h1>Dark/Light Mode Toggle Example</h1>
+  <p>This is an example of a dark/light mode toggle switch.</p>
+
+  
+
+
+<script>
+    const toggleSwitch = document.querySelector("#toggle-switch");
+    const body = document.body;
+
+    // Check the user's preference and set the mode accordingly
+    if (localStorage.getItem("mode") === "dark") {
+      body.classList.replace("light-mode", "dark-mode");
+      toggleSwitch.checked = true;
+    }
+
+    // Toggle mode
+    toggleSwitch.addEventListener("change", function () {
+      if (this.checked) {
+        body.classList.replace("light-mode", "dark-mode");
+        localStorage.setItem("mode", "dark");
+      } else {
+        body.classList.replace("dark-mode", "light-mode");
+        localStorage.setItem("mode", "light");
+      }
+    });
+  </script>
+
+
+</body>
+</html>
