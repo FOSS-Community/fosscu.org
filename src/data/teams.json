@@ -62,11 +62,21 @@
           }
     },
     {
+      "image": "https://i.ibb.co/HFDjq70/image.png",
+      "name": "Utkarsh",
+      "position": "Volunteer in App Development",
+      "link": {
+          "url": "",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+  },
+    {
       "image": "https://i.ibb.co/47VhcxP/image.png",
       "name": "Rishika",
       "position": "Volunteer in Frontend Development",
       "link": {
-          "url": "https://www.linkedin.com/in/shivam-kumar-70a746256/",
+          "url": "",
           "target": "_blank",
           "rel": "noopener noreferrer"
         }
