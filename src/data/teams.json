@@ -21,17 +21,6 @@
           }
     },
     {
-        "image": "https://i.ibb.co/Qr77wgk/anjuman-hasan.jpg",
-        "name": "Anjuman Hasan",
-        "position": "Women in Tech Lead",
-        "link": {
-            "url": "https://www.linkedin.com/in/anjuman-hasan/",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-        
-    },
-    {
         "image": "https://i.ibb.co/pdS3Bz1/mayank.jpg",
         "name": "MAYANK",
         "position": "Volunteer in Frontend Development",
