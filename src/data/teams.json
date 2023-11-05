@@ -32,16 +32,6 @@
         
     },
     {
-        "image": "https://i.ibb.co/34GJFS2/Tejaswita-Agarwal.png",
-        "name": "Tejaswita Agarwal",
-        "position": "Volunteer in Public Relations",
-        "link": {
-            "url": "https://www.linkedin.com/in/tejaswita-agarwal/",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-    },
-    {
         "image": "https://i.ibb.co/vkHfDM5/suyash-srivastava.png",
         "name": "Suyash Srivastava",
         "position": "Machine Learning Instructor and Lead",
