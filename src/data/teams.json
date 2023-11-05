@@ -54,11 +54,21 @@
     {
         "image": "https://i.ibb.co/dkNYd1x/Shivam-Kumar.jpg",
         "name": "Shivam Kumar",
-        "position": "Volunteer in Web Development",
+        "position": "Volunteer in Cloud and DevOps",
         "link": {
             "url": "https://www.linkedin.com/in/shivam-kumar-70a746256/",
             "target": "_blank",
             "rel": "noopener noreferrer"
           }
-    }
+    },
+    {
+      "image": "https://i.ibb.co/47VhcxP/image.png",
+      "name": "Rishika",
+      "position": "Volunteer in Frontend Development",
+      "link": {
+          "url": "https://www.linkedin.com/in/shivam-kumar-70a746256/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+  }
 ]
