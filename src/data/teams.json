@@ -1,8 +1,8 @@
 [
     {
-        "image": "https://i.ibb.co/LtPMJXZ/akshat-sharma.png",
+        "image": "https://i.ibb.co/4YPG2Hh/image.png",
         "name": "AKSHAT SHARMA",
-        "position": "President and Blockchain Developer",
+        "position": "Blockchain Developer @SpedX, Wormhole Fellow, President",
         "link": {
           "url": "https://akshatsharma.co",
           "target": "_blank",
@@ -13,7 +13,7 @@
     {
         "image": "https://i.ibb.co/z8jVL9V/kanishk-pachauri.jpg",
         "name": "KANISHK PACHAURI",
-        "position": "Community Manager and Backend Developer",
+        "position": "GSOC'2022, Summer Intern @Google UK, Community Manager",
         "link": {
             "url": "https://www.linkedin.com/in/kanishk-pachauri-0161261b0/",
             "target": "_blank",
@@ -21,67 +21,15 @@
           }
     },
     {
-        "image": "https://i.ibb.co/Qr77wgk/anjuman-hasan.jpg",
-        "name": "Anjuman Hasan",
-        "position": "Women in Tech Lead",
-        "link": {
-            "url": "https://www.linkedin.com/in/anjuman-hasan/",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-        
-    },
-    {
-        "image": "https://i.ibb.co/pdS3Bz1/mayank.jpg",
+        "image": "https://i.ibb.co/v1mZPRz/telegram-cloud-photo-size-5-6215051693356333577-x.jpg",
         "name": "MAYANK",
-        "position": "Volunteer in Frontend Development",
+        "position": "Sentinel and Ops, Volunteer in Frontend Development",
         "link": {
             "url": "https://www.linkedin.com/in/mayank-agarwal-162457199/",
             "target": "_blank",
             "rel": "noopener noreferrer"
           }
         
-    },
-    {
-        "image": "https://i.ibb.co/z7BxKZ8/yash-varshney.jpg",
-        "name": "YASH VARSHNEY",
-        "position": "Volunteer in Web Development",
-        "link": {
-            "url": "https://www.linkedin.com/in/yash-varshney-7b81ab1b1/",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-
-    },
-    {
-        "image": "https://i.ibb.co/34GJFS2/Tejaswita-Agarwal.png",
-        "name": "Tejaswita Agarwal",
-        "position": "Volunteer in Public Relations",
-        "link": {
-            "url": "https://www.linkedin.com/in/tejaswita-agarwal/",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-    },
-    {
-        "image": "https://i.ibb.co/vkHfDM5/suyash-srivastava.png",
-        "name": "Suyash Srivastava",
-        "position": "Machine Learning Instructor and Lead",
-        "link": {
-            "url": "https://www.linkedin.com/in/suyash-srivastava-024288197",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-    },
-    {
-        "image": "https://i.ibb.co/BGD1Th9/shivendu-mishra.jpg",
-        "name": "Shivendu Mishra",
-        "position": "Android Development Lead",
-        "link": {
-            "url": "https://www.linkedin.com/in/shivendu-mishra-94ba36200/",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
     },
     {
         "image": "https://i.ibb.co/pjnccjZ/Devanshu-Saxena.jpg",
@@ -104,13 +52,53 @@
           }
     },
     {
-        "image": "https://i.ibb.co/dkNYd1x/Shivam-Kumar.jpg",
+        "image": "https://i.ibb.co/qNbRHzM/image.png",
         "name": "Shivam Kumar",
-        "position": "Volunteer in Web Development",
+        "position": "Volunteer in Cloud and DevOps",
         "link": {
             "url": "https://www.linkedin.com/in/shivam-kumar-70a746256/",
             "target": "_blank",
             "rel": "noopener noreferrer"
           }
+    },
+    {
+      "image": "https://i.ibb.co/HFDjq70/image.png",
+      "name": "Utkarsh",
+      "position": "Volunteer in App Development",
+      "link": {
+          "url": "",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+  },
+    {
+      "image": "https://i.ibb.co/47VhcxP/image.png",
+      "name": "Rishika",
+      "position": "Volunteer in Frontend Development",
+      "link": {
+          "url": "",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+  },
+  {
+    "image": "https://i.ibb.co/0rpf91f/image.png",
+    "name": "Ghanatva",
+    "position": "Volunteer in DevOps",
+    "link": {
+        "url": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+},
+{
+  "image": "https://i.ibb.co/mTF0qCs/image.png",
+  "name": "Sam",
+  "position": "Volunteer in Backend Development",
+  "link": {
+      "url": "",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
     }
+}
 ]
