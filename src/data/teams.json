@@ -32,16 +32,6 @@
         
     },
     {
-        "image": "https://i.ibb.co/vkHfDM5/suyash-srivastava.png",
-        "name": "Suyash Srivastava",
-        "position": "Machine Learning Instructor and Lead",
-        "link": {
-            "url": "https://www.linkedin.com/in/suyash-srivastava-024288197",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-    },
-    {
         "image": "https://i.ibb.co/BGD1Th9/shivendu-mishra.jpg",
         "name": "Shivendu Mishra",
         "position": "Android Development Lead",
