@@ -90,5 +90,15 @@
         "target": "_blank",
         "rel": "noopener noreferrer"
       }
+},
+{
+  "image": "https://i.ibb.co/Sn89DsQ/image.png",
+  "name": "Sam",
+  "position": "Volunteer in Backend Development",
+  "link": {
+      "url": "",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    }
 }
 ]
