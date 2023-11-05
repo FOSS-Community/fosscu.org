@@ -80,5 +80,15 @@
           "target": "_blank",
           "rel": "noopener noreferrer"
         }
-  }
+  },
+  {
+    "image": "https://i.ibb.co/0rpf91f/image.png",
+    "name": "Ghanatva",
+    "position": "Volunteer in DevOps",
+    "link": {
+        "url": "",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+}
 ]
