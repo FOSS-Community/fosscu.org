@@ -78,12 +78,12 @@ function Hero() {
               </button>
                 </a>
                 <a
-                  href="https://cal.com/fosscu/"
+                  href="https://docs.fosscu.org"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
               <button className="hover:bg-green-800 bg-[#0dff1c] w-[190px] h-[60px] rounded-md font-medium my-4 py-3 text-black">
-                  Doubt Clarification ⏱️
+                  Learn More 🧠
               </button>
                 </a>
             </div>
