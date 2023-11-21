@@ -20,7 +20,6 @@ import Tail_wind from "./pages/Frontend/Tail_wind";
 import Vue__js from "./pages/Frontend/Vue__js";
 import React__native from "./pages/Frontend/React__native";
 import Three__js from "./pages/Frontend/Three__js";
-import RedirectConf from "./components/RedirectToConf";
 
 // import About from './components/About'
 // import AboutOrg from "./pages/AboutOrg";
@@ -34,7 +33,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<RedirectConf />}></Route>
+        <Route path="/" element={<Homepage />}></Route>
         <Route path="/home" element={<Homepage />}></Route>
         <Route path="/team" element={<Team />}></Route>
         <Route path="/contact" element={<Contacts />}></Route>
