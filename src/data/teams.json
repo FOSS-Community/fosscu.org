@@ -144,6 +144,16 @@
           "target": "_blank",
           "rel": "noopener noreferrer"
         }
+      },
+      {
+        "image": "https://i.ibb.co/vVTmrpm/aditya.jpg",
+        "name": "Aditya Varshney",
+        "position": "Volunteer in Frontend Development",
+        "link": {
+          "url": "https://twitter.com/adityaslyf",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
       }
     ]
   }
