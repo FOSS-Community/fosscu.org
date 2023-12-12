@@ -30,6 +30,16 @@
           "target": "_blank",
           "rel": "noopener noreferrer"
         }
+      },
+      {
+        "image": "https://i.ibb.co/vqV1SS3/vivek.jpg",
+        "name": "Vivek Pal",
+        "position": "Full Stack Developer, Member @SuperteamDAO, Wormhole Fellow",
+        "link":{
+          "url": "https://vivekpal.in/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
       }
     ]
   },
