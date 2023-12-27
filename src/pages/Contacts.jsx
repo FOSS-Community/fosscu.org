@@ -8,9 +8,9 @@ import {
   FaDiscord,
   FaLinkedin,
   FaEnvelope,
-  FaTwitter
+  FaTwitter,
+  FaNetworkWired
 } from 'react-icons/fa';
-
 
 const Contacts = () => {
   const url = env.url;
@@ -69,7 +69,9 @@ const Contacts = () => {
                 <div className="w-12 h-10 flex flex-col items-center">
               <a href="https://twitter.com/fosscuk" target="twitter" ><FaTwitter className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10 " size={35} /></a>
                </div>
-
+              <div className="w-12 h-10 flex flex-col items-center">
+              <a href= "https://matrix.to/#/#fosscu:matrix.org" target="Matrix" ><FaNetworkWired className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10 " size={35} /></a>
+               </div> 
             </div>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
