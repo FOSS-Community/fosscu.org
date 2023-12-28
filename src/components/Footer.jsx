@@ -43,7 +43,7 @@ const Footer = () => {
             <a href="/about" className="pb-2">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">About</li>
             </a>
-            <a href="https://fosscu-blog.vercel.app/"className="pb-2" target="blank">
+            <a href="https://github.com/FOSS-Community/blog-archive"className="pb-2" target="blank">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Blog</li>
             </a>
             <a href="https://dub.sh/fosscu-discord" className="pb-2" target="blank">
