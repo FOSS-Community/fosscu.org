@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="/guide" className="pb-2">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Guides</li>
             </a>
-            <a href="/building" className="pb-2">
+            <a href="https://www.kuma.fosscu.org/status/fosscu" className="pb-2">
               <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">API Status</li>
             </a>
             <a href="/faq" className="pb-2">
