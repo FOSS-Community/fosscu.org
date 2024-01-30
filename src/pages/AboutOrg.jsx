@@ -14,7 +14,7 @@ import FOSSCU from "../assets/img/logo/fosscu.png"
         <img className='w-[30px] sm:w-[65px] ' src={FOSSCU} alt="/" />     
         <h2 class=" text-lg sm:text-3xl  text-[#00FF00] tracking-widest font title-font mb-1 sm:ml-5 sm:mt-4 ml-2 mt-2 " >ABOUT FOSSCU-KIET</h2>
       </div>
-        <p class="lg:w-2/3 mx-auto mt-7 leading-relaxed ">We at FOSSCU (Free and Open-Source Community United )  are a Group of individuals who are constantly working to promote Open-Source Culture. </p>
+        <p class="lg:w-2/3 mx-auto mt-7 leading-relaxed ">We at FOSSCU (Free and Open-Source Software Community United )  are a Group of individuals who are constantly working to promote Open-Source Culture. </p>
         <p class="mt-8 text-[#1AFF1A]">Some key points about our community.</p>
       </div>
       <div class="flex flex-wrap">
