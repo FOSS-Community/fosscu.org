@@ -3,6 +3,7 @@ import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
 import Team from "./pages/Team";
 import Contacts from "./pages/Contacts";
+import Shipyard from "./pages/Shipyard"
 import About from "./pages/AboutOrg";
 import Buiding from "./pages/Buiding";
 import ReactDOM from "react-dom/client";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/home" element={<Homepage />}></Route>
         <Route path="/team" element={<Team />}></Route>
         <Route path="/contact" element={<Contacts />}></Route>
+        <Route path="/shipyard" element={<Shipyard />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/building" element={<Buiding />}></Route>
         <Route path="/guide" element={<Guide />}></Route>

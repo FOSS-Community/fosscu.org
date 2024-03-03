@@ -82,6 +82,16 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link>
           </li>
 
+          <li
+            className={`p-4 ${
+              activeLink === "/shipyard"
+                ? "text-[#0DFF1C]"
+                : "hover:text-[#0DFF1C]"
+            } hover:text-[#0DFF1C]`}
+          >
+            <Link to="/shipyard">Shipyard</Link>
+          </li>
+
           <div class="relative group xl:mr-0 mr-8">
             <button className=" px-4 pt-4 pb-0 hover:text-[#0DFF1C] flex items-center  text-white ">
               <span className="mr-1">
