@@ -35,7 +35,7 @@
         "image": "https://i.ibb.co/vqV1SS3/vivek.jpg",
         "name": "Vivek Pal",
         "position": "Full Stack Dev, Wormhole Fellow, Member @SuperteamDAO",
-        "link":{
+        "link": {
           "url": "https://vivekpal.in/",
           "target": "_blank",
           "rel": "noopener noreferrer"
@@ -161,6 +161,16 @@
         "position": "Volunteer in Frontend Development",
         "link": {
           "url": "https://twitter.com/adityaslyf",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      },
+      {
+        "image": "https://i.ibb.co/k5Xhff6/diya.jpg",
+        "name": "Diya Mehra",
+        "position": "Volunteer in Competitive Programming",
+        "link": {
+          "url": "https://www.linkedin.com/in/diya-mehra-5a93b0255",
           "target": "_blank",
           "rel": "noopener noreferrer"
         }
