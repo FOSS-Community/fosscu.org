@@ -63,8 +63,8 @@ dependencies:
     specifier: ^1.1.1
     version: 1.1.1
   web-vitals:
-    specifier: ^2.1.0
-    version: 2.1.0
+    specifier: ^3.5.2
+    version: 3.5.2
 
 devDependencies:
   '@vitejs/plugin-react':
@@ -3548,8 +3548,8 @@ packages:
       defaults: 1.0.4
     dev: false
 
-  /web-vitals@2.1.0:
-    resolution: {integrity: sha512-npEyJP8jHf3J71t1tRTEtz9FeKp8H2udWJUUq5ykfPhhstr//TUxiYhIEzLNwk4zv2ybAilMn7v7N6Mxmuitmg==}
+  /web-vitals@3.5.2:
+    resolution: {integrity: sha512-c0rhqNcHXRkY/ogGDJQxZ9Im9D19hDihbzSQJrsioex+KnFgmMzBiy57Z1EjkhX/+OjyBpclDCzz2ITtjokFmg==}
     dev: false
 
   /which-boxed-primitive@1.0.2:
