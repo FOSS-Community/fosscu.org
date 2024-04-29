@@ -21,7 +21,7 @@
     "react-lottie": "^1.2.3",
     "react-router-dom": "^6.4.2",
     "react-typed": "^1.2.0",
-    "vite-plugin-env-compatible": "^1.1.1",
+    "vite-plugin-env-compatible": "^2.0.1",
     "web-vitals": "^3.5.2"
   },
   "scripts": {
