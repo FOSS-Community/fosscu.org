@@ -16,7 +16,7 @@ dependencies:
     version: 6.4.2
   '@testing-library/react':
     specifier: ^14.2.2
-    version: 14.2.2(react-dom@18.2.0)(react@18.3.1)
+    version: 14.2.2(react-dom@18.3.1)(react@18.3.1)
   '@testing-library/user-event':
     specifier: ^13.2.1
     version: 13.2.1(@testing-library/dom@9.2.0)
@@ -31,7 +31,7 @@ dependencies:
     version: 1.8.1
   flowbite-react:
     specifier: ^0.3.2
-    version: 0.3.2(flowbite@1.8.1)(react-dom@18.2.0)(react@18.3.1)(tailwindcss@3.4.3)
+    version: 0.3.2(flowbite@1.8.1)(react-dom@18.3.1)(react@18.3.1)(tailwindcss@3.4.3)
   prop-types:
     specifier: ^15.8.1
     version: 15.8.1
@@ -39,8 +39,8 @@ dependencies:
     specifier: ^18.3.1
     version: 18.3.1
   react-dom:
-    specifier: ^18.2.0
-    version: 18.2.0(react@18.3.1)
+    specifier: ^18.3.1
+    version: 18.3.1(react@18.3.1)
   react-dotenv:
     specifier: ^0.1.3
     version: 0.1.3
@@ -55,10 +55,10 @@ dependencies:
     version: 1.2.3(react@18.3.1)
   react-router-dom:
     specifier: ^6.22.3
-    version: 6.22.3(react-dom@18.2.0)(react@18.3.1)
+    version: 6.22.3(react-dom@18.3.1)(react@18.3.1)
   react-typed:
     specifier: ^1.2.0
-    version: 1.2.0(react-dom@18.2.0)(react@18.3.1)
+    version: 1.2.0(react-dom@18.3.1)(react@18.3.1)
   vite-plugin-env-compatible:
     specifier: ^2.0.1
     version: 2.0.1
@@ -635,20 +635,20 @@ packages:
       '@floating-ui/core': 1.2.6
     dev: false
 
-  /@floating-ui/react-dom-interactions@0.9.3(react-dom@18.2.0)(react@18.3.1):
+  /@floating-ui/react-dom-interactions@0.9.3(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-oHwFLxySRtmhgwg7ZdWswvDDi+ld4mEtxu6ngOd7mRC5L1Rk6adjSfOBOHDxea+ItAWmds8m6A725sn1HQtUyQ==}
     deprecated: Package renamed to @floating-ui/react
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@floating-ui/react-dom': 1.3.0(react-dom@18.2.0)(react@18.3.1)
+      '@floating-ui/react-dom': 1.3.0(react-dom@18.3.1)(react@18.3.1)
       aria-hidden: 1.2.3
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
-  /@floating-ui/react-dom@1.3.0(react-dom@18.2.0)(react@18.3.1):
+  /@floating-ui/react-dom@1.3.0(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-htwHm67Ji5E/pROEAr7f8IKFShuiCKHwUC/UY4vC3I5jiSvGFAYnSYiZO5MlGmads+QqvUkR9ANHEguGrDv72g==}
     peerDependencies:
       react: '>=16.8.0'
@@ -656,7 +656,7 @@ packages:
     dependencies:
       '@floating-ui/dom': 1.2.7
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
   /@fortawesome/fontawesome-common-types@6.2.1:
@@ -948,7 +948,7 @@ packages:
       redent: 3.0.0
     dev: false
 
-  /@testing-library/react@14.2.2(react-dom@18.2.0)(react@18.3.1):
+  /@testing-library/react@14.2.2(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-SOUuM2ysCvjUWBXTNfQ/ztmnKDmqaiPV3SvoIuyxMUca45rbSWWAT/qB8CUs/JQ/ux/8JFs9DNdFQ3f6jH3crA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -959,7 +959,7 @@ packages:
       '@testing-library/dom': 9.2.0
       '@types/react-dom': 18.2.1
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
   /@testing-library/user-event@13.2.1(@testing-library/dom@9.2.0):
@@ -1845,7 +1845,7 @@ packages:
       resolve-dir: 1.0.1
     dev: false
 
-  /flowbite-react@0.3.2(flowbite@1.8.1)(react-dom@18.2.0)(react@18.3.1)(tailwindcss@3.4.3):
+  /flowbite-react@0.3.2(flowbite@1.8.1)(react-dom@18.3.1)(react@18.3.1)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-Cioqan7ZMmA8njbUjo+CuAmOhcLPvKlHPZSA1P8A23XTHCPuqgoFq7OtIXTBw2fXFWl0DFvKcnLTAGQmDCXl+w==}
     peerDependencies:
       flowbite: ^1
@@ -1853,15 +1853,15 @@ packages:
       react-dom: ^18
       tailwindcss: ^3
     dependencies:
-      '@floating-ui/react-dom': 1.3.0(react-dom@18.2.0)(react@18.3.1)
-      '@floating-ui/react-dom-interactions': 0.9.3(react-dom@18.2.0)(react@18.3.1)
+      '@floating-ui/react-dom': 1.3.0(react-dom@18.3.1)(react@18.3.1)
+      '@floating-ui/react-dom-interactions': 0.9.3(react-dom@18.3.1)(react@18.3.1)
       classnames: 2.3.2
       commitizen: 4.3.0
       flowbite: 1.8.1
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
       react-icons: 4.8.0(react@18.3.1)
-      react-indiana-drag-scroll: 2.2.0(react-dom@18.2.0)(react@18.3.1)
+      react-indiana-drag-scroll: 2.2.0(react-dom@18.3.1)(react@18.3.1)
       tailwindcss: 3.4.3(ts-node@10.9.1)
     transitivePeerDependencies:
       - '@swc/core'
@@ -2811,14 +2811,14 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  /react-dom@18.2.0(react@18.3.1):
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  /react-dom@18.3.1(react@18.3.1):
+    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.3.1
     dependencies:
       loose-envify: 1.4.0
       react: 18.3.1
-      scheduler: 0.23.0
+      scheduler: 0.23.2
     dev: false
 
   /react-dotenv@0.1.3:
@@ -2855,7 +2855,7 @@ packages:
       react: 18.3.1
     dev: false
 
-  /react-indiana-drag-scroll@2.2.0(react-dom@18.2.0)(react@18.3.1):
+  /react-indiana-drag-scroll@2.2.0(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-+W/3B2OQV0FrbdnsoIo4dww/xpH0MUQJz6ziQb7H+oBko3OCbXuzDFYnho6v6yhGrYDNWYPuFUewb89IONEl/A==}
     engines: {node: '>=8', npm: '>=5'}
     peerDependencies:
@@ -2866,7 +2866,7 @@ packages:
       debounce: 1.2.1
       easy-bem: 1.1.1
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
     dev: false
 
   /react-is@16.13.1:
@@ -2893,7 +2893,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom@6.22.3(react-dom@18.2.0)(react@18.3.1):
+  /react-router-dom@6.22.3(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-7ZILI7HjcE+p31oQvwbokjk6OA/bnFxrhJ19n82Ex9Ph8fNAq+Hm/7KchpMGlTgWhUxRHMMCut+vEtNpWpowKw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -2902,7 +2902,7 @@ packages:
     dependencies:
       '@remix-run/router': 1.15.3
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
       react-router: 6.22.3(react@18.3.1)
     dev: false
 
@@ -2916,7 +2916,7 @@ packages:
       react: 18.3.1
     dev: false
 
-  /react-typed@1.2.0(react-dom@18.2.0)(react@18.3.1):
+  /react-typed@1.2.0(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-aDsaA6zkjAFJs8285APOqE85l/kwJ0/ZJmBhARwUrza4TTttrMM5FcMCGEDdThdfUdHo/0l9WXmxp1m2ik4qdw==}
     peerDependencies:
       react: ^16.3.0
@@ -2924,7 +2924,7 @@ packages:
     dependencies:
       prop-types: 15.8.1
       react: 18.3.1
-      react-dom: 18.2.0(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
       typed.js: 2.0.15
     dev: false
 
@@ -3067,8 +3067,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
-  /scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+  /scheduler@0.23.2:
+    resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
     dependencies:
       loose-envify: 1.4.0
     dev: false
