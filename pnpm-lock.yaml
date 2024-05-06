@@ -9,8 +9,8 @@ dependencies:
     specifier: ^6.5.2
     version: 6.5.2
   '@fortawesome/free-solid-svg-icons':
-    specifier: ^6.2.1
-    version: 6.2.1
+    specifier: ^6.5.2
+    version: 6.5.2
   '@testing-library/jest-dom':
     specifier: ^6.4.2
     version: 6.4.2
@@ -659,12 +659,6 @@ packages:
       react-dom: 18.2.0(react@18.3.1)
     dev: false
 
-  /@fortawesome/fontawesome-common-types@6.2.1:
-    resolution: {integrity: sha512-Sz07mnQrTekFWLz5BMjOzHl/+NooTdW8F8kDQxjWwbpOJcnoSg4vUDng8d/WR1wOxM0O+CY9Zw0nR054riNYtQ==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dev: false
-
   /@fortawesome/fontawesome-common-types@6.5.2:
     resolution: {integrity: sha512-gBxPg3aVO6J0kpfHNILc+NMhXnqHumFxOmjYCFfOiLZfwhnnfhtsdA2hfJlDnj+8PjAs6kKQPenOTKj3Rf7zHw==}
     engines: {node: '>=6'}
@@ -679,12 +673,12 @@ packages:
       '@fortawesome/fontawesome-common-types': 6.5.2
     dev: false
 
-  /@fortawesome/free-solid-svg-icons@6.2.1:
-    resolution: {integrity: sha512-oKuqrP5jbfEPJWTij4sM+/RvgX+RMFwx3QZCZcK9PrBDgxC35zuc7AOFsyMjMd/PIFPeB2JxyqDr5zs/DZFPPw==}
+  /@fortawesome/free-solid-svg-icons@6.5.2:
+    resolution: {integrity: sha512-QWFZYXFE7O1Gr1dTIp+D6UcFUF0qElOnZptpi7PBUMylJh+vFmIedVe1Ir6RM1t2tEQLLSV1k7bR4o92M+uqlw==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.2.1
+      '@fortawesome/fontawesome-common-types': 6.5.2
     dev: false
 
   /@isaacs/cliui@8.0.2:
