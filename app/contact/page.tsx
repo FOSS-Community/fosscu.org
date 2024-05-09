@@ -18,8 +18,8 @@ const AirtableForm = () => {
   const [isVisible, setVisible] = useState(true);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isLoading, setLoading] = useState(false);
-  const apiKey = process.env.API_URL;
-  console.log(apiKey);
+  // const apiKey = process.env.API_URL;
+  // console.log(apiKey);
 
   const handleInputChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -46,10 +46,9 @@ const AirtableForm = () => {
   
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append('Access-Control-Allow-Origin', '*');
     myHeaders.append(
       "Authorization",
-      `Bearer ${apiKey}`
+      "Bearer patv9V491TkNGUhyA.0e452983e9bc1b7541a5bcc3029deb4e6882327d620244e2c44b4399f9700c28"
     );
 
     const requestOptions = {
@@ -67,14 +66,14 @@ const AirtableForm = () => {
 
     try {
       const response = await fetch(
-        "https://airtable.com/v0/app8Uz5ucCz3jJAH8/data", 
+        "https://api.airtable.com/v0/appt2qGxSivdUxI4b/data", 
         requestOptions
       );
       const result = await response.text();
       setVisible(false); // Hide the inner-box div
       setLoading(false);
       setFormSubmitted(true); // Set formSubmitted to true
-      console.log(result);
+      // console.log(result);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -90,17 +89,17 @@ const AirtableForm = () => {
   }; 
 
   return (
-    <div className="isolate flex flex-col px-6 py-18 sm:py-24 lg:px-8">
-      <div className="mx-auto max-w-2xl text-center">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-5xl text-white">
+    <div className="isolate flex flex-col px-6 py-18 sm:py-24 lg:px-8 sm:overflow-x-hidden ">
+      <div className="w-screen mx-44 text-center sm:mx-auto">
+        <h1 className="my-20 text-4xl font-bold tracking-tight sm:text-5xl text-white text-center sm:text-center sm:my-0">
           Contact Us
         </h1>
       </div>
-      <div className="flex flex-col p-12 justify-between items-center md:flex-row">  
+      <div className="flex my-36 absolute gap-24 flex-col p-12 justify-between items-center lg:flex-row sm:gap-6 lg:items-center sm:relative sm:my-0"> 
           <Lottie options={defaultOpt} height={380} width={500}/> 
         <form
           onSubmit={handleSubmit}
-          className="mx-auto mt-2 max-w-2xl p-10 sm:mt-10 border-4 border-emerald-800 rounded-xl"
+          className="mx-24 relative mt-2 max-w-2xl p-10 sm:mt-10 border-4 border-emerald-800 rounded-xl sm:mx-auto"
         >
           {isVisible  && (
             <div className="inner-box">
