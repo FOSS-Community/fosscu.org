@@ -6,6 +6,7 @@ import env from "react-dotenv";
 
 import {
   FaDiscord,
+  FaReddit,
   FaLinkedin,
   FaEnvelope,
   FaTwitter,
@@ -57,21 +58,24 @@ const Contacts = () => {
           </div>
           <div className="lg:w-1/2 md:w-2/3  mx-auto mb-8">
             <div className="flex justify-center  md:space-x-12 lg:space-x-14 xl:space-x-20 space-x-6">
-            <div className="w-12 h-10 flex flex-col items-center">
-              <a href="https://discord.com/invite/4xruwjjU9B" target="discord" > <FaDiscord className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 " size={40} /> </a>
-            </div>
               <div className="w-12 h-10 flex flex-col items-center">
-              <a href="Mailto:fosscu@gmail.com" target="mail" ><FaEnvelope className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} /></a>
-               </div>
-                <div className="w-12 h-10 flex flex-col items-center">
-              <a href="https://www.linkedin.com/company/fosscu/" target="linkedin" ><FaLinkedin className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} /></a>
-               </div>
-                <div className="w-12 h-10 flex flex-col items-center">
-              <a href="https://twitter.com/fosscuk" target="twitter" ><FaTwitter className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10 " size={35} /></a>
-               </div>
+                <a href="https://discord.com/invite/4xruwjjU9B" target="discord" > <FaDiscord className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 " size={40} /> </a>
+              </div>
               <div className="w-12 h-10 flex flex-col items-center">
-              <a href= "https://matrix.to/#/#fosscu:matrix.org" target="Matrix" ><FaNetworkWired className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10 " size={35} /></a>
-               </div> 
+                <a href="https://www.reddit.com/r/fosscu/" target="discord" > <FaReddit className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 " size={40} /> </a>
+              </div>
+              <div className="w-12 h-10 flex flex-col items-center">
+                <a href="Mailto:fosscu@gmail.com" target="mail" ><FaEnvelope className= " hover:fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} /></a>
+              </div>
+              <div className="w-12 h-10 flex flex-col items-center">
+                <a href="https://www.linkedin.com/company/fosscu/" target="linkedin" ><FaLinkedin className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} /></a>
+              </div>
+              <div className="w-12 h-10 flex flex-col items-center">
+                <a href="https://twitter.com/fosscuk" target="twitter" ><FaTwitter className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10 " size={35} /></a>
+              </div>
+              <div className="w-12 h-10 flex flex-col items-center">
+                <a href= "https://matrix.to/#/#fosscu:matrix.org" target="Matrix" ><FaNetworkWired className= " fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10 " size={35} /></a>
+              </div> 
             </div>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
