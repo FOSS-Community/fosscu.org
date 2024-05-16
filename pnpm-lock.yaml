@@ -51,8 +51,8 @@ dependencies:
     specifier: ^4.4.0
     version: 4.4.0(react@18.3.1)
   react-lottie:
-    specifier: ^1.2.3
-    version: 1.2.3(react@18.3.1)
+    specifier: ^1.2.4
+    version: 1.2.4(react@18.3.1)
   react-router-dom:
     specifier: ^6.22.3
     version: 6.22.3(react-dom@18.3.1)(react@18.3.1)
@@ -2871,11 +2871,11 @@ packages:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: false
 
-  /react-lottie@1.2.3(react@18.3.1):
-    resolution: {integrity: sha512-qLCERxUr8M+4mm1LU0Ruxw5Y5Fn/OmYkGfnA+JDM/dZb3oKwVAJCjwnjkj9TMHtzR2U6sMEUD3ZZ1RaHagM7kA==}
+  /react-lottie@1.2.4(react@18.3.1):
+    resolution: {integrity: sha512-kBGxI+MIZGBf4wZhNCWwHkMcVP+kbpmrLWH/SkO0qCKc7D7eSPcxQbfpsmsCo8v2KCBYjuGSou+xTqK44D/jMg==}
     engines: {npm: ^3.0.0}
     peerDependencies:
-      react: ^0.14.7 || ^15.0.0 || ^16.0.0
+      react: '>=15.0.0'
     dependencies:
       babel-runtime: 6.26.0
       lottie-web: 5.11.0
