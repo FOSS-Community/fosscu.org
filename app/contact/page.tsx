@@ -12,30 +12,27 @@ const AirtableForm = () => {
     Email: "",
     Message: "",
   };
-  
+
   const [formData, setFormData] = useState(initialFormData);
-  const [ownRoleIncluded, setOwnRoleIncluded] = useState(false);
   const [isVisible, setVisible] = useState(true);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isLoading, setLoading] = useState(false);
-  // const apiKey = process.env.API_URL;
-  // console.log(apiKey);
+  const apiKey = process.env.NEXT_PUBLIC_API_URL;
+  // const apiKey = "patv9V491TkNGUhyA.0e452983e9bc1b7541a5bcc3029deb4e6882327d620244e2c44b4399f9700c28";
 
   const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-
+    const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: value,
     }));
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     const requiredFields = ["Name", "Email", "Message"];
-
     const missingFields = requiredFields.filter((field) => !formData[field]);
 
     if (missingFields.length > 0) {
@@ -43,17 +40,13 @@ const AirtableForm = () => {
       setLoading(false);
       return;
     }
-  
-    const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-    myHeaders.append(
-      "Authorization",
-      "Bearer patv9V491TkNGUhyA.0e452983e9bc1b7541a5bcc3029deb4e6882327d620244e2c44b4399f9700c28"
-    );
 
     const requestOptions = {
       method: "POST",
-      headers: myHeaders,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`,
+      },
       body: JSON.stringify({
         records: [
           {
@@ -61,24 +54,29 @@ const AirtableForm = () => {
           },
         ],
       }),
-      redirect: "follow",
     };
 
     try {
       const response = await fetch(
-        "https://api.airtable.com/v0/appt2qGxSivdUxI4b/data", 
+        "https://api.airtable.com/v0/appt2qGxSivdUxI4b/data",
         requestOptions
       );
-      const result = await response.text();
-      setVisible(false); // Hide the inner-box div
-      setLoading(false);
-      setFormSubmitted(true); // Set formSubmitted to true
-      // console.log(result);
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status} - ${response.statusText}`);
+      }
+
+      setVisible(false);
+      setFormSubmitted(true);
     } catch (error) {
       console.error("Error:", error);
+      alert("An error occurred while submitting the form. Please try again later.");
+      setFormData(initialFormData);
+    } finally {
+      setLoading(false);
     }
   };
-  
+
   const defaultOpt = {
     loop: true,
     autoplay: true,
@@ -86,7 +84,7 @@ const AirtableForm = () => {
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
-  }; 
+  };
 
   return (
     <div className="isolate flex flex-col px-6 py-18 sm:py-24 lg:px-8 sm:overflow-x-hidden ">
@@ -223,3 +221,20 @@ const AirtableForm = () => {
 };
 
 export default AirtableForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
