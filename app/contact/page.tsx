@@ -1,26 +1,32 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, ChangeEvent, KeyboardEvent, FormEvent } from "react";
 import Lottie from "react-lottie";
-import animationData from "./mail.json";
+import animationData from "../assets/mail.json";
 import Link from "next/link";
 import { IoMail } from "react-icons/io5";
 import { FaDiscord, FaLinkedin, FaTwitter, FaNetworkWired } from "react-icons/fa";
 import { BallTriangle } from "react-loading-icons";
 import { handleInputChange, handleSubmit } from "./formUtils";
 
-const AirtableForm = () => {
-  const initialFormData = {
+interface FormData {
+  Name: string;
+  Email: string;
+  Message: string;
+}
+
+const AirtableForm: React.FC = () => {
+  const initialFormData: FormData = {
     Name: "",
     Email: "",
     Message: "",
   };
 
-  const [formData, setFormData] = useState(initialFormData);
-  const [isVisible, setVisible] = useState(true);
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [isLoading, setLoading] = useState(false);
-  const [isLottieLoaded, setLottieLoaded] = useState(false);
-  const apiKey = process.env.NEXT_PUBLIC_API_URL;
+  const [formData, setFormData] = useState<FormData>(initialFormData);
+  const [isVisible, setVisible] = useState<boolean>(true);
+  const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
+  const [isLoading, setLoading] = useState<boolean>(false);
+  const [isLottieLoaded, setLottieLoaded] = useState<boolean>(false);
+  const apiKey = process.env.NEXT_PUBLIC_API_URL as string;
 
   const defaultOpt = {
     loop: true,
@@ -39,11 +45,11 @@ const AirtableForm = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLTextAreaElement | HTMLInputElement>) => {
     if (event.key === "Enter") {
       event.preventDefault();
       handleSubmit(
-        event,
+        event as unknown as FormEvent<HTMLFormElement>,
         formData,
         setLoading,
         setVisible,
@@ -73,7 +79,7 @@ const AirtableForm = () => {
       <div className="flex my-36 absolute gap-24 flex-col p-12 justify-between items-center lg:flex-row sm:gap-6 lg:items-center sm:relative sm:my-0">
         <Lottie options={defaultOpt} height={380} width={500} />
         <form
-          onSubmit={(e) =>
+          onSubmit={(e: FormEvent<HTMLFormElement>) =>
             handleSubmit(
               e,
               formData,
@@ -90,7 +96,6 @@ const AirtableForm = () => {
           {isVisible && (
             <div className="inner-box">
               <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                {/* Your form input fields */}
                 <div>
                   <label
                     htmlFor="Name"
@@ -103,9 +108,9 @@ const AirtableForm = () => {
                       type="text"
                       name="Name"
                       id="Name"
-                      value={formData["Name"]}
+                      value={formData.Name}
                       autoComplete="Name"
-                      onChange={(e) => handleInputChange(e, setFormData)}
+                      onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange(e, setFormData)}
                       onKeyDown={handleKeyDown}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 bg-neutral-900 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6"
                     />
@@ -123,9 +128,9 @@ const AirtableForm = () => {
                       type="email"
                       name="Email"
                       id="Email"
-                      value={formData["Email"]}
+                      value={formData.Email}
                       autoComplete="email"
-                      onChange={(e) => handleInputChange(e, setFormData)}
+                      onChange={(e: ChangeEvent<HTMLInputElement>) => handleInputChange(e, setFormData)}
                       onKeyDown={handleKeyDown}
                       className="block w-full rounded-md border-0 px-3.5 py-2 bg-neutral-900 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6"
                     />
@@ -143,9 +148,9 @@ const AirtableForm = () => {
                     <textarea
                       name="Message"
                       id="Message"
-                      value={formData["Message"]}
+                      value={formData.Message}
                       rows={4}
-                      onChange={(e) => handleInputChange(e, setFormData)}
+                      onChange={(e: ChangeEvent<HTMLTextAreaElement>) => handleInputChange(e, setFormData)}
                       onKeyDown={handleKeyDown}
                       className="block w-full rounded-md border-0 px-3.5 py-2 bg-neutral-900 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-950 sm:text-sm sm:leading-6"
                     />
@@ -186,7 +191,6 @@ const AirtableForm = () => {
             </div>
           )}
           <div className="mt-8 relative flex gap-12 justify-center">
-            {/* Your social media links */}
             <Link
               href="https://discord.com/invite/4xruwjjU9B"
               className="hover:scale-125 transition ease-in-out"
@@ -230,4 +234,3 @@ const AirtableForm = () => {
 };
 
 export default AirtableForm;
-
