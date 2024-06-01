@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
       <div>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>FOSSCU</h1>
+        <h1 className='w-full text-3xl font-bold text-custom-green'>FOSSCU</h1>
         <p className='py-4'>Made with 💚 and Open Source</p>
         <div className='flex justify-between md:w-[75%] my-6'>
           <a href="https://www.instagram.com/fosscu/" className="transition duration-300 ease-in-out hover:scale-125" target="blank">
@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
       <div className="lg:col-span-2 flex justify-between mt-6">
         <div>
-          <h6 className="font-medium text-[#00df9a]">Support</h6>
+          <h6 className="font-medium text-custom-green">Support</h6>
           <ul>
             <a href="/building" className="pb-2">
               <li className="pt-2 text-sum hover:border-b hover:border-green-400">Documentation</li>
@@ -42,36 +42,36 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-[#00df9a]">Organization</h6>
+          <h6 className="font-medium text-custom-green">Organization</h6>
           <ul>
             <a href="/about" className="pb-2">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">About</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">About</li>
             </a>
             <a href="https://github.com/FOSS-Community/blog-archive" className="pb-2" target="blank">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Blog</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">Blog</li>
             </a>
             <a href="https://dub.sh/fosscu-discord" className="pb-2" target="blank">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Join Us</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">Join Us</li>
             </a>
             <a href="https://github.com/FOSS-Community/" className="pb-2" target="blank">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Contribute</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">Contribute</li>
             </a>
           </ul>
         </div>
         <div>
-          <h6 className="font-medium text-[#00df9a]">Handbook</h6>
+          <h6 className="font-medium text-custom-green">Handbook</h6>
           <ul>
             <a href="https://docs.fosscu.org/Docs/values" className="pb-2" target="blank">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Core Values</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">Core Values</li>
             </a>
             <a href="https://docs.fosscu.org/Docs/code-of-conduct" className="pb-2" target="blank">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Code of Conduct</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">Code of Conduct</li>
             </a>
             <a href="https://docs.fosscu.org/Docs/getting-started" className="pb-2" target="blank">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">What is FOSS</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">What is FOSS</li>
             </a>
             <a href="/building" className="pb-2">
-              <li className="pt-2 w-max text-sum hover:border-b hover:border-green-400">Terms</li>
+              <li className="pt-2 w-max text-sum hover:border-b hover:border-custom-green">Terms</li>
             </a>
           </ul>
         </div>
