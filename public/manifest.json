@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "short_name": "FOSSCU",
   "name": "Free Open Source Software Community App",
+=======
+  "short_name": "React App",
+  "name": "Create React App Sample",
+>>>>>>> c3bafaf (created landing page using react framework)
   "icons": [
     {
       "src": "favicon.ico",

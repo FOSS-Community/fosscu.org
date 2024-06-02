@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">FOSSC Documentation 😃</h1>
 
 <p align="center">
@@ -191,11 +192,17 @@ This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
 # Getting Started with VITE
 
 This project was bootstrapped with [VITE](https://vitejs.dev/).
+=======
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>>>>>>> c3bafaf (created landing page using react framework)
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+<<<<<<< HEAD
 
 ### `npm install -g yarn`
 Install all dependencies. This project uses yarn as the package manager. If you don't have yarn installed, you can install it by running the above command.
@@ -207,10 +214,17 @@ Then, install all dependencies by running the above command.
 
 Runs the app in the development mode.\
 Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+=======
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+>>>>>>> c3bafaf (created landing page using react framework)
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+<<<<<<< HEAD
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
@@ -218,13 +232,29 @@ Launches the test runner in the interactive watch mode.\
 ### `yarn build`
 
 Builds the app for production to the `dist` folder.\
+=======
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+>>>>>>> c3bafaf (created landing page using react framework)
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+<<<<<<< HEAD
 
 ### `yarn eject`
+=======
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+>>>>>>> c3bafaf (created landing page using react framework)
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
@@ -236,6 +266,36 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Learn More
 
+<<<<<<< HEAD
 You can learn more in the [VITE documentation](https://vitejs.dev/guide/).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+=======
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+>>>>>>> c3bafaf (created landing page using react framework)

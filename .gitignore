@@ -2,18 +2,26 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
 .env
 /.pnp
 .pnp.js
 /.yarn
 .yarn/
+=======
+/.pnp
+.pnp.js
+>>>>>>> c3bafaf (created landing page using react framework)
 
 # testing
 /coverage
 
 # production
 /build
+<<<<<<< HEAD
 /dist
+=======
+>>>>>>> c3bafaf (created landing page using react framework)
 
 # misc
 .DS_Store
@@ -21,13 +29,19 @@
 .env.development.local
 .env.test.local
 .env.production.local
+<<<<<<< HEAD
 .env
+=======
+>>>>>>> c3bafaf (created landing page using react framework)
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
 yarnrc.yml
 
 
 # Local Netlify folder
 .netlify
+=======
+>>>>>>> c3bafaf (created landing page using react framework)
