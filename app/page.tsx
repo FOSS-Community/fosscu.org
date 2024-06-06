@@ -8,10 +8,10 @@ const Home: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <Initiatives />
       <Structure />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
