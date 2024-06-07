@@ -70,14 +70,16 @@ const AirtableForm: React.FC = () => {
   }
 
   return (
-    <div className="isolate flex flex-col px-6 py-18 sm:py-24 lg:px-8 sm:overflow-x-hidden">
-      <div className="w-screen mx-44 text-center sm:mx-auto">
-        <h1 className="my-20 text-4xl font-bold tracking-tight sm:text-5xl text-white text-center sm:text-center sm:my-0">
+    <div className="isolate flex flex-col px-6 py-8 sm:py-10 lg:px-8 sm:overflow-x-hidden">
+      <div className="w-full mx-auto text-center">
+        <h1 className="my-10 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-white">
           Contact Us
         </h1>
       </div>
-      <div className="flex my-36 absolute gap-24 flex-col p-12 justify-between items-center lg:flex-row sm:gap-6 lg:items-center sm:relative sm:my-0">
-        <Lottie options={defaultOpt} height={380} width={500} />
+      <div className="flex flex-col lg:flex-row lg:gap-32 p-6 lg:p-12 justify-center items-center">
+        <div className="w-full hidden sm:flex lg:w-1/3 justify-center lg:justify-end mb-10 lg:mb-0">
+          <Lottie options={defaultOpt} height={400} width={400} />
+        </div>
         <form
           onSubmit={(e: FormEvent<HTMLFormElement>) =>
             handleSubmit(
@@ -91,7 +93,7 @@ const AirtableForm: React.FC = () => {
               apiKey
             )
           }
-          className="mx-24 relative mt-2 max-w-2xl p-10 sm:mt-10 border-4 border-emerald-800 rounded-xl sm:mx-auto"
+          className="w-full max-w-md px-6 py-10 bg-neutral-800 border-2 border-emerald-800 rounded-xl"
         >
           {isVisible && (
             <div className="inner-box">
@@ -190,41 +192,41 @@ const AirtableForm: React.FC = () => {
               </p>
             </div>
           )}
-          <div className="mt-8 relative flex gap-12 justify-center">
+          <div className="mt-8 flex gap-6 sm:gap-10 justify-center flex-wrap">
             <Link
               href="https://discord.com/invite/4xruwjjU9B"
               className="hover:scale-125 transition ease-in-out"
               target="discord"
             >
-              <FaDiscord className="size-14 hover:text-violet-500" />
+              <FaDiscord className="w-8 h-8 sm:w-10 sm:h-10 hover:text-violet-500" />
             </Link>
             <Link
               href="Mailto:fosscu@gmail.com"
               className="hover:scale-125 transition ease-in-out"
               target="mail"
             >
-              <IoMail className="size-14 hover:text-red-500" />
+              <IoMail className="w-8 h-8 sm:w-10 sm:h-10 hover:text-red-500" />
             </Link>
             <Link
               href="https://twitter.com/fosscuk"
               className="hover:scale-125 transition ease-in-out"
               target="twitter"
             >
-              <FaTwitter className="size-12 hover:text-blue-400" />
+              <FaTwitter className="w-8 h-8 sm:w-10 sm:h-10 hover:text-blue-400" />
             </Link>
             <Link
               href="https://matrix.to/#/#fosscu:matrix.org"
               className="hover:scale-125 transition ease-in-out"
               target="network"
             >
-              <FaNetworkWired className="size-12 hover:text-pink-600" />
+              <FaNetworkWired className="w-8 h-8 sm:w-10 sm:h-10 hover:text-pink-600" />
             </Link>
             <Link
               href="https://www.linkedin.com/company/fosscu/"
               className="hover:scale-125 transition ease-in-out"
               target="linkedin"
             >
-              <FaLinkedin className="size-12 hover:text-blue-600" />
+              <FaLinkedin className="w-8 h-8 sm:w-10 sm:h-10 hover:text-blue-600" />
             </Link>
           </div>
         </form>
