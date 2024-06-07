@@ -3,9 +3,9 @@ export default function Structure() {
       <div className="flex flex-col gap-16 mb-10">
         <h1 className="text-5xl font-bold text-white text-center py-6">The Community Structure</h1>
         <div className="flex justify-center">
-          <div className="flex flex-col gap-20 px-40 pt-10 text-center text-black text-sm rounded-3xl" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}>
-            <h1 className="text-3xl font-bold text-white text-center">“with great power, comes great <br /> responsibilities”</h1>
-            <div className="flex justify-center items-end gap-20">
+          <div className="flex flex-col gap-20 rounded-t-3xl lg:px-40 pt-10 text-center text-black text-sm" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}>
+            <h1 className="p-2 lg:text-3xl font-bold text-white text-center">“with great power, comes great <br /> responsibilities”</h1>
+            <div className="px-4 flex lg:flex justify-center items-end gap-20">
                 <div className="flex justify-center items-center w-20 h-40 bg-custom-yellow">Learner</div>
                 <div className="flex justify-center items-center w-20 h-80 bg-custom-yellow">Maintainer</div>
                 <div className="flex justify-center items-center w-20 h-60 bg-custom-yellow">Contributor</div>
@@ -13,10 +13,10 @@ export default function Structure() {
           </div>
         </div>
         <a href="/docs" className="text-center text-white text-lg">Read our docs for a much detailed information.</a>
-        <div className="flex justify-evenly items-center">
+        <div className="flex flex-col gap-10 text-center lg:flex-row p-4 justify-evenly items-center">
             <div>
-                <h1 className="text-3xl text-white">Want Latest News of OSS World 🌍 ?</h1>
-                <h2 className="text-lg text-white">Sign up for our newsletter to stay up to date.</h2>
+                <h1 className="text:xl lg:text-3xl text-white">Want Latest News of OSS World 🌍 ?</h1>
+                <h2 className="text-xl lg:text-3xl text-white">Sign up for our newsletter to stay up to date.</h2>
             </div>
             <div className="flex flex-col gap-2 text-center">
                 <input type="text" placeholder="Enter Email" className="p-3 rounded-xl" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)'}} />

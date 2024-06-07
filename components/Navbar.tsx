@@ -24,7 +24,26 @@ export default function Navbar() {
         <Link href='/team' className="text-white text-lg hover:text-custom-green">Team</Link>
         <Link href='/contact' className="text-white text-lg hover:text-custom-green">Contact</Link>
         <Link href='/shipyard' className="text-white text-lg hover:text-custom-green">Shipyard</Link>
-        <Link href='/' className="text-white text-lg hover:text-custom-green">More</Link>
+        <button className="hover:text-custom-green flex items-center  text-white ">
+              <span className="mr-1">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+            </span>
+            <span>More</span>
+          </button>
+            
       </div>
       
       <div className='hidden lg:flex'>
@@ -35,8 +54,7 @@ export default function Navbar() {
         <FontAwesomeIcon icon={faBars} className="text-white" />
       </button>
         
-      {/* Mobile Menu */}
-      <div className={`fixed bg-bg-black text-white inset-0 p-4 z-10 lg:hidden ${menu ? '' : 'hidden'}`}>
+      <div className={`fixed bg-bg-black text-white inset-0 h-fit pl-4 pr-4 pt-4 z-20 lg:hidden ${menu ? '' : 'hidden'}`}>
         <div className="flex justify-between">
           <Link href='/' className="flex gap-2 items-center">
             <Image src="/favicon.ico" alt="logo" width={48} height={48} className="object-cover max-w-12 max-h-12" />
@@ -54,8 +72,6 @@ export default function Navbar() {
           <Link href='/shipyard' className="font-medium hover:text-custom-green p-3 m-3 hover:bg-gray-800 block rounded-lg">Shipyard</Link>
           <Link href='/' className="font-medium hover:text-custom-green p-3 m-3 hover:bg-gray-800 block rounded-lg">More</Link>
         </div>
-        <div className="h-[1px] bg-gray-300"></div>
-        
       </div>
     </nav>
   );

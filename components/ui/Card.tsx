@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, imageUrl }) => {
   return (
-    <div className={`flex grow-0 flex-col gap-4 max-w-sm rounded-3xl overflow-hidden h-fit shadow-lg bg-white p-4 text-white ${title === 'Shipyard' ? 'mt-24' : ''}`} style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}>
+    <div className={`flex grow-0 flex-col gap-4 max-w-fixed rounded-3xl overflow-hidden h-fit w-fit shadow-lg bg-white p-4 text-white lg:${title === 'Shipyard' ? 'mt-24' : ''}`} style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)' }}>
       <img className="w-full" src={imageUrl} alt={title} />
       <div className="flex flex-col gap-2">
         <div className="font-bold text-3xl">{title}</div>
