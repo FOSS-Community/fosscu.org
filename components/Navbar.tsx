@@ -54,7 +54,7 @@ export default function Navbar() {
         <FontAwesomeIcon icon={faBars} className="text-white" />
       </button>
         
-      <div className={`fixed bg-bg-black text-white inset-0 h-fit pl-4 pr-4 pt-4 z-20 lg:hidden ${menu ? '' : 'hidden'}`}>
+      <div className={`fixed bg-bg-black text-white m-0 inset-0 h-fit pl-4 pr-4 pt-4 z-20 lg:hidden ${menu ? '' : 'hidden'}`}>
         <div className="flex justify-between">
           <Link href='/' className="flex gap-2 items-center">
             <Image src="/favicon.ico" alt="logo" width={48} height={48} className="object-cover max-w-12 max-h-12" />

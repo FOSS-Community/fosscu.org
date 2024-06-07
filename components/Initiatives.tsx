@@ -5,7 +5,7 @@ import Card from "../components/ui/Card";
 
 export default function Initiatives () {
   return (
-      <div className="flex flex-col gap-16 mb-16">
+      <div className="flex flex-col items-center justify-between gap-16 mb-16">
         <h1 className="text-5xl font-bold text-white text-center py-6">We Include</h1>
         <div className="flex flex-col lg:flex-row justify-evenly text-center lg:text-left text-3xl text-custom-gray2 font-bold">
           <div className="flex items-center justify-center lg:justify-start gap-3 mb-4 lg:mb-0">
