@@ -26,7 +26,7 @@ export default function Structure() {
   </div>
   <div className="flex flex-col gap-2 text-center">
     <input type="text" placeholder="Enter Email" className="p-3 rounded-xl" style={{ backgroundColor: 'rgba(255, 255, 255, 0.08)'}} />
-    <button className="bg-custom-green font-bold p-3 rounded-xl hover:opacity-50">Notify me</button>
+    <button className="bg-custom-green-gradient font-bold p-3 rounded-xl hover:opacity-50">Notify me</button>
     <p className="text-white">We care about the protection of your data. Read our <br />
       <a href="/privacy" className="underline">Privacy Policy.</a></p>
   </div>
