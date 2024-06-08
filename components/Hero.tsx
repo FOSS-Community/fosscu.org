@@ -7,7 +7,7 @@ export default function Hero() {
         <img
           src={bgImg.src}
           alt="bg img"
-          className="hidden object-cover scale-125 sm:scale-150 md:block lg:block"
+          className="object-cover scale-150 sm:scale-150 md:block lg:block"
         />
       </div>
       <div className="flex-col text-center text-white z-10 mb-20 px-10">

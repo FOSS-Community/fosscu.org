@@ -13,7 +13,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="flex bg-bg-black p-4 items-center justify-between">
+    <nav className="flex bg-bg-black p-4 px-6 items-center justify-between">
       <Link href='/' className="flex gap-2 items-center">
         <Image src="/favicon.ico" alt="logo" width={36} height={36} />
         <div className="text-white text-3xl">FOSSCU</div>
@@ -70,7 +70,6 @@ export default function Navbar() {
           <Link href='/team' className="font-medium hover:text-custom-green p-3 m-3 hover:bg-gray-800 block rounded-lg">Team</Link>
           <Link href='/contact' className="font-medium hover:text-custom-green p-3 m-3 hover:bg-gray-800 block rounded-lg">Contact</Link>
           <Link href='/shipyard' className="font-medium hover:text-custom-green p-3 m-3 hover:bg-gray-800 block rounded-lg">Shipyard</Link>
-          <Link href='/' className="font-medium hover:text-custom-green p-3 m-3 hover:bg-gray-800 block rounded-lg">More</Link>
         </div>
       </div>
     </nav>
