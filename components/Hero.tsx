@@ -1,13 +1,16 @@
 import bgImg from "@/assets/Frame 1000005985.png";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center">
-        <img
+        <Image
           src={bgImg.src}
           alt="bg img"
           className="object-cover scale-150 sm:scale-150 md:block lg:block"
+          width={700}
+          height={700}
         />
       </div>
       <div className="flex-col text-center text-white z-10 mb-20 px-10">
