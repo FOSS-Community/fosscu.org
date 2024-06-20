@@ -12,6 +12,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "types": ["node", "react", "react-dom", "react-lottie"],
+    "typeRoots": ["./node_modules/@types"],
     "plugins": [
       {
         "name": "next"
