@@ -70,13 +70,13 @@ const AirtableForm: React.FC = () => {
   }
 
   return (
-    <div className="isolate flex flex-col px-6 py-8 sm:py-10 lg:px-8 sm:overflow-x-hidden">
+    <div className="isolate flex flex-col px-0 py-8 sm:py-10 lg:px-8 sm:overflow-x-hidden">
       <div className="w-full mx-auto text-center">
         <h1 className="my-10 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-white">
           Contact Us
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row lg:gap-32 p-6 lg:p-12 justify-center items-center">
+      <div className="flex flex-col lg:flex-row lg:gap-32 py-0 px-4 lg:p-12 justify-center items-center">
         <div className="w-full hidden sm:flex lg:w-1/3 justify-center lg:justify-end mb-10 lg:mb-0">
           <Lottie options={defaultOpt} height={400} width={400} />
         </div>
