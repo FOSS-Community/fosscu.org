@@ -23,7 +23,7 @@ const Frontend = () => {
 
       <div className="flex flex-wrap justify-center gap-4 mx-4 md:mx-20">
         {courses.map((course, index) => (
-          <div key={index}>
+          <React.Fragment key={index}>
             <a
               href={course.link}
               className="w-full sm:w-auto sm:mb-10 flex flex-col shadow-lg shadow-[#00df9a] transition-shadow hover:bg-opacity-90 duration-[320ms] bg-gray-900 rounded-lg text-green-400 hover:bg-[#00df9a] hover:shadow-none hover:text-white"
@@ -46,7 +46,7 @@ const Frontend = () => {
                 />
               </div>
             )}
-          </div>
+          </React.Fragment>
         ))}
       </div>
     </div>
