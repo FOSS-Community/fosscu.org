@@ -21,8 +21,8 @@ importers:
         specifier: ^14.2.2
         version: 14.2.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@testing-library/user-event':
-        specifier: ^13.2.1
-        version: 13.2.1(@testing-library/dom@9.2.0)
+        specifier: ^14.5.2
+        version: 14.5.2(@testing-library/dom@9.2.0)
       axios:
         specifier: ^1.7.2
         version: 1.7.2
@@ -576,9 +576,9 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
 
-  '@testing-library/user-event@13.2.1':
-    resolution: {integrity: sha512-cczlgVl+krjOb3j1625usarNEibI0IFRJrSWX9UsJ1HKYFgCQv9Nb7QAipUDXl3Xdz8NDTsiS78eAkPSxlzTlw==}
-    engines: {node: '>=10', npm: '>=6'}
+  '@testing-library/user-event@14.5.2':
+    resolution: {integrity: sha512-YAh82Wh4TIrxYLmfGcixwD18oIjyC1pFQC2Y01F2lzV2HTMiYrI0nze0FD0ocB//CKS/7jIUgae+adPqxK5yCQ==}
+    engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
 
@@ -2552,9 +2552,8 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@testing-library/user-event@13.2.1(@testing-library/dom@9.2.0)':
+  '@testing-library/user-event@14.5.2(@testing-library/dom@9.2.0)':
     dependencies:
-      '@babel/runtime': 7.21.0
       '@testing-library/dom': 9.2.0
 
   '@tsconfig/node10@1.0.9':
