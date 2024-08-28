@@ -2651,6 +2651,11 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
+react-chrome-dino-ts@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-chrome-dino-ts/-/react-chrome-dino-ts-0.1.2.tgz#4a247be70991ebb32568bd915edee6463b3c02c2"
+  integrity sha512-UT7zEkeLFykgwgl2r/5FHzZgs0Bp8c/ZpB+4TZxMPdgakrXGbR7CZl/wYZ5uTJKDwqf7JcEE/5sVZsKaWXuSBA==
+
 react-dom@^18.3.1:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
