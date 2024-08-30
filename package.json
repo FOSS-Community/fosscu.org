@@ -6,7 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    
+    "docker:build": "docker build -t nextjs-app .",
+    "docker:run": "docker run -p 3000:3000 nextjs-app",
+    "docker:build-run": "npm run docker:build && npm run docker:run",
+    
+    "docker:dev-build": "docker build -f Dockerfile.dev -t nextjs-app-dev .",
+    "docker:dev": "docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules nextjs-app-dev",
+    "docker:dev-build-run": "npm run docker:dev-build && npm run docker:dev"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
