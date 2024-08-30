@@ -14,6 +14,27 @@ pnpm dev
 bun dev
 ```
 
+## Running through docker
+
+Make sure you have docker install in your device, if not  [https://docs.docker.com/engine/install](Take reference from here)
+
+Clone the website 
+
+`git clone https://github.com/FOSS-Community/fosscu.org.git`
+
+Change the branch
+
+Change directory to cloned fosscu-website directory
+
+`cd website-fossc`
+
+Run Commands
+
+docker:build-run : Build production image.
+
+docker:dev-build-run : Run development container after building the image.
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
