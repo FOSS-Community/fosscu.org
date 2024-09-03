@@ -1,0 +1,31 @@
+# Stage 1: Build the application
+FROM node:20 AS builder
+
+# Set the working directory
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy application files
+COPY . .
+
+# Stage 2: Development environment
+FROM node:20
+
+# Set the working directory
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy application files
+COPY --from=builder /app /app
+
+# Expose port
+EXPOSE 3000
+
+# Start the application
+CMD ["npm", "run", "dev"]
