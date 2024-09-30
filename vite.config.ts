@@ -1,25 +1,16 @@
-import { defineConfig } from "vite";
+import path from "path";
 import react from "@vitejs/plugin-react";
-import viteTsconfigPaths from "vite-tsconfig-paths";
-import svgrPlugin from "vite-plugin-svgr";
-
-// https://vitejs.dev/config/
+import { defineConfig } from "vite";
+import { config } from 'dotenv';
+config();
 export default defineConfig({
-  server: {
-    watch: {
-      usePolling: true,
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
-    host: true,
-    port: 8080,
   },
-
-  plugins: [
-    react(),
-    viteTsconfigPaths(),
-    svgrPlugin({
-      svgrOptions: {
-        icon: true,
-      },
-    }),
-  ],
+  define: {
+    'process.env': process.env
+  }
 });
