@@ -10,8 +10,9 @@ import {
 import Airtable from "airtable";
 
 const SECRET_API_TOKEN = process.env.REACT_APP_AIRTABLE_SECRET_API_TOKEN;
+const BASE_ID = process.env.REACT_APP_BASE_ID;
 
-const base = new Airtable({ apiKey: SECRET_API_TOKEN }).base("appEMnQzGawihl0o1");
+const base = new Airtable({ apiKey: SECRET_API_TOKEN }).base(BASE_ID);
 
 const Contact = () => {
   const [data, setData] = useState({
