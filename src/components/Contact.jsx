@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import env from "react-dotenv";
-
+const url = process.env.REACT_APP_BACKEND_URL;
 import {
   FaDiscord,
   FaReddit,
@@ -12,7 +11,6 @@ import {
 } from 'react-icons/fa';
 
 const Contact = () => {
-  const url = env.url;
   const [data, setData] = useState({
     name: "",
     email: "",
