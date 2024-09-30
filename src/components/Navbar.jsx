@@ -174,6 +174,14 @@ const Navbar = () => {
               <Link to="/team">Team</Link>
             </li>
             <li
+              className={`p-4 ${activeLink === "/shipyard" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+                } border-b border-gray-600`}
+            >
+              <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>
+                Shipyard
+              </Link>
+            </li>
+            <li
               className={`p-4 ${activeLink === "/resource" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
                 } border-b border-gray-600`}
             >
@@ -196,14 +204,6 @@ const Navbar = () => {
             </li>
             <li className="p-4 border-b border-gray-600">
               <a href="https://github.com/FOSS-Community/">Contribute</a>
-            </li>
-            <li
-              className={`p-4 ${activeLink === "/shipyard" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
-                }`}
-            >
-              <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>
-                Shipyard
-              </Link>
             </li>
           </ul>
         </div>
