@@ -159,65 +159,65 @@ const Navbar = () => {
             </h1>
           </center>
           <ul className="uppercase p-4">
-            <li
-              className={`p-4 ${
-                activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
-              } border-b border-gray-600 `}
-            >
-              <Link to="/" onClick={() => handleLinkClick("/")}>
-                {" "}
-                Home{" "}
-              </Link>{" "}
-            </li>
-            <li
-              className={`p-4 ${
-                activeLink === "/about"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-              } border-b border-gray-600 `}
-            >
-              <Link to="/about">About</Link>
-            </li>
-            <li
-              className={`p-4 ${
-                activeLink === "/team"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-              } border-b border-gray-600 `}
-            >
-              <Link to="/team"> Team </Link>{" "}
-            </li>
-            <li
-              className={`p-4 ${
-                activeLink === "/resource"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-              } border-b border-gray-600 `}
-            >
-              <Link to="/resource">Resources</Link>{" "}
-            </li>
-            <li className={`p-4 border-b border-gray-600 `}>
-              <a href="https://docs.fosscu.org">Handbook</a>{" "}
-            </li>
-            <li className={`p-4 border-b border-gray-600 `}>
-              <a href="https://github.com/FOSS-Community">Projects</a>
-            </li>
-            <li
-              className={`p-4 ${
-                activeLink === "/contact"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-              } border-b border-gray-600 `}
-            >
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className={`p-4 border-b border-gray-600 `}>
-              <a href="https://lu.ma/fosscu">Calender</a>
-            </li>
-            <li className={`p-4 border-b border-gray-600 `}>
-              <a href="https://github.com/FOSS-Community/">Contribute</a>
-            </li>
-          </ul>
+  <li
+    className={`p-4 ${
+      activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+    } border-b border-gray-600`}
+  >
+    <Link to="/" onClick={() => handleLinkClick("/")}>
+      Home
+    </Link>
+  </li>
+  <li
+    className={`p-4 ${
+      activeLink === "/about" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+    } border-b border-gray-600`}
+  >
+    <Link to="/about">About</Link>
+  </li>
+  <li
+    className={`p-4 ${
+      activeLink === "/team" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+    } border-b border-gray-600`}
+  >
+    <Link to="/team">Team</Link>
+  </li>
+  <li
+    className={`p-4 ${
+      activeLink === "/resource" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+    } border-b border-gray-600`}
+  >
+    <Link to="/resource">Resources</Link>
+  </li>
+  <li className="p-4 border-b border-gray-600">
+    <a href="https://docs.fosscu.org">Handbook</a>
+  </li>
+  <li className="p-4 border-b border-gray-600">
+    <a href="https://github.com/FOSS-Community">Projects</a>
+  </li>
+  <li
+    className={`p-4 ${
+      activeLink === "/contact" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+    } border-b border-gray-600`}
+  >
+    <Link to="/contact">Contact</Link>
+  </li>
+  <li className="p-4 border-b border-gray-600">
+    <a href="https://lu.ma/fosscu">Calendar</a>
+  </li>
+  <li className="p-4 border-b border-gray-600">
+    <a href="https://github.com/FOSS-Community/">Contribute</a>
+  </li>
+  <li
+    className={`p-4 ${
+      activeLink === "/shipyard" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+    }`}
+  >
+    <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>
+      Shipyard
+    </Link>
+  </li>
+</ul>
         </div>
       </div>
       <Outlet />
