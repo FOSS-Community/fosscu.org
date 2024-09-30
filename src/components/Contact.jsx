@@ -22,6 +22,7 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false); 
   const [error, setError] = useState(""); 
+  const [success, setSuccess] = useState("");
 
   function handle(e) {
     const newData = { ...data };
@@ -33,7 +34,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true); 
     setError("");
-
+    setSuccess("");
     try {
       await base("Table 1").create([
         {
@@ -44,9 +45,12 @@ const Contact = () => {
           },
         },
       ]);
+      setSuccess("Your message has been sent successfully!");
+      setTimeout(() => setSuccess(""), 3000);
     } catch (err) {
       console.error("Error:", err);
       setError("There was an error processing your request."); 
+      setTimeout(() => setError(""), 3000);
     } finally {
       setLoading(false);
       setData({
@@ -60,7 +64,7 @@ const Contact = () => {
   return (
     <div>
       <section className="text-gray-400 bg-gray-1000 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-10 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
               Contact Us
@@ -152,8 +156,11 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-            {loading && <p className="text-white">Loading...</p>} {/* Optional loading message */}
-            {error && <p className="text-red-500">{error}</p>} {/* Optional error message */}
+            <div className="py-6 text-center font-semibold">
+            {loading && <p className="text-white">Loading...</p>}
+            {error && <p className="text-red-500">{error}</p>}
+            {success && <p className="text-green-500">{success}</p>}
+            </div>
           </div>
         </div>
       </section>
