@@ -46,8 +46,8 @@ const Navbar = () => {
           </li>
           <li
             className={`p-4 ${activeLink === "/about"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               }`}
           >
             <Link to="/about">About</Link>
@@ -61,8 +61,8 @@ const Navbar = () => {
 
           <li
             className={`p-4 ${activeLink === "/resource"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               } hover:text-[#0DFF1C] translate-x-[-3.2em] hidden absolute  bg-white text-gray-900 rounded mt-1 w-48 group-hover:block hover:rounded-md `}
           >
             <a href="/resource">Resources</a>
@@ -70,8 +70,8 @@ const Navbar = () => {
 
           <li
             className={`p-4 ${activeLink === "/contact"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               } hover:text-[#0DFF1C]`}
           >
             <Link to="/contact">Contact</Link>
@@ -79,8 +79,8 @@ const Navbar = () => {
 
           <li
             className={`p-4 ${activeLink === "/shipyard"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               } hover:text-[#0DFF1C]`}
           >
             <Link to="/shipyard">Shipyard</Link>
