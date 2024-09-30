@@ -74,7 +74,9 @@ const Contact = () => {
             </div>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <form class="flex flex-wrap -m-2" onSubmit={(e) => submit(e)}>
+            <form class="flex flex-wrap -m-2" 
+            // onSubmit={(e) => submit(e)}
+            netlify>
               <div class="p-2 w-1/2">
                 <div class="">
                   <label for="name" class="leading-7 text-sm text-gray-400">
