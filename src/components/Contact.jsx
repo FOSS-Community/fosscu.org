@@ -20,8 +20,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [loading, setLoading] = useState(false); 
-  const [error, setError] = useState(""); 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
   function handle(e) {
@@ -32,7 +32,7 @@ const Contact = () => {
 
   async function submit(e) {
     e.preventDefault();
-    setLoading(true); 
+    setLoading(true);
     setError("");
     setSuccess("");
     try {
@@ -49,7 +49,7 @@ const Contact = () => {
       setTimeout(() => setSuccess(""), 3000);
     } catch (err) {
       console.error("Error:", err);
-      setError("There was an error processing your request."); 
+      setError("There was an error processing your request.");
       setTimeout(() => setError(""), 3000);
     } finally {
       setLoading(false);
@@ -157,9 +157,9 @@ const Contact = () => {
               </div>
             </form>
             <div className="py-6 text-center font-semibold">
-            {loading && <p className="text-white">Loading...</p>}
-            {error && <p className="text-red-500">{error}</p>}
-            {success && <p className="text-green-500">{success}</p>}
+              {loading && <p className="text-white">Loading...</p>}
+              {error && <p className="text-red-500">{error}</p>}
+              {success && <p className="text-green-500">{success}</p>}
             </div>
           </div>
         </div>
