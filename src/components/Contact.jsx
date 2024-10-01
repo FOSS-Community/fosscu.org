@@ -107,9 +107,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
-            <form className="flex flex-wrap -m-2" 
-// onSubmit={(e) => submit(e)}
-  >
+            <form className="flex flex-wrap -m-2" onSubmit={(e) => submit(e)}>
               <div className="p-2 w-1/2">
                 <div className="">
                   <label htmlFor="name" className="leading-7 text-sm text-gray-400">
