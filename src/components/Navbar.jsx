@@ -46,8 +46,8 @@ const Navbar = () => {
           </li>
           <li
             className={`p-4 ${activeLink === "/about"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               }`}
           >
             <Link to="/about">About</Link>
@@ -61,8 +61,8 @@ const Navbar = () => {
 
           <li
             className={`p-4 ${activeLink === "/resource"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               } hover:text-[#0DFF1C] translate-x-[-3.2em] hidden absolute  bg-white text-gray-900 rounded mt-1 w-48 group-hover:block hover:rounded-md `}
           >
             <a href="/resource">Resources</a>
@@ -70,8 +70,8 @@ const Navbar = () => {
 
           <li
             className={`p-4 ${activeLink === "/contact"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               } hover:text-[#0DFF1C]`}
           >
             <Link to="/contact">Contact</Link>
@@ -79,8 +79,8 @@ const Navbar = () => {
 
           <li
             className={`p-4 ${activeLink === "/shipyard"
-                ? "text-[#0DFF1C]"
-                : "hover:text-[#0DFF1C]"
+              ? "text-[#0DFF1C]"
+              : "hover:text-[#0DFF1C]"
               } hover:text-[#0DFF1C]`}
           >
             <Link to="/shipyard">Shipyard</Link>
@@ -155,63 +155,56 @@ const Navbar = () => {
           <ul className="uppercase p-4">
             <li
               className={`p-4 ${activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
-                } border-b border-gray-600 `}
+                } border-b border-gray-600`}
             >
               <Link to="/" onClick={() => handleLinkClick("/")}>
-                {" "}
-                Home{" "}
-              </Link>{" "}
+                Home
+              </Link>
             </li>
             <li
-              className={`p-4 ${activeLink === "/about"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-                } border-b border-gray-600 `}
+              className={`p-4 ${activeLink === "/about" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+                } border-b border-gray-600`}
             >
               <Link to="/about">About</Link>
             </li>
             <li
-              className={`p-4 ${activeLink === "/team"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-                } border-b border-gray-600 `}
+
+              className={`p-4 ${activeLink === "/team" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+                } border-b border-gray-600`}
             >
-              <Link to="/team"> Team </Link>{" "}
+              <Link to="/team">Team</Link>
             </li>
             <li
-              className={`p-4 ${activeLink === "/resource"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-                } border-b border-gray-600 `}
+              className={`p-4 ${activeLink === "/shipyard" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+                } border-b border-gray-600`}
             >
-              <Link to="/resource">Resources</Link>{" "}
+              <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>
+                Shipyard
+              </Link>
             </li>
-            <li className={`p-4 border-b border-gray-600 `}>
-              <a href="https://docs.fosscu.org">Handbook</a>{" "}
+            <li
+              className={`p-4 ${activeLink === "/resource" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+                } border-b border-gray-600`}
+            >
+              <Link to="/resource">Resources</Link>
             </li>
-            <li className={`p-4 border-b border-gray-600 `}>
+            <li className="p-4 border-b border-gray-600">
+              <a href="https://docs.fosscu.org">Handbook</a>
+            </li>
+            <li className="p-4 border-b border-gray-600">
               <a href="https://github.com/FOSS-Community">Projects</a>
             </li>
             <li
-              className={`p-4 ${activeLink === "/contact"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-                } border-b border-gray-600 `}
+
+              className={`p-4 ${activeLink === "/contact" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+                } border-b border-gray-600`}
             >
               <Link to="/contact">Contact</Link>
             </li>
-            <li
-              className={`p-4 ${activeLink === "/contact"
-                  ? "text-[#0DFF1C]"
-                  : "hover:text-[#0DFF1C]"
-                } border-b border-gray-600 `}
-            >
-              <Link to="/shipyard">Shipyard</Link>
+            <li className="p-4 border-b border-gray-600">
+              <a href="https://lu.ma/fosscu">Calendar</a>
             </li>
-            <li className={`p-4 border-b border-gray-600 `}>
-              <a href="https://lu.ma/fosscu">Calender</a>
-            </li>
-            <li className={`p-4 border-b border-gray-600 `}>
+            <li className="p-4 border-b border-gray-600">
               <a href="https://github.com/FOSS-Community/">Contribute</a>
             </li>
           </ul>
