@@ -86,7 +86,7 @@ const Navbar = () => {
             <Link to="/shipyard">Shipyard</Link>
           </li>
 
-          <div class="relative group xl:mr-0 mr-8">
+          <div className="relative group xl:mr-0 mr-8">
             <button className=" px-4 pt-4 pb-0 hover:text-[#0DFF1C] flex items-center  text-white ">
               <span className="mr-1">
                 {" "}
@@ -95,24 +95,24 @@ const Navbar = () => {
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-chevron-down"
+                  className="bi bi-chevron-down"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                   />
                 </svg>
               </span>
               <span>More</span>
             </button>
-            <div class="translate-x-[-0em] hidden absolute bg-black text-white rounded mt-1 w-36 group-hover:block hover:rounded-md ">
-              <a href="/resource" class="block px-4 py-2 hover:text-[#0dff1c]">
+            <div className="translate-x-[-0em] hidden absolute bg-black text-white rounded mt-1 w-36 group-hover:block hover:rounded-md ">
+              <a href="/resource" className="block px-4 py-2 hover:text-[#0dff1c]">
                 Resources
               </a>
               <a
                 href="https://docs.fosscu.org"
-                class="block px-4 py-2 hover:text-[#0dff1c]"
+                className="block px-4 py-2 hover:text-[#0dff1c]"
                 target="blank"
               >
                 Handbook
@@ -121,14 +121,14 @@ const Navbar = () => {
                 href="https://lu.ma/fosscu"
                 rel="noreferrer"
                 target="blank"
-                class="block px-4 py-2 hover:text-[#0dff1c]"
+                className="block px-4 py-2 hover:text-[#0dff1c]"
               >
                 Calendar
               </a>
               <a
                 href="https://github.com/FOSS-Community/"
                 target="blank"
-                class="block px-4 py-2 hover:text-[#0dff1c]"
+                className="block px-4 py-2 hover:text-[#0dff1c]"
               >
                 Contribute
               </a>
