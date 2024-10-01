@@ -10,7 +10,7 @@ import {
 } from 'react-icons/fa';
 
 const Contact = () => {
-  const url = process.env.REACT_APP_API_URL;
+  const url = process.env.REACT_APP_BACKEND_URL;
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -100,7 +100,5 @@ const Contact = () => {
     </div>
   );
 };
-
-// ... (SocialIcon, InputField, and TextArea components remain the same)
 
 export default Contact;
