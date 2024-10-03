@@ -67,7 +67,7 @@ function Hero() {
                 loop
               />
             </div>
-            <div class="sm:space-x-4 space-x-0 flex flex-col items-center sm:flex-row sm:justify-center">
+            <div className="sm:space-x-4 space-x-0 flex flex-col items-center sm:flex-row sm:justify-center">
                 <a
                   href="https://dub.sh/fosscu-discord"
                   target="_blank"
