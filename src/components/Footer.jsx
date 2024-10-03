@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithubSquare, FaInstagram, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaInstagram, FaXTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           </a>
           <a href="https://twitter.com/fosscuk" className="transition duration-300 ease-in-out hover:scale-125" target="blank">
 
-            <FaTwitterSquare size={30} />
+            <FaXTwitter size={30} />
           </a>
           <a href="https://github.com/FOSS-Community/" className="transition duration-300 ease-in-out hover:scale-125" target="blank">
             <FaGithubSquare size={30} />
