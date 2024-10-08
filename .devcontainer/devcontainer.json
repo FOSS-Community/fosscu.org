@@ -1,0 +1,23 @@
+{
+    "name": "website-fosscu",
+    "dockerFile": "Dockerfile",
+    "context": "..", 
+    "remoteUser": "node",
+    "forwardPorts": [8080], 
+    "postCreateCommand": "yarn", 
+    "shutdownAction": "none",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "editor.formatOnSave": true, 
+                "eslint.alwaysShowStatus": true 
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint", 
+                "esbenp.prettier-vscode", 
+                "ms-azuretools.vscode-docker" 
+            ]
+        }
+    }
+}
