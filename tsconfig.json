@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",                     // Enable JSX for React projects
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true // Enable JSON imports
+  
+  },
+  "include": ["**/*"],                       // Include all files and directories
+  "exclude": ["node_modules", "dist"]        // Exclude node_modules and any build output folders
+}
