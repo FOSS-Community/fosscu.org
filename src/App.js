@@ -1,0 +1,27 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Team from "./pages/Team";
+import Contacts from "./pages/Contacts";
+import Shipyard from "./pages/Shipyard";
+import About from "./pages/AboutOrg";
+import Buiding from "./pages/Buiding";
+import Guide from "./pages/Guide";
+import Faqs from "./pages/Faqs";
+import Resources from "./pages/Resources";
+import Privacy from "./pages/Privacy";
+import Frontends from "./pages/FrontEnds";
+import HTMLCSS from "./pages/Frontend/HTMLCSS";
+import JS from "./pages/Frontend/JSc";
+import Eletron from "./pages/Frontend/Eletron";
+import Reactjs from "./pages/Frontend/Reactjs";
+import Next__js from "./pages/Frontend/Next__js";
+import Tail_wind from "./pages/Frontend/Tail_wind";
+import Vue__js from "./pages/Frontend/Vue__js";
+import React__native from "./pages/Frontend/React__native";
+import Three__js from "./pages/Frontend/Three__js";
+import PageNotFound from "./pages/PageNotFound";
+const App = () => {
+    return (_jsx(BrowserRouter, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Homepage, {}) }), _jsx(Route, { path: "/home", element: _jsx(Homepage, {}) }), _jsx(Route, { path: "/team", element: _jsx(Team, {}) }), _jsx(Route, { path: "/contact", element: _jsx(Contacts, {}) }), _jsx(Route, { path: "/shipyard", element: _jsx(Shipyard, {}) }), _jsx(Route, { path: "/about", element: _jsx(About, {}) }), _jsx(Route, { path: "/building", element: _jsx(Buiding, {}) }), _jsx(Route, { path: "/guide", element: _jsx(Guide, {}) }), _jsx(Route, { path: "/faq", element: _jsx(Faqs, {}) }), _jsx(Route, { path: "/resource", element: _jsx(Resources, {}) }), _jsx(Route, { path: "/privacypolicy", element: _jsx(Privacy, {}) }), _jsx(Route, { path: "/frontend", element: _jsx(Frontends, {}) }), _jsx(Route, { path: "/html_css", element: _jsx(HTMLCSS, {}) }), _jsx(Route, { path: "/javascript", element: _jsx(JS, {}) }), _jsx(Route, { path: "/electron", element: _jsx(Eletron, {}) }), _jsx(Route, { path: "/reactjs", element: _jsx(Reactjs, {}) }), _jsx(Route, { path: "/nextjs", element: _jsx(Next__js, {}) }), _jsx(Route, { path: "/tailwind", element: _jsx(Tail_wind, {}) }), _jsx(Route, { path: "/vuejs", element: _jsx(Vue__js, {}) }), _jsx(Route, { path: "/threejs", element: _jsx(Three__js, {}) }), _jsx(Route, { path: "/reactnative", element: _jsx(React__native, {}) }), _jsx(Route, { path: "*", element: _jsx(PageNotFound, {}) })] }) }));
+};
+export default App;
