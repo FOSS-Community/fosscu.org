@@ -4,6 +4,7 @@
     "module": "ESNext",
     "jsx": "react-jsx",                     // Enable JSX for React projects
     "strict": true,
+    "outDir": "./dist",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,

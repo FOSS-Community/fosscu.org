@@ -34,23 +34,69 @@ const Navbar: React.FC = () => {
         <RiOpenSourceFill className="flex-shrink-0" size={31} color="green" />
         <h1 className="w-full text-3xl font-bold text-[#0DFF1C] m-4">FOSSCU</h1>
         <ul className="hidden md:flex">
-          <li className={`p-4 ${activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"}`}>
-            <Link to="/" onClick={() => handleLinkClick("/")}> Home </Link>
+          <li
+            className={`p-4 ${
+              activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            }`}
+          >
+            <Link to="/" onClick={() => handleLinkClick("/")}>
+              {" "}
+              Home{" "}
+            </Link>
           </li>
-          <li className={`p-4 ${activeLink === "/about" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"}`}>
-            <Link to="/about" onClick={() => handleLinkClick("/about")}>About</Link>
+          <li
+            className={`p-4 ${
+              activeLink === "/about"
+                ? "text-[#0DFF1C]"
+                : "hover:text-[#0DFF1C]"
+            }`}
+          >
+            <Link to="/about" onClick={() => handleLinkClick("/about")}>
+              About
+            </Link>
           </li>
-          <li className={`p-4 ${activeLink === "/team" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"}`}>
-            <Link to="/team" onClick={() => handleLinkClick("/team")}> Team </Link>
+          <li
+            className={`p-4 ${
+              activeLink === "/team" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+            }`}
+          >
+            <Link to="/team" onClick={() => handleLinkClick("/team")}>
+              {" "}
+              Team{" "}
+            </Link>
           </li>
-          <li className={`p-4 ${activeLink === "/resource" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"}`}>
-            <Link to="/resource" onClick={() => handleLinkClick("/resource")}>Resources</Link>
+          <li
+            className={`p-4 ${
+              activeLink === "/resource"
+                ? "text-[#0DFF1C]"
+                : "hover:text-[#0DFF1C]"
+            }`}
+          >
+            <Link to="/resource" onClick={() => handleLinkClick("/resource")}>
+              Resources
+            </Link>
           </li>
-          <li className={`p-4 ${activeLink === "/contact" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"}`}>
-            <Link to="/contact" onClick={() => handleLinkClick("/contact")}>Contact</Link>
+          <li
+            className={`p-4 ${
+              activeLink === "/contact"
+                ? "text-[#0DFF1C]"
+                : "hover:text-[#0DFF1C]"
+            }`}
+          >
+            <Link to="/contact" onClick={() => handleLinkClick("/contact")}>
+              Contact
+            </Link>
           </li>
-          <li className={`p-4 ${activeLink === "/shipyard" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"}`}>
-            <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>Shipyard</Link>
+          <li
+            className={`p-4 ${
+              activeLink === "/shipyard"
+                ? "text-[#0DFF1C]"
+                : "hover:text-[#0DFF1C]"
+            }`}
+          >
+            <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>
+              Shipyard
+            </Link>
           </li>
 
           <div className="relative group xl:mr-0 mr-8">
@@ -73,10 +119,36 @@ const Navbar: React.FC = () => {
               <span>More</span>
             </button>
             <div className="translate-x-[-0em] hidden absolute bg-black text-white rounded mt-1 w-36 group-hover:block hover:rounded-md">
-              <a href="/resource" className="block px-4 py-2 hover:text-[#0dff1c]">Resources</a>
-              <a href="https://docs.fosscu.org" className="block px-4 py-2 hover:text-[#0dff1c]" target="_blank" rel="noopener noreferrer">Handbook</a>
-              <a href="https://lu.ma/fosscu" className="block px-4 py-2 hover:text-[#0dff1c]" target="_blank" rel="noopener noreferrer">Calendar</a>
-              <a href="https://github.com/FOSS-Community/" className="block px-4 py-2 hover:text-[#0dff1c]" target="_blank" rel="noopener noreferrer">Contribute</a>
+              <a
+                href="/resource"
+                className="block px-4 py-2 hover:text-[#0dff1c]"
+              >
+                Resources
+              </a>
+              <a
+                href="https://docs.fosscu.org"
+                className="block px-4 py-2 hover:text-[#0dff1c]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Handbook
+              </a>
+              <a
+                href="https://lu.ma/fosscu"
+                className="block px-4 py-2 hover:text-[#0dff1c]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Calendar
+              </a>
+              <a
+                href="https://github.com/FOSS-Community/"
+                className="block px-4 py-2 hover:text-[#0dff1c]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contribute
+              </a>
             </div>
           </div>
         </ul>
@@ -90,40 +162,113 @@ const Navbar: React.FC = () => {
               : "fixed left-[-100%]"
           }
         >
-          <center>
+          <div className="flex flex-col items-center">
             <RiOpenSourceFill size={65} color="green" />
-            <h1 className="w-full text-3xl font-bold text-[#0DFF1C] m-4">FOSSCU</h1>
-          </center>
+            <h1 className="w-full text-3xl font-bold text-[#0DFF1C] m-4">
+              FOSSCU
+            </h1>
+          </div>
+
           <ul className="uppercase p-4">
-            <li className={`p-4 ${activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"} border-b border-gray-600`}>
-              <Link to="/" onClick={() => handleLinkClick("/")}>Home</Link>
+            <li
+              className={`p-4 ${
+                activeLink === "/" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"
+              } border-b border-gray-600`}
+            >
+              <Link to="/" onClick={() => handleLinkClick("/")}>
+                Home
+              </Link>
             </li>
-            <li className={`p-4 ${activeLink === "/about" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"} border-b border-gray-600`}>
-              <Link to="/about" onClick={() => handleLinkClick("/about")}>About</Link>
+            <li
+              className={`p-4 ${
+                activeLink === "/about"
+                  ? "text-[#0DFF1C]"
+                  : "hover:text-[#0DFF1C]"
+              } border-b border-gray-600`}
+            >
+              <Link to="/about" onClick={() => handleLinkClick("/about")}>
+                About
+              </Link>
             </li>
-            <li className={`p-4 ${activeLink === "/team" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"} border-b border-gray-600`}>
-              <Link to="/team" onClick={() => handleLinkClick("/team")}>Team</Link>
+            <li
+              className={`p-4 ${
+                activeLink === "/team"
+                  ? "text-[#0DFF1C]"
+                  : "hover:text-[#0DFF1C]"
+              } border-b border-gray-600`}
+            >
+              <Link to="/team" onClick={() => handleLinkClick("/team")}>
+                Team
+              </Link>
             </li>
-            <li className={`p-4 ${activeLink === "/shipyard" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"} border-b border-gray-600`}>
-              <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>Shipyard</Link>
+            <li
+              className={`p-4 ${
+                activeLink === "/shipyard"
+                  ? "text-[#0DFF1C]"
+                  : "hover:text-[#0DFF1C]"
+              } border-b border-gray-600`}
+            >
+              <Link to="/shipyard" onClick={() => handleLinkClick("/shipyard")}>
+                Shipyard
+              </Link>
             </li>
-            <li className={`p-4 ${activeLink === "/resource" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"} border-b border-gray-600`}>
-              <Link to="/resource" onClick={() => handleLinkClick("/resource")}>Resources</Link>
+            <li
+              className={`p-4 ${
+                activeLink === "/resource"
+                  ? "text-[#0DFF1C]"
+                  : "hover:text-[#0DFF1C]"
+              } border-b border-gray-600`}
+            >
+              <Link to="/resource" onClick={() => handleLinkClick("/resource")}>
+                Resources
+              </Link>
             </li>
             <li className="p-4 border-b border-gray-600">
-              <a href="https://docs.fosscu.org" target="_blank" rel="noopener noreferrer">Handbook</a>
+              <a
+                href="https://docs.fosscu.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Handbook
+              </a>
             </li>
             <li className="p-4 border-b border-gray-600">
-              <a href="https://github.com/FOSS-Community" target="_blank" rel="noopener noreferrer">Projects</a>
+              <a
+                href="https://github.com/FOSS-Community"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Projects
+              </a>
             </li>
-            <li className={`p-4 ${activeLink === "/contact" ? "text-[#0DFF1C]" : "hover:text-[#0DFF1C]"} border-b border-gray-600`}>
-              <Link to="/contact" onClick={() => handleLinkClick("/contact")}>Contact</Link>
+            <li
+              className={`p-4 ${
+                activeLink === "/contact"
+                  ? "text-[#0DFF1C]"
+                  : "hover:text-[#0DFF1C]"
+              } border-b border-gray-600`}
+            >
+              <Link to="/contact" onClick={() => handleLinkClick("/contact")}>
+                Contact
+              </Link>
             </li>
             <li className="p-4 border-b border-gray-600">
-              <a href="https://lu.ma/fosscu" target="_blank" rel="noopener noreferrer">Calendar</a>
+              <a
+                href="https://lu.ma/fosscu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Calendar
+              </a>
             </li>
             <li className="p-4 border-b border-gray-600">
-              <a href="https://github.com/FOSS-Community/" target="_blank" rel="noopener noreferrer">Contribute</a>
+              <a
+                href="https://github.com/FOSS-Community/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contribute
+              </a>
             </li>
           </ul>
         </div>
