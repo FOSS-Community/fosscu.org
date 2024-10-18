@@ -96,16 +96,6 @@
         }
       },
       {
-        "image": "https://i.ibb.co/1qJ9Sjn/rohan.jpg",
-        "name": "Tushar Singh",
-        "position": "Volunteer in Backend Development, Community Outreach",
-        "link": {
-          "url": "https://linktr.ee/irohanrajput",
-          "target": "_blank",
-          "rel": "noopener noreferrer"
-        }
-      },
-      {
         "image": "https://i.ibb.co/Qd8HvWJ/Shivam-Yadav.jpg",
         "name": "Shivam Yadav",
         "position": "Frontend Lead",
@@ -164,6 +154,17 @@
           "target": "_blank",
           "rel": "noopener noreferrer"
         }
+      },
+      {
+        "image": "https://ibb.co/LQQP7gM",
+        "name": "Yash Yadav",
+        "position": "Volunteer in Web and Blockchain Development",
+        "link": {
+          "url": "https://twitter.com/yashastro23",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
       }
     ]
   }
