@@ -156,7 +156,7 @@
         }
       },
       {
-        "image": "https://ibb.co/LQQP7gM",
+        "image": "https://i.ibb.co/J7VGLQv/yash-yadav.png",
         "name": "Yash Yadav",
         "position": "Volunteer in Web and Blockchain Development",
         "link": {
@@ -165,6 +165,95 @@
           "rel": "noopener noreferrer"
         }
 
+      },
+      {
+        "image": "https://i.ibb.co/dD5g3Sj/jiya-gupta.png",
+        "name": "Jiya Gupta",
+        "position": "Volunteer in Web Development",
+        "link": {
+          "url": "https://twitter.com/JiyaGupta_dev",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      },
+      {
+        
+        "image": "https://i.ibb.co/Br2T11w/yash-raj.png",
+        "name": "Yash Raj",
+        "position": "Volunteer in Backend and devops",
+        "link": {
+          "url": "https://twitter.com/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      },
+      {
+        
+        "image": "",
+        "name": "Vinayak Rastogi",
+        "position": "Volunteer in Backend development",
+        "link": {
+          "url": "https://twitter.com/yashastro23",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        
+        "image": "https://i.ibb.co/0j0KMdc/dev-mishra.png",
+        "name": "Dev Mishra",
+        "position": "Volunteer in Springboot and Java",
+        "link": {
+          "url": "https://twitter.com/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        "image": "https://i.ibb.co/sRTbgHb/Ksauraj.jpg",
+        "name": "Ksauraj",
+        "position": "Volunteer in linux ",
+        "link": {
+          "url": "https://twitter.com/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+
+      },
+      {
+        "image": "",
+        "name": "Sarthak Gupta",
+        "position": "Volunteer in Frontend Development",
+        "link": {
+          "url": "https://twitter.com/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        "image": "",
+        "name": "Priyansh Mishra",
+        "position": "Volunteer in Machine Learning",
+        "link": {
+          "url": "https://twitter.com/",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        "image": "",
+        "name": "Abhay Pratap Maurya",
+        "position": "Volunteer in Machine Learning",
+        "link": {
+          "url": "https://twitter.com/abhay_pratap_23",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
       }
     ]
   }
