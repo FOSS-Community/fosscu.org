@@ -12,7 +12,21 @@ import Airtable from "airtable";
 const SECRET_API_TOKEN = process.env.REACT_APP_AIRTABLE_SECRET_API_TOKEN;
 const BASE_ID = process.env.REACT_APP_BASE_ID;
 
-const base = new Airtable({ apiKey: SECRET_API_TOKEN }).base(BASE_ID);
+// const base = new Airtable({ apiKey: SECRET_API_TOKEN }).base(BASE_ID);
+let base;
+
+try {
+  if (!SECRET_API_TOKEN) {
+    throw new Error("Airtable API token is not defined.");
+  }
+  if (!BASE_ID) {
+    throw new Error("Airtable Base ID is not defined.");
+  }
+
+  base = new Airtable({ apiKey: SECRET_API_TOKEN }).base(BASE_ID);
+} catch (error) {
+  console.error("Error initializing Airtable:", error.message);
+}
 
 const Contact = () => {
   const [data, setData] = useState({

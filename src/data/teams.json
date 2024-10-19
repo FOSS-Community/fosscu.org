@@ -96,16 +96,6 @@
         }
       },
       {
-        "image": "https://i.ibb.co/1qJ9Sjn/rohan.jpg",
-        "name": "Tushar Singh",
-        "position": "Volunteer in Backend Development, Community Outreach",
-        "link": {
-          "url": "https://linktr.ee/irohanrajput",
-          "target": "_blank",
-          "rel": "noopener noreferrer"
-        }
-      },
-      {
         "image": "https://i.ibb.co/Qd8HvWJ/Shivam-Yadav.jpg",
         "name": "Shivam Yadav",
         "position": "Frontend Lead",
@@ -161,6 +151,106 @@
         "position": "Volunteer in Competitive Programming",
         "link": {
           "url": "https://www.linkedin.com/in/diya-mehra-5a93b0255",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      },
+      {
+        "image": "https://i.ibb.co/J7VGLQv/yash-yadav.png",
+        "name": "Yash Yadav",
+        "position": "Volunteer in Web and Blockchain Development",
+        "link": {
+          "url": "https://twitter.com/yashastro23",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        "image": "https://i.ibb.co/dD5g3Sj/jiya-gupta.png",
+        "name": "Jiya Gupta",
+        "position": "Volunteer in Web and blockchain Development",
+        "link": {
+          "url": "https://twitter.com/JiyaGupta_dev",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      },
+      {
+        
+        "image": "https://i.ibb.co/Br2T11w/yash-raj.png",
+        "name": "Yash Raj",
+        "position": "Volunteer in Backend and devops",
+        "link": {
+          "url": "https://twitter.com/Yash44207966",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      },
+      {
+        
+        "image": "https://i.ibb.co/BC0tDvN/vinayak.png",
+        "name": "Vinayak Rastogi",
+        "position": "Volunteer in Backend development",
+        "link": {
+          "url": "https://twitter.com/rast441",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        
+        "image": "https://i.ibb.co/0j0KMdc/dev-mishra.png",
+        "name": "Dev Mishra",
+        "position": "Volunteer in Springboot and Java",
+        "link": {
+          "url": "https://twitter.com/dev_m03",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        "image": "https://i.ibb.co/sRTbgHb/Ksauraj.jpg",
+        "name": "Ksauraj",
+        "position": "Volunteer in linux ",
+        "link": {
+          "url": "https://twitter.com/k_sauraj",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+
+      },
+      {
+        "image": "https://i.ibb.co/kcD1Bhh/sarthak.png",
+        "name": "Sarthak Gupta",
+        "position": "Volunteer in Web Development",
+        "link": {
+          "url": "https://twitter.com/sarthakstrange",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        "image": "https://i.ibb.co/yN1wGR3/priyansh.png",
+        "name": "Priyansh Mishra",
+        "position": "Volunteer in Machine Learning and cloud",
+        "link": {
+          "url": "https://twitter.com/PriyanshMi96886",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+
+      },
+      {
+        "image": "https://i.ibb.co/0hVMv2p/abhay.png",
+        "name": "Abhay Pratap Maurya",
+        "position": "Volunteer in Machine Learning",
+        "link": {
+          "url": "https://twitter.com/abhay_pratap_23",
           "target": "_blank",
           "rel": "noopener noreferrer"
         }
