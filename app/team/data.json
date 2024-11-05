@@ -1,0 +1,166 @@
+{
+    "steering_council": [
+        {
+            "name": "AKSHAT SHARMA",
+            "image": "https://i.ibb.co/bXbHcv2/image.png",
+            "description": "Blockchain Developer @SpedX, Wormhole Fellow",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "KANISHK PACHAURI",
+            "image": "https://i.ibb.co/z8jVL9V/kanishk-pachauri.jpg",
+            "description": "OSS Dev",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/in/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "MAYANK",
+            "image": "https://i.ibb.co/v1mZPRz/telegram-cloud-photo-size-5-6215051693356333577-x.jpg",
+            "description": "Sentinel and Ops",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Vivek Pal",
+            "image": "https://i.ibb.co/vqV1SS3/vivek.jpg",
+            "description": "Full Stack Dev, Wormhole Fellow, Member @SuperteamDAO",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        }
+    ],
+    "volunteers": [
+        {
+            "name": "Devanshu Saxena",
+            "image": "https://i.ibb.co/pjnccjZ/Devanshu-Saxena.jpg",
+            "description": "Volunteer in Web Development",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Utkarsh Shrivastav",
+            "image": "https://i.ibb.co/HFDjq70/image.png",
+            "description": "Volunteer in App Development, President",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Shivam Kumar",
+            "image": "https://i.ibb.co/qNbRHzM/image.png",
+            "description": "Volunteer in Cloud and DevOps, Community Manager",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Rishika Agarwal",
+            "image": "https://i.ibb.co/47VhcxP/image.png",
+            "description": "Women in Tech Lead, Sentinel",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Abdul (Sam)ad Ansari",
+            "image": "https://i.ibb.co/mTF0qCs/image.png",
+            "description": "Volunteer in Backend Development, ⁠Sculptor",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Tushar Singh",
+            "image": "https://i.ibb.co/1qJ9Sjn/rohan.jpg",
+            "description": "Volunteer in Backend Development, Community Outreach",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Shivam Yadav",
+            "image": "https://i.ibb.co/Qd8HvWJ/Shivam-Yadav.jpg",
+            "description": "Frontend Lead",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Bhavya Agarwal",
+            "image": "https://i.ibb.co/NpVc9tH/bhavya.jpg",
+            "description": "Social Media and PR lead",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Ayush Agarwal",
+            "image": "https://i.ibb.co/0YBbsks/ayush.jpg",
+            "description": "Community Outreach",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Vishesh",
+            "image": "https://i.ibb.co/fDqSzf4/vishesh.png",
+            "description": "Keeper of the Community",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Aditya Varshney",
+            "image": "https://i.ibb.co/vVTmrpm/aditya.jpg",
+            "description": "Volunteer in Frontend Development",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        },
+        {
+            "name": "Diya Mehra",
+            "image": "https://i.ibb.co/k5Xhff6/diya.jpg",
+            "description": "Volunteer in Competitive Programming",
+            "social_media": {
+                "linkedin": "https://www.linkedin.com/",
+                "twitter": "https://twitter.com/",
+                "github": "https://github.com/"
+            }
+        }
+    ]
+}
