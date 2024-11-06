@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-const NEXT_SHIPYARD_DATE = new Date('2024-12-05T13:40:00');
+const NEXT_SHIPYARD_DATE = new Date('2024-11-05T13:40:00');
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({
