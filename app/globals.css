@@ -2,16 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #141718;
-  font-family: sans-serif;
-  font-weight: 500;
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+  }
 }
 
-.inter-heading {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 102, 255, 0.5),
+                 0 0 20px rgba(0, 102, 255, 0.3),
+                 0 0 30px rgba(0, 102, 255, 0.1);
+  }
+
+  .bg-mesh {
+    background-image: radial-gradient(at 40% 20%, rgba(0, 102, 255, 0.1) 0px, transparent 50%),
+                      radial-gradient(at 80% 0%, rgba(107, 70, 193, 0.1) 0px, transparent 50%),
+                      radial-gradient(at 0% 50%, rgba(0, 102, 255, 0.1) 0px, transparent 50%),
+                      radial-gradient(at 80% 50%, rgba(107, 70, 193, 0.1) 0px, transparent 50%),
+                      radial-gradient(at 0% 100%, rgba(0, 102, 255, 0.1) 0px, transparent 50%),
+                      radial-gradient(at 80% 100%, rgba(107, 70, 193, 0.1) 0px, transparent 50%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 2rem));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+/* Add smooth scrolling to the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-shipyard-dark text-white antialiased;
 }
