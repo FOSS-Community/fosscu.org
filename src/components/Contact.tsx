@@ -9,21 +9,40 @@ import {
 } from "react-icons/fa";
 import Airtable from "airtable";
 
-// Ensure that your environment variables are correctly typed
-const SECRET_API_TOKEN = process.env.REACT_APP_AIRTABLE_SECRET_API_TOKEN || '';
-const BASE_ID = process.env.REACT_APP_BASE_ID || '';
-
-const base = new Airtable({ apiKey: SECRET_API_TOKEN }).base(BASE_ID);
-
-// Define the shape of your state data
-interface ContactData {
+// Type definitions
+interface FormData {
   name: string;
   email: string;
   message: string;
 }
 
+interface AirtableError extends Error {
+  statusCode?: number;
+  error?: string;
+}
+
+// Environment variables type check
+const SECRET_API_TOKEN: string | undefined = process.env.REACT_APP_AIRTABLE_SECRET_API_TOKEN;
+const BASE_ID: string | undefined = process.env.REACT_APP_BASE_ID;
+
+// Airtable initialization
+let base: Airtable.Base | undefined;
+
+try {
+  if (!SECRET_API_TOKEN) {
+    throw new Error("Airtable API token is not defined.");
+  }
+  if (!BASE_ID) {
+    throw new Error("Airtable Base ID is not defined.");
+  }
+
+  base = new Airtable({ apiKey: SECRET_API_TOKEN }).base(BASE_ID);
+} catch (error) {
+  console.error("Error initializing Airtable:", (error as Error).message);
+}
+
 const Contact: React.FC = () => {
-  const [data, setData] = useState<ContactData>({
+  const [data, setData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
@@ -32,19 +51,23 @@ const Contact: React.FC = () => {
   const [error, setError] = useState<string>("");
   const [success, setSuccess] = useState<string>("");
 
-  // Type the event parameter
-  const handle = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handle = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     const newData = { ...data };
-    newData[e.target.id as keyof ContactData] = e.target.value;
+    newData[e.target.id as keyof FormData] = e.target.value;
     setData(newData);
   };
 
-  const submit = async (e: FormEvent<HTMLFormElement>) => {
+  const submit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
     setLoading(true);
     setError("");
     setSuccess("");
+
     try {
+      if (!base) {
+        throw new Error("Airtable base is not initialized");
+      }
+
       await base("Table 1").create([
         {
           fields: {
@@ -83,32 +106,32 @@ const Contact: React.FC = () => {
           <div className="lg:w-1/2 md:w-2/3 mx-auto mb-8">
             <div className="flex justify-center md:space-x-12 lg:space-x-14 xl:space-x-20 space-x-6">
               <div className="w-12 h-10 flex flex-col items-center">
-                <a href="https://discord.com/invite/4xruwjjU9B" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.com/invite/4xruwjjU9B" target="discord">
                   <FaDiscord className="hover:fill-current hover:text-[#0DFF1C] hover:w-12" size={40} />
                 </a>
               </div>
               <div className="w-12 h-10 flex flex-col items-center">
-                <a href="https://www.reddit.com/r/fosscu/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.reddit.com/r/fosscu/" target="discord">
                   <FaReddit className="hover:fill-current hover:text-[#0DFF1C] hover:w-12" size={40} />
                 </a>
               </div>
               <div className="w-12 h-10 flex flex-col items-center">
-                <a href="mailto:fosscu@gmail.com" target="_blank" rel="noopener noreferrer">
+                <a href="Mailto:fosscu@gmail.com" target="mail">
                   <FaEnvelope className="hover:fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} />
                 </a>
               </div>
               <div className="w-12 h-10 flex flex-col items-center">
-                <a href="https://www.linkedin.com/company/fosscu/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/fosscu/" target="linkedin">
                   <FaLinkedin className="fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} />
                 </a>
               </div>
               <div className="w-12 h-10 flex flex-col items-center">
-                <a href="https://twitter.com/fosscuk" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/fosscuk" target="twitter">
                   <FaTwitter className="fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} />
                 </a>
               </div>
               <div className="w-12 h-10 flex flex-col items-center">
-                <a href="https://matrix.to/#/#fosscu:matrix.org" target="_blank" rel="noopener noreferrer">
+                <a href="https://matrix.to/#/#fosscu:matrix.org" target="Matrix">
                   <FaNetworkWired className="fill-current hover:text-[#0DFF1C] hover:w-12 hover:h-10" size={35} />
                 </a>
               </div>
@@ -117,7 +140,7 @@ const Contact: React.FC = () => {
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <form className="flex flex-wrap -m-2" onSubmit={submit}>
               <div className="p-2 w-1/2">
-                <div>
+                <div className="">
                   <label htmlFor="name" className="leading-7 text-sm text-gray-400">
                     Name
                   </label>
@@ -131,13 +154,14 @@ const Contact: React.FC = () => {
                 </div>
               </div>
               <div className="p-2 w-1/2">
-                <div>
+                <div className="">
                   <label htmlFor="email" className="leading-7 text-sm text-gray-400">
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     onChange={handle}
                     value={data.email}
                     className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-[#0dff1c] focus:bg-gray-900 focus:ring-2 focus:ring-[#0dff1c] text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -145,12 +169,13 @@ const Contact: React.FC = () => {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <div>
+                <div className="">
                   <label htmlFor="message" className="leading-7 text-sm text-gray-400">
                     Message
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     onChange={handle}
                     value={data.message}
                     className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-[#0dff1c] focus:bg-gray-900 focus:ring-2 focus:ring-[#0dff1c] h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
