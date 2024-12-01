@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto  px-4  text-white">
         <RiOpenSourceFill className="flex-shrink-0" size={31} color="green" />
-        <h1 className="w-full text-3xl font-bold text-[#0DFF1C] m-4">
+        <h1 className="w-full text-3xl font-bold text-[#0DFF1C] p-4">
           {" "}
           FOSSCU
         </h1>
