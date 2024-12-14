@@ -1,5 +1,10 @@
+// src/app/page.tsx
 import { Hero } from "@/components/Hero";
+import { Footer } from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/floating-navbar";
+import { WhatWeDoSection } from "@/components/WhatWeDo";
+import { ProjectsSection } from "@/components/Projects";
+import { NewsletterSection } from "@/components/Newsletter";
 
 export default function Home() {
   const navItems = [
@@ -24,11 +29,15 @@ export default function Home() {
       link: "/resources",
     },
   ];
+
   return (
     <>
       <FloatingNav navItems={navItems} />
       <Hero />
-      <div className="h-screen bg-black/[0.96] dark:bg-black"></div>
+      <WhatWeDoSection />
+      <ProjectsSection />
+      <NewsletterSection />
+      <Footer />
     </>
   );
 }
