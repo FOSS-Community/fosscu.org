@@ -1,5 +1,3 @@
-// src/components/Projects.tsx
-import { UiButton } from "@/components/UiButton";
 import { BackgroundGrid } from "./ui/background-grid";
 import { FloatingParticles } from "./ui/floating-particles";
 import { Badge } from "./Badge";
@@ -18,8 +16,8 @@ const projectItems = [
 export const ProjectsSection = () => {
   return (
     <section className=" bg-black/[0.96] relative overflow-hidden min-h-screen">
-      <BackgroundGrid />
-      <FloatingParticles />
+      {/* <BackgroundGrid />
+      <FloatingParticles /> */}
       
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-2">

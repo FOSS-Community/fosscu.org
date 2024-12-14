@@ -1,10 +1,15 @@
 // src/app/page.tsx
+import dynamic from 'next/dynamic';
 import { Hero } from "@/components/Hero";
-import { Footer } from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { WhatWeDoSection } from "@/components/WhatWeDo";
-import { ProjectsSection } from "@/components/Projects";
-import { NewsletterSection } from "@/components/Newsletter";
+import { Suspense } from 'react';
+
+const WhatWeDoSection = dynamic(() => import('@/components/WhatWeDo').then(mod => mod.WhatWeDoSection), {
+  loading: () => <div className="min-h-screen" /> 
+});
+
+const ProjectsSection = dynamic(() => import('@/components/Projects').then(mod => mod.ProjectsSection));
+const Footer = dynamic(() => import('@/components/Footer').then(mod => mod.Footer));
 
 export default function Home() {
   const navItems = [
@@ -31,13 +36,20 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <div className="smooth-scroll">
+
       <FloatingNav navItems={navItems} />
       <Hero />
-      <WhatWeDoSection />
-      <ProjectsSection />
-      <NewsletterSection />
-      <Footer />
-    </>
+      <Suspense fallback={<div className="min-h-screen" />}>
+        <WhatWeDoSection />
+      </Suspense>
+      <Suspense fallback={<div className="min-h-screen" />}>
+        <ProjectsSection />
+      </Suspense>
+      <Suspense fallback={<div className="h-40" />}>
+        <Footer />
+      </Suspense>
+      </div>
+    
   );
 }

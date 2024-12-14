@@ -1,6 +1,3 @@
-// src/components/WhatWeDoSection.tsx
-import { UiButton } from "@/components/UiButton";
-import { Spotlight } from "./ui/spotlight";
 import { BackgroundGrid } from "./ui/background-grid";
 import { FloatingParticles } from "./ui/floating-particles";
 import { Badge } from "./Badge";
@@ -31,8 +28,8 @@ const whatWeDoItems = [
 export const WhatWeDoSection = () => {
   return (
     <section className=" bg-black/[0.96] relative overflow-hidden min-h-screen">
-      <BackgroundGrid />
-      <FloatingParticles />
+      {/* <BackgroundGrid /> */}
+      {/* <FloatingParticles /> */}
 
       
       <div className="container mx-auto px-4 relative z-10">

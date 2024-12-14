@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { cn } from "@/lib/utils";
 import { Spotlight } from "./ui/spotlight";
 import { BackgroundGrid } from "./ui/background-grid";
 import { FloatingParticles } from "./ui/floating-particles";
+import { BackgroundLines } from "./ui/background-lines";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { HoverButton } from "./Button";
@@ -11,13 +11,22 @@ import { HoverButton } from "./Button";
 export function Hero() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-black/[0.96] antialiased relative overflow-hidden">
-      <BackgroundGrid />
-      <FloatingParticles />
-      <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="green"
-      />
-      <div className="relative z-10 flex flex-col items-center p-4 max-w-7xl w-full mt-60">
+      {/* <div className="absolute inset-0 z-[0]">
+        <BackgroundGrid />
+      </div> */}
+      <div className="absolute inset-0 z-[1] pointer-events-none">
+        <BackgroundLines className="h-full bg-transparent">
+          <></>
+        </BackgroundLines>
+      </div>
+      <div className="absolute inset-0 z-[2]">
+        <FloatingParticles />
+        <Spotlight
+          className="-top-40 left-0 md:left-60 md:-top-20"
+          fill="green"
+        />
+      </div>
+      <div className="relative z-[3] flex flex-col items-center p-4 max-w-7xl w-full mt-60">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
