@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 export function Hero() {
   return (
     <div className="min-h-screen w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased relative overflow-hidden">
+        
       <BackgroundGrid />
       <FloatingParticles />
       <Spotlight
@@ -20,9 +21,9 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          whileHover={{ 
+          whileHover={{
             scale: 1.1,
-            transition: { duration: 0.2 }
+            transition: { duration: 0.2 },
           }}
           className="flex justify-center mb-8"
         >
