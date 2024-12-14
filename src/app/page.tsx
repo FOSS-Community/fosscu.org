@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <FloatingNav navItems={navItems} />
       <Hero />
-      <div className="h-screen bg-white dark:bg-black"></div>
+      <div className="h-screen bg-black/[0.96] dark:bg-black"></div>
     </>
   );
 }
