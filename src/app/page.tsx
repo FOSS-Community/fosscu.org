@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Suspense } from 'react';
 import { FlipWordsComponent } from '@/components/FlipWords';
+import { NewsletterSection } from '@/components/NewsletterSection';
 
 const WhatWeDoSection = dynamic(() => import('@/components/WhatWeDo').then(mod => mod.WhatWeDoSection), {
   loading: () => <div className="min-h-screen" /> 
@@ -41,13 +42,16 @@ export default function Home() {
 
       <FloatingNav navItems={navItems} />
       <Hero />
-      <Suspense fallback={<div className="min-h-screen" />}>
+      <Suspense fallback={<div className="h-min" />}>
         <WhatWeDoSection />
       </Suspense>
-      <Suspense fallback={<div className="min-h-screen" />}>
+      <Suspense fallback={<div className="h-min" />}>
         <ProjectsSection />
       </Suspense>
-      <Suspense fallback={<div className="h-40" />}>
+        <Suspense fallback={<div className="h-min" />}>
+        <NewsletterSection />
+      </Suspense>
+      <Suspense fallback={<div className="h-min" />}>
         <Footer />
       </Suspense>
       </div>

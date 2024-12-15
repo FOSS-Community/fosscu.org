@@ -16,7 +16,7 @@ const projectItems = [
 
 export const ProjectsSection = () => {
   return (
-    <section className=" bg-black/[0.96] relative overflow-hidden min-h-screen">
+    <section className=" bg-black/[0.96] relative overflow-hidden pb-10">
       {/* <BackgroundGrid />
       <FloatingParticles /> */}
       
