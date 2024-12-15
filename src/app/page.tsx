@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import { Hero } from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Suspense } from 'react';
+import { FlipWordsComponent } from '@/components/FlipWords';
 
 const WhatWeDoSection = dynamic(() => import('@/components/WhatWeDo').then(mod => mod.WhatWeDoSection), {
   loading: () => <div className="min-h-screen" /> 

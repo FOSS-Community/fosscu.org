@@ -1,6 +1,7 @@
 import { BackgroundGrid } from "./ui/background-grid";
 import { FloatingParticles } from "./ui/floating-particles";
 import { Badge } from "./Badge";
+import { FlipWordsComponent } from "./FlipWords";
 
 const projectItems = [
   "Check Your Reputation",
@@ -23,6 +24,8 @@ export const ProjectsSection = () => {
         <h2 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 mb-2">
           Our Projects, Services and More
         </h2>
+      {/* <FlipWordsComponent /> */}
+
         <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
           Explore our open source projects and tools. From developer utilities to community platforms, 
           these projects are built by the community, for the community.
