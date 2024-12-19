@@ -8,32 +8,11 @@ import { Footer } from "@/components/Footer";
 import teamsData from "@/data/teams.json";
 
 export default function Teams() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Team",
-      link: "/teams",
-    },
-    {
-      name: "Shipyard",
-      link: "/shipyard",
-    },
-    {
-      name: "Resources",
-      link: "/resources",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen w-full bg-black/[0.96] antialiased relative overflow-hidden">
-      <FloatingNav navItems={navItems} />
+      <FloatingNav/>
       <div className="absolute inset-0 z-[1] pointer-events-none">
         <BackgroundLines className="h-full bg-transparent">
           <></>

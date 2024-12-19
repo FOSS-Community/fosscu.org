@@ -4,7 +4,6 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FloatingParticles } from "@/components/ui/floating-particles";
 import { motion } from "framer-motion";
-import { Badge } from "@/components/Badge";
 import Link from "next/link";
 
 const resourceCategories = [
@@ -66,7 +65,7 @@ export default function Resources() {
 
   return (
     <div className="min-h-screen w-full bg-black/[0.96] antialiased relative overflow-hidden">
-      <FloatingNav navItems={navItems} />
+      <FloatingNav/>
       <div className="absolute inset-0 z-[1] pointer-events-none">
         <BackgroundLines className="h-full bg-transparent">
           <></>
