@@ -25,7 +25,7 @@ export default function Home() {
     },
     {
       name: "Team",
-      link: "/contact",
+      link: "/teams",
     },
     {
       name: "Shipyard",

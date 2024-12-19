@@ -42,7 +42,7 @@ export default function About() {
     },
     {
       name: "Team",
-      link: "/contact",
+      link: "/teams",
     },
     {
       name: "Shipyard",
