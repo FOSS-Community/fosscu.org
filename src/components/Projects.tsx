@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
           ))}
         </div>
         <div className="flex justify-center mt-16">
-          <Badge text="View all projects on GitHub" />
+          <Badge text="View all projects on GitHub" href="https://github.com/foss-community" />
         </div>
       </div>
     </section>

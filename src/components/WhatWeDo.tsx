@@ -70,7 +70,7 @@ export const WhatWeDoSection = () => {
           ))}
         </div>
         <div className="flex justify-center mt-16"  >
-        <Badge text="Learn More" />
+        <Badge text="Learn More"  href="https://docs.fosscu.org"/>
 
         </div>
       </div>

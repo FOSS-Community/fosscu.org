@@ -1,10 +1,10 @@
 "use client"
 import React from "react";
 
-export const Badge = ({ text }: { text: string }) => {
+export const Badge = ({ text, href }: { text: string, href: string }) => {
   return (
     <a
-      href="https://www.producthunt.com/posts/awesome-framer-motion-components"
+      href={href}
       target="__blank"
       className="bg-slate-900 no-underline group mb-8 cursor-pointer relative  shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
     >

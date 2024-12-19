@@ -7,13 +7,12 @@ import { BackgroundLines } from "./ui/background-lines";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { HoverButton } from "./Button";
+import { PrimaryButton } from "./PrimaryButton";
 
 export function Hero() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-black/[0.96] antialiased relative overflow-hidden">
-      {/* <div className="absolute inset-0 z-[0]">
-        <BackgroundGrid />
-      </div> */}
+     
       <div className="absolute inset-0 z-[1] pointer-events-none">
         <BackgroundLines className="h-full bg-transparent">
           <></>
@@ -26,7 +25,7 @@ export function Hero() {
           fill="green"
         />
       </div>
-      <div className="relative z-[3] flex flex-col items-center p-4 max-w-7xl w-full mt-60">
+      <div className="relative z-[3] flex flex-col items-center p-4 max-w-7xl w-full mt-20">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -50,8 +49,10 @@ export function Hero() {
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center">
           Free and open source software community united
         </p>
-        <div className="-mt-28">
-          <HoverButton />
+
+        <div className="mt-10">
+        <PrimaryButton onClick={() => window.open('https://dub.sh/fosscu')}> Become a member </PrimaryButton>
+
         </div>
       </div>
     </div>

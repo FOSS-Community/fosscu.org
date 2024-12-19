@@ -52,7 +52,7 @@ export default function About() {
       <div className="relative z-[3] pt-40 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center">
-            <Badge text="Connect with us" />
+            <Badge text="Connect with us" href="https://dub.sh/fosscu" />
           </div>
 
           <motion.div

@@ -3,7 +3,6 @@ import { Spotlight } from "@/components/ui/spotlight";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { motion } from "framer-motion";
-import { Badge } from "@/components/Badge";
 import { use } from 'react';
 
 import htmlcssData from "@/data/resources/frontend/htmlcss.json";
@@ -59,9 +58,7 @@ export default function TechnologyResources({ params }: { params: Promise<{ tech
 
       <div className="relative z-[3] pt-40 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col items-center">
-            <Badge text={resource.title} />
-          </div>
+          
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

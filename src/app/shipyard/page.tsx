@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Spotlight } from "@/components/ui/spotlight";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -6,6 +6,7 @@ import { FloatingParticles } from "@/components/ui/floating-particles";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/Badge";
 import { Footer } from "@/components/Footer";
+import { PrimaryButton } from "@/components/PrimaryButton";
 
 const features = [
   {
@@ -26,11 +27,9 @@ const features = [
 ];
 
 export default function Shipyard() {
-
-
   return (
     <div className="min-h-screen w-full bg-black/[0.96] antialiased relative overflow-hidden">
-      <FloatingNav/>
+      <FloatingNav />
       <div className="absolute inset-0 z-[1] pointer-events-none">
         <BackgroundLines className="h-full bg-transparent">
           <></>
@@ -46,8 +45,6 @@ export default function Shipyard() {
 
       <div className="relative z-[3] pt-40 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
-        
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -58,7 +55,8 @@ export default function Shipyard() {
               Welcome to Shipyard
             </h1>
             <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
-              FOSSCU's monthly gathering where open source enthusiasts come together to build, ship, and celebrate amazing projects.
+              FOSSCU's monthly gathering where open source enthusiasts come
+              together to build, ship, and celebrate amazing projects.
             </p>
           </motion.div>
 
@@ -91,17 +89,13 @@ export default function Shipyard() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-center"
           >
-            <button
-              className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            <PrimaryButton
               onClick={() => {
                 // window.open('', '_blank');
               }}
             >
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-8 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Submit Your Project 🛠️
-              </span>
-            </button>
+              Submit Your Project 🛠️
+            </PrimaryButton>
           </motion.div>
 
           <motion.div
@@ -109,9 +103,7 @@ export default function Shipyard() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-20 text-center"
-          >
-         
-          </motion.div>
+          ></motion.div>
         </div>
       </div>
 
