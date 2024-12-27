@@ -36,7 +36,7 @@ export function Hero() {
           className="mb-8"
         >
           <Image
-            src="/fosscu-white.png"
+            src="/fosscu-green.png"
             alt="FOSSCU Logo"
             width={100}
             height={100}
