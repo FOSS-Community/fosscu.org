@@ -4,14 +4,38 @@ import { Badge } from "./Badge";
 import { FlipWordsComponent } from "./FlipWords";
 
 const projectItems = [
-  "Check Your Reputation",
-  "Get FOSSCU Sub-Domains",
-  "paste.fosscu.org",
-  "Linkliberte",
-  "FOSSConf",
-  "How we begin",
-  "How to contribute",
-  "🧙‍♂️Wand 🪄",
+  {
+    title: "Check Your Reputation",
+    url: "https://reputation.fosscu.org"
+  },
+  {
+    title: "Get FOSSCU Sub-Domains",
+    url: "https://subdomains.fosscu.org"
+  },
+  {
+    title: "paste.fosscu.org",
+    url: "https://paste.fosscu.org"
+  },
+  {
+    title: "Linkliberte",
+    url: "https://github.com/foss-community/linkliberte"
+  },
+  {
+    title: "FOSSConf",
+    url: "https://conference.fosscu.org"
+  },
+  {
+    title: "How we begin",
+    url: "/about"
+  },
+  {
+    title: "How to contribute",
+    url: "https://github.com/foss-community"
+  },
+  {
+    title: "🧙‍♂️Wand 🪄",
+    url: "https://github.com/foss-community/wand"
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -32,7 +56,10 @@ export const ProjectsSection = () => {
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {projectItems.map((item, index) => (
-            <div 
+            <a 
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
               key={index} 
               className={`
                 relative group
@@ -47,10 +74,10 @@ export const ProjectsSection = () => {
             >
               <div className="relative h-full flex flex-col bg-black/40 rounded-lg">
                 <div className="w-full h-full text-lg font-medium text-white/80 hover:text-white group-hover:scale-105 transition-all duration-300 flex items-center justify-center">
-                  {item}
+                  {item.title}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
         <div className="flex justify-center mt-16">
