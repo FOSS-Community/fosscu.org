@@ -7,15 +7,15 @@ export const Footer = () => {
       { name: "Code of Conduct", href: "https://docs.fosscu.org/docs/code-of-conduct" },
     ],
     resources: [
-      { name: "Docs", href: "/docs" },
-      { name: "Guides", href: "/guides" },
+      { name: "Docs", href: "https://docs.fosscu.org" },
+      { name: "Guides", href: "https://github.com/FOSS-Community" },
       { name: "Blog", href: "https://github.com/FOSS-Community/blog-archive" },
       { name: "FAQ", href: "/faq" },
     ],
     about: [
       { name: "About Us", href: "/about" },
       { name: "What is FOSS", href: "https://docs.fosscu.org/docs/getting-started" },
-      { name: "API Status", href: "/status" },
+      { name: "API Status", href: "https://www.kuma.fosscu.org/status/fosscu" },
       { name: "Terms", href: "/terms" },
     ],
     social: [
