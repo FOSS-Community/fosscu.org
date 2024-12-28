@@ -6,32 +6,11 @@ import { FloatingParticles } from "@/components/ui/floating-particles";
 import { motion } from "framer-motion";
 
 export default function Web3Resources() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Team",
-      link: "/teams",
-    },
-    {
-      name: "Shipyard",
-      link: "/shipyard",
-    },
-    {
-      name: "Resources",
-      link: "/resources",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen w-full bg-black/[0.96] antialiased relative overflow-hidden">
-      <FloatingNav navItems={navItems} />
+      <FloatingNav />
       <div className="absolute inset-0 z-[1] pointer-events-none">
         <BackgroundLines className="h-full bg-transparent">
           <></>
@@ -57,7 +36,7 @@ export default function Web3Resources() {
               Web3 Development Path
             </h1>
             <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
-              We're currently curating the best resources for Web3 development. 
+              We&apos;re currently curating the best resources for Web3 development. 
               Check back soon for comprehensive guides and tutorials.
             </p>
           </motion.div>

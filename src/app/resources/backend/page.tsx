@@ -4,7 +4,6 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FloatingParticles } from "@/components/ui/floating-particles";
 import { motion } from "framer-motion";
-import { Badge } from "@/components/Badge";
 
 export default function BackendResources() {
 
@@ -37,7 +36,7 @@ export default function BackendResources() {
               Backend Development Path
             </h1>
             <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
-              We're currently curating the best resources for backend development. 
+              We&apos;re currently curating the best resources for backend development. 
               Check back soon for comprehensive guides and tutorials.
             </p>
           </motion.div>

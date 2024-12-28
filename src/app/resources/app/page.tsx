@@ -1,37 +1,23 @@
 "use client"
-import { Spotlight } from "@/components/ui/spotlight";
-import { BackgroundLines } from "@/components/ui/background-lines";
+import dynamic from 'next/dynamic';
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { FloatingParticles } from "@/components/ui/floating-particles";
-import { motion } from "framer-motion";
+import { BackgroundLines } from "@/components/ui/background-lines";
+import { motion } from 'framer-motion';
+
+const FloatingParticles = dynamic(() => import('@/components/ui/floating-particles').then(mod => mod.FloatingParticles), {
+  ssr: false
+});
+
+const Spotlight = dynamic(() => import('@/components/ui/spotlight').then(mod => mod.Spotlight), {
+  ssr: false
+});
 
 export default function AppResources() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "About",
-      link: "/about",
-    },
-    {
-      name: "Team",
-      link: "/teams",
-    },
-    {
-      name: "Shipyard",
-      link: "/shipyard",
-    },
-    {
-      name: "Resources",
-      link: "/resources",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen w-full bg-black/[0.96] antialiased relative overflow-hidden">
-      <FloatingNav navItems={navItems} />
+      <FloatingNav/>
       <div className="absolute inset-0 z-[1] pointer-events-none">
         <BackgroundLines className="h-full bg-transparent">
           <></>
@@ -57,7 +43,7 @@ export default function AppResources() {
               App Development Path
             </h1>
             <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
-              We're currently curating the best resources for App development. 
+              We&apos;re currently curating the best resources for App development. 
               Check back soon for comprehensive guides and tutorials.
             </p>
           </motion.div>

@@ -1,13 +1,24 @@
 "use client";
 
-import {useRef } from "react";
+import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from "framer-motion";
 
-export const FloatingParticles = () => {
+export function FloatingParticles() {
+  const [isMounted, setIsMounted] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(containerRef, { once: true });
-  
-  const particleCount = window?.innerWidth > 768 ? 50 : 25;
+  const [particleCount, setParticleCount] = useState(25);
+
+  useEffect(() => {
+    setIsMounted(true);
+    if (typeof window !== 'undefined') {
+      setParticleCount(window.innerWidth > 768 ? 50 : 25);
+    }
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div ref={containerRef} className="absolute inset-0 overflow-hidden">
@@ -20,8 +31,8 @@ export const FloatingParticles = () => {
               animate={{
                 opacity: [0, 0.5, 0],
                 scale: [0, 1, 0],
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
+                x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1000),
+                y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1000),
               }}
               transition={{
                 duration: 15,
@@ -35,4 +46,4 @@ export const FloatingParticles = () => {
       )}
     </div>
   );
-};
+}

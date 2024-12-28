@@ -1,9 +1,9 @@
 "use client"
-import { Spotlight } from "@/components/ui/spotlight";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { motion } from "framer-motion";
 import { use } from 'react';
+import Link from 'next/link';
 
 import htmlcssData from "@/data/resources/frontend/htmlcss.json";
 import jsData from "@/data/resources/frontend/js.json";
@@ -15,7 +15,17 @@ import tailwindData from "@/data/resources/frontend/tailwind.json";
 import reactNativeData from "@/data/resources/frontend/react-native.json";
 import electronData from "@/data/resources/frontend/electronjs.json";
 
-const resourcesMap: { [key: string]: any } = {
+interface ResourceItem {
+  superehead?: string;
+  head: string;
+  para1?: string;
+  para2?: string;
+  para3?: string;
+  link?: string;
+  videoLink?: string;
+}
+
+const resourcesMap: { [key: string]: { data: ResourceItem[], title: string } } = {
   'htmlcss': { data: htmlcssData, title: 'HTML & CSS' },
   'tailwindcss': { data: tailwindData, title: 'Tailwind CSS' },
   'javascript': { data: jsData, title: 'JavaScript' },
@@ -39,9 +49,9 @@ export default function TechnologyResources({ params }: { params: Promise<{ tech
         <div className="text-white text-center">
           <h1 className="text-4xl font-bold mb-4">Resource Not Found</h1>
           <p className="text-gray-400 mb-8">The requested resource could not be found.</p>
-          <a href="/resources/frontend" className="text-purple-500 hover:text-purple-400">
+          <Link href="/resources/frontend" className="text-purple-500 hover:text-purple-400">
             ← Back to Frontend Resources
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -72,7 +82,7 @@ export default function TechnologyResources({ params }: { params: Promise<{ tech
           </motion.div>
 
           <div className="space-y-12">
-            {resource.data.map((item: any, index: number) => (
+            {resource.data.map((item: ResourceItem, index: number) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}

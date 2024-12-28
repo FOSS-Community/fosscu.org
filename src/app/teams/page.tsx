@@ -6,6 +6,7 @@ import { FloatingParticles } from "@/components/ui/floating-particles";
 import { motion } from "framer-motion";
 import { Footer } from "@/components/Footer";
 import teamsData from "@/data/teams.json";
+import Image from "next/image";
 
 export default function Teams() {
 
@@ -58,9 +59,11 @@ export default function Teams() {
                 >
                   <div className="relative flex flex-col items-center bg-black/40 rounded-lg p-6">
                     <div className="w-32 h-32 mb-4 overflow-hidden rounded-full border-2 border-white/20 group-hover:border-white/40 transition-all duration-300">
-                      <img
+                      <Image
                         src={member.image}
                         alt={member.name}
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
                       />
                     </div>
@@ -91,9 +94,11 @@ export default function Teams() {
                 >
                   <div className="relative flex flex-col items-center bg-black/40 rounded-lg p-4">
                     <div className="w-24 h-24 mb-3 overflow-hidden rounded-full border-2 border-white/20 group-hover:border-white/40 transition-all duration-300">
-                      <img
+                      <Image
                         src={member.image}
                         alt={member.name}
+                        width={96}
+                        height={96}
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
                       />
                     </div>

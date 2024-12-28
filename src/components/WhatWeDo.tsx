@@ -1,5 +1,3 @@
-import { BackgroundGrid } from "./ui/background-grid";
-import { FloatingParticles } from "./ui/floating-particles";
 import { Badge } from "./Badge";
 
 const whatWeDoItems = [

@@ -14,7 +14,8 @@ export const NewsletterSection = () => {
       await new Promise(resolve => setTimeout(resolve, 1000));
       setStatus("success");
       setEmail("");
-    } catch (error) {
+    } catch (_error) {
+      console.log(_error);
       setStatus("error");
     }
   };

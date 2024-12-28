@@ -12,6 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1
+};
+
 export const metadata: Metadata = {
   title: "FOSSCU",
   description: "We at FOSSCU (Free and Open-Source Software Community United) are a Group of individuals who are constantly working to promote Open-Source Culture",
@@ -20,7 +26,6 @@ export const metadata: Metadata = {
     apple: "/logo192.png",
   },
   manifest: "/manifest.json",
-  themeColor: "#000000",
   openGraph: {
     title: "FOSSCU",
     description: "We at FOSSCU (Free and Open-Source Software Community United) are a Group of individuals who are constantly working to promote Open-Source Culture",
@@ -38,8 +43,7 @@ export const metadata: Metadata = {
     "itemprop:name": "We ❤️ Open Source",
     "itemprop:description": "We at FOSSCU (Free and Open-Source Software Community United) are a Group of individuals who are constantly working to promote Open-Source Culture",
     "itemprop:image": "https://raw.githubusercontent.com/FOSS-Community/website-fossc/7fb82481a6d40ca5ceacbdeac46da76f9932a31c/src/assets/img/logo/fosscu.png",
-  },
-  viewport: "width=device-width, initial-scale=1",
+  }
 };
 
 export default function RootLayout({

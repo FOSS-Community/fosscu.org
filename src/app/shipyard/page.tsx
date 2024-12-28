@@ -4,7 +4,6 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FloatingParticles } from "@/components/ui/floating-particles";
 import { motion } from "framer-motion";
-import { Badge } from "@/components/Badge";
 import { Footer } from "@/components/Footer";
 import { PrimaryButton } from "@/components/PrimaryButton";
 
@@ -55,7 +54,7 @@ export default function Shipyard() {
               Welcome to Shipyard
             </h1>
             <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
-              FOSSCU's monthly gathering where open source enthusiasts come
+              FOSSCU&apos;s monthly gathering where open source enthusiasts come
               together to build, ship, and celebrate amazing projects.
             </p>
           </motion.div>

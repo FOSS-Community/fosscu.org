@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
 import { Spotlight } from "./ui/spotlight";
-import { BackgroundGrid } from "./ui/background-grid";
 import { FloatingParticles } from "./ui/floating-particles";
 import { BackgroundLines } from "./ui/background-lines";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { HoverButton } from "./Button";
 import { PrimaryButton } from "./PrimaryButton";
 
 export function Hero() {
@@ -51,7 +49,13 @@ export function Hero() {
         </p>
 
         <div className="mt-10">
-        <PrimaryButton onClick={() => window.open('https://dub.sh/fosscu')}> Become a member </PrimaryButton>
+        <PrimaryButton onClick={() => {
+          if (typeof window !== 'undefined') {
+            window.open('https://dub.sh/fosscu');
+          }
+        }}>
+          Become a member
+        </PrimaryButton>
 
         </div>
       </div>

@@ -1,12 +1,18 @@
 "use client"
-import { Spotlight } from "@/components/ui/spotlight";
-import { BackgroundLines } from "@/components/ui/background-lines";
+import dynamic from 'next/dynamic';
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { FloatingParticles } from "@/components/ui/floating-particles";
-import { motion } from "framer-motion";
-import { Badge } from "@/components/Badge";
+import { BackgroundLines } from "@/components/ui/background-lines";
 import frontendData from "@/data/resources/frontend/index.json";
 import Link from "next/link";
+import { motion } from 'framer-motion';
+
+const FloatingParticles = dynamic(() => import('@/components/ui/floating-particles').then(mod => mod.FloatingParticles), {
+  ssr: false
+});
+
+const Spotlight = dynamic(() => import('@/components/ui/spotlight').then(mod => mod.Spotlight), {
+  ssr: false
+});
 
 export default function FrontendResources() {
 
