@@ -11,7 +11,7 @@ This repository contains the assets required to build the [FOSSC Website](https:
 [![CodeFactor](https://www.codefactor.io/repository/github/foss-community/website-fossc/badge)](https://www.codefactor.io/repository/github/foss-community/website-fossc)
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/FOSS-Community/website-fossc)
 
-<img src="src\assets\readme img\FOSSCU.jpeg"></img>
+<img src="./public/readme/FOSSCU.jpeg"></img>
 
 
 
@@ -35,13 +35,13 @@ This documentation aims to simplify and guide the way beginners make their first
  This will create a copy of this repository in your account.
 
 
- <img src="src\assets\readme img\Fork.jpeg"></img>
+ <img src="./public/readme/Fork.jpeg"></img>
 
 
 
 ## Clone the repository
 
- <img src="src\assets\readme img\clone.png"></img>
+ <img src="./public/readme/clone.png"></img>
 
  Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click on open with Github Desktop ot you can click on  _copy to clipboard_ icon if you want to use git bash.
 
@@ -50,7 +50,7 @@ This documentation aims to simplify and guide the way beginners make their first
 > For Git Desktop users ---> Now just click on Open with VS code and start your contribution.
 
  Example:
- <img src="src\assets\readme img\Vscode img.png"></img>
+ <img src="./public/readme/Vscode img.png"></img>
 
 
 ## Commit Changes
@@ -58,7 +58,7 @@ This documentation aims to simplify and guide the way beginners make their first
  After you have updated the files,click on 'Commit to main' and then click on push origin.
 
  Example :
- <img src="src\assets\readme img\commit.png"></img>
+ <img src="./public/readme/commit.png"></img>
 
 
  Now Come back to Github web and click on contribute to submit your changes for review.
@@ -139,15 +139,15 @@ replacing `<add-your-branch-name>` with the name of the branch you created earli
 
 If you go to your repository on GitHub, you'll see a `Contribute` button. Click on that button.
 
-<img src="src\assets\readme img\Contribute.jpeg"></img>
+<img src="./public/readme/Contribute.jpeg"></img>
 
 click on `Open pull request`.
 
-<img src="src\assets\readme img\pull request.png"></img>
+<img src="./public/readme/pull request.png"></img>
 
 click on `Create pull request`.
 
-<img src="src\assets\readme img\create request.png"></img>
+<img src="./public/readme/create request.png"></img>
 
 
 click on `Create pull request`.
@@ -188,54 +188,41 @@ This project needs a ⭐️ from you. Don't forget to leave a star ⭐️
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://www.linkedin.com/pulse/20-ways-make-someone-smile-ingrid-kelada/?trk=read_related_article-card_title)
 
 
-# Getting Started with VITE
+# Getting Started with Next.js
 
-This project was bootstrapped with [VITE](https://vitejs.dev/).
+This project was bootstrapped with [Next.js](https://nextjs.org/).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `npm install`
+Install all dependencies.
 
-### `npm install -g yarn`
-Install all dependencies. This project uses yarn as the package manager. If you don't have yarn installed, you can install it by running the above command.
-
-### `yarn`
-Then, install all dependencies by running the above command.
-
-### `yarn start`
+### `npm run dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `yarn test`
+### `npm run test`
 
 Launches the test runner in the interactive watch mode.\
 
-### `yarn build`
+### `npm run build`
 
-Builds the app for production to the `dist` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production.\
+It correctly bundles Next.js in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run start`
 
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Runs the built app in production mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Learn More
 
-You can learn more in the [VITE documentation](https://vitejs.dev/guide/).
+You can learn more in the [Next.js documentation](https://nextjs.org/docs).
 
 To learn React, check out the [React documentation](https://reactjs.org/).

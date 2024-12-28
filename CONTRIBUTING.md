@@ -32,13 +32,13 @@ You can raise an issue to report a bug or to request a new feature. Before raisi
  This will create a copy of this repository in your account.
 
 
- <img src="src\assets\readme img\Fork.jpeg"></img>
+ <img src="./public/readme/Fork.jpeg"></img>
 
 ***
 
 ### Clone the repository
 
- <img src="src\assets\readme img\clone.png"></img>
+ <img src="./public/readme/clone.png"></img>
 
  Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click on open with Github Desktop ot you can click on  _copy to clipboard_ icon if you want to use git bash.
 
@@ -47,7 +47,7 @@ You can raise an issue to report a bug or to request a new feature. Before raisi
 > For Git Desktop users ---> Now just click on Open with VS code and start your contribution.
 
  Example:
- <img src="src\assets\readme img\Vscode img.png"></img>
+ <img src="./public/readme/Vscode img.png"></img>
 
 ***
 
@@ -56,7 +56,7 @@ You can raise an issue to report a bug or to request a new feature. Before raisi
  After you have updated the files,click on 'Commit to main' and then click on push origin.
 
  Example :
- <img src="src\assets\readme img\commit.png"></img>
+ <img src="./public/readme/commit.png"></img>
 
 
  Now Come back to Github web and click on contribute to submit your changes for review.
@@ -146,15 +146,15 @@ replacing `<add-your-branch-name>` with the name of the branch you created earli
 
 If you go to your repository on GitHub, you'll see a `Contribute` button. Click on that button.
 
-<img src="src\assets\readme img\Contribute.jpeg"></img>
+<img src="./public/readme/Contribute.jpeg"></img>
 
 click on `Open pull request`.
 
-<img src="src\assets\readme img\pull request.png"></img>
+<img src="./public/readme/pull request.png"></img>
 
 click on `Create pull request`.
 
-<img src="src\assets\readme img\create request.png"></img>
+<img src="./public/readme/create request.png"></img>
 
 
 ***

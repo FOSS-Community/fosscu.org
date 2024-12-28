@@ -1,0 +1,51 @@
+{
+    "title": "Frontend Development",
+    "description": "Start your journey in frontend development with these curated resources",
+    "path": [
+      {
+        "title": "HTML/CSS",
+        "icon": "🎨",
+        "status": "foundation"
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "🎭",
+        "status": "styling"
+      },
+      {
+        "title": "JavaScript",
+        "icon": "⚡",
+        "status": "core"
+      },
+      {
+        "title": "React.js",
+        "icon": "⚛️",
+        "status": "framework"
+      },
+      {
+        "title": "Next.js",
+        "icon": "🔲",
+        "status": "framework"
+      },
+      {
+        "title": "Vue.js",
+        "icon": "💚",
+        "status": "framework"
+      },
+      {
+        "title": "Three.js",
+        "icon": "🎮",
+        "status": "advanced"
+      },
+      {
+        "title": "React Native",
+        "icon": "📱",
+        "status": "mobile"
+      },
+      {
+        "title": "Electron",
+        "icon": "🖥️",
+        "status": "desktop"
+      }
+    ]
+  }
