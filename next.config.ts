@@ -55,6 +55,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/ginister/install.sh',
+        destination: 'https://raw.githubusercontent.com/FOSS-Community/ginister/refs/heads/main/install.sh',
+        permanent: true,
+      },
+      {
         source: '/tps',
         destination: 'https://github.com/Mr-Sunglasses/the-python-show',
         permanent: true,
