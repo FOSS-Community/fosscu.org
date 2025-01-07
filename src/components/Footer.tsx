@@ -59,7 +59,7 @@ export const Footer = () => {
               Free and Open Source Software Community United.
             </p>
           </div>
-          {Object.entries(footerLinks).map(([category, links], index) => (
+          {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
               <h3 className="text-white font-semibold mb-4 capitalize">{category}</h3>
               <ul className="space-y-2 text-gray-400">
