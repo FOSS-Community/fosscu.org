@@ -8,7 +8,7 @@ const projectItems = [
   },
   {
     title: "Get FOSSCU Sub-Domains",
-    url: "https://subdomains.fosscu.org"
+    url: "https://subdomain.fosscu.org"
   },
   {
     title: "paste.fosscu.org",
