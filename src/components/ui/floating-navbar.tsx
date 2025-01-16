@@ -66,7 +66,9 @@ export const FloatingNav = ({ className }: { className?: string }) => {
               </Link>
             ))}
             <button 
-              onClick={() => setIsOpen(false)}
+              onClick={() => {setIsOpen(false);
+                window.open('https://docs.fosscu.org/', '_blank');
+              }}
               className="text-left px-4 py-2 text-sm text-white hover:text-neutral-300 hover:bg-white/10 transition-colors rounded"
             >
               Handbook
