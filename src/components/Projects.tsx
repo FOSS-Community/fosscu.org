@@ -15,8 +15,8 @@ const projectItems = [
     url: "https://paste.fosscu.org"
   },
   {
-    title: "Linkliberte",
-    url: "https://github.com/foss-community/linkliberte"
+    title: "LinkLiberate",
+    url: "https://github.com/foss-community/LinkLiberate"
   },
   {
     title: "FOSSConf",
