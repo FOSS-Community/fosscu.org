@@ -58,6 +58,17 @@ export function Hero() {
         </PrimaryButton>
 
         </div>
+
+        <div className="mt-10">
+        <PrimaryButton onClick={() => {
+          if (typeof window !== 'undefined') {
+            window.open('https://www.gnu.org/philosophy/floss-and-foss.en.html');
+          }
+        }}>
+          Our Philosophy
+        </PrimaryButton>
+
+        </div>
       </div>
     </div>
   );
