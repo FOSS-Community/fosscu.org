@@ -6,6 +6,7 @@ import { FloatingParticles } from "@/components/ui/floating-particles";
 import { motion } from "framer-motion";
 import { Footer } from "@/components/Footer";
 import { PrimaryButton } from "@/components/PrimaryButton";
+import { ShipyardIntro } from "@/components/ShipyardIntro";
 
 const features = [
   {
@@ -59,7 +60,9 @@ export default function Shipyard() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          <ShipyardIntro />
+
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -84,18 +87,19 @@ export default function Shipyard() {
           </div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            animate={{ opacity: 1, y: 0 }}
             className="text-center"
-          >
+          > 
             <PrimaryButton
               onClick={() => {
-                // window.open('', '_blank');
+                window.open('https://github.com/FOSS-Community/fosscu.org/blob/main/src/app/shipyard/README.md', '_blank');
               }}
             >
               Submit Your Project 🛠️
             </PrimaryButton>
           </motion.div>
+
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
