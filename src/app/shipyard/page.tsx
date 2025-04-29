@@ -93,8 +93,7 @@ export default function Shipyard() {
           > 
             <PrimaryButton
               onClick={() => {
-                alert("Hang tight! Submission steps will appear here once the pull request is approved. You'll soon be able to fork the repo and add your project idea.");
-                // window.open('https://github.com/FOSS-Community/fosscu.org/blob/main/src/app/shipyard/README.md', '_blank');
+                window.open('https://github.com/FOSS-Community/fosscu.org/blob/main/src/app/shipyard/README.md', '_blank');
               }}
             >
               Submit Your Project 🛠️
